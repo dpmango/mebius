@@ -3,9 +3,32 @@
   display: inline-block
   font-style: normal
   content: ' '
+  vertical-align: middle
+  background-repeat: no-repeat
+  background-size: contain
+  background-position: center
 
 // mixin
 @define-mixin myIcon $name
   background: url('../images/$(name).svg') no-repeat center
   width: 1em
   height: 1em
+
+.ico-logo
+  background-image: url('../images/logo.png')
+  width: 120px
+  height: 40px
+
+.ico-help
+  background-image: url('../images/sprite/ico-help@2x.png')
+  size: 18px
+.ico-cabinet
+  background-image: url('../images/sprite/ico-cabinet@2x.png')
+  size: 18px
+.ico-down
+  background-image: url('../images/sprite/ico-down@2x.png')
+  size: 30px 15px
+  transition: transform .3s ease
+.ico-location
+  background-image: url('../images/sprite/ico-location@2x.png')
+  size: 8px 13px

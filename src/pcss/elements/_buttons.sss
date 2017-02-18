@@ -1,17 +1,24 @@
 // buttons
 .btn
+  outline: none
+  text-align: center
+  background: transparent
+  display: inline-block
+  padding: 8px 20px
+  line-height: auto
   &:focus, &:active
     outline: none
 
-// generic modifiers
-.btn--rounded
-  border-radius: 50%
-
-.btn--outline
-  border: 1px solid transparent
-  &:hover
-
-.btn--abosulte-ico
-  .ico
-    position: absolute 50% 50%
-    transform: translate(-50%, -50%)
+  &--primary
+    font-size: 20px
+    border: 2px solid #e9c162
+    border-radius: 4px
+    transition: all .4s ease-out
+    &:hover
+      background: #e9c162
+      color: white
+      transform: translate3d(0, -5px, 0) skewX(-10deg)
+  &--min-width
+    min-width: 180px
+  &--block
+    display: block

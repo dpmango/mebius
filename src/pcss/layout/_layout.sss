@@ -1,29 +1,32 @@
 // LAYOUT
-
 $mobile: width <= 568px
 $mobile-from: width >= 568px
 $tablet: width <= 768px
 $tablet-from: width <= 768px
-$desktop: width <= 1000px
-$desktop-from: width >= 1000px
+$desktop: width <= 992px
+$desktop-from: width >= 992px
 $wide: width <= 1200px
 $wide-from: width >= 1200px
 $hd: width <= 1680px
 $hd-from: width >= 1680px
 
 // variables
-$fontColor: #333
+$fontColor: #3b3a3a
+$colorDarkChoco: #514c4a
+$colorLightChoco: #c3b497
+$colorChoco: #746956
+$colorExtraLightChoco: #b3a488
+$colorYellow: #e9c264
+
 $colorGreen: #4ab68f
 $colorRed: #f45b63
-$colorYellow: #fda737
-$colorOrange: #f46d36
-$darkColor: #101226
 
 *
   box-sizing: border-box
 
 a
   color: inherit
+  text-decoration: none
   &:hover, &:focus, &:visited
     text-decoration: none
 
@@ -32,11 +35,55 @@ ul
   li
     display: inline-block
 
-
 body, html
-  background: white
+  background: #fefcfa
   color: $fontColor
-  font-family: Helvetica
-  font-size: 14px
+  font-family: 'PTSans-Light', sans-serif
+  font-size: 16px
   max-width: 100%
   overflow-x: hidden
+
+.page
+  position: relative
+  display: flex
+  flex-direction: column
+  &__content
+    flex: 1
+
+.container
+  max-width: 960px
+  width: 100%
+  margin-left: auto
+  margin-right: auto
+  padding-left: 20px
+  padding-right: 20px
+
+.row
+  display: flex
+  margin-left: -12px
+  margin-right: -12px
+  &--alignCenter
+    align-items: center
+  &--jcsb
+    justify-content: space-between
+  &--wrap
+    flex-wrap: wrap
+
+//desktop first method
+.col
+  flex-grow: 0
+  flex-shrink: 1
+  padding-left: 12px
+  padding-right: 12px
+  &--1-6
+    flex-basis: 16.6%
+  &--2-6
+    flex-basis: 33.3%
+  &--3-6
+    flex-basis: 50%
+  &--4-6
+    flex-basis: 66.4%
+  &--5-6
+    flex-basis: 83%
+  &--full
+    flex-basis: 100%

@@ -3,41 +3,176 @@ html
   include shared/head.pug
 
   body
-    include shared/header.pug
+    .page
+      include shared/header.pug
+      .page__content
+        // HERO
+        .hero.hero--mainpage
+          .container
+            .row
+              .col.col--full
+                .hero__content-wrap
+                  .hero__title приключения начинаются <br> прямо здесь
+                  a(href="#sectionIntro")
+                    i.ico.ico-down
+        // HEADING
+        .heading#sectionIntro
+          .container
+            .row
+              .col.col--full
+                .heading__front История, исход которой зависит только от вас!
+                .heading__desc Каждая игра — это детально проработанный сюжет, разноплановые персонажи, судьбоносные решения и оригинальные загадки. <br> Для прохождения требуются 2-3 часа свободного времени, смартфон и немного воображения
 
-    // SECTION::START
-    section.section
+        // ICON LIST
+        .icon-list
+          .container
+            .row
+              .col.col--full
+                .section-name.section-name--centrify Выберите себе игру
+                .icon-list__wrapper
+                  a(href="#").icon-list__item
+                    i.ico.ico-list-1
+                    .icon-list__item__name для всей семьи
+                    .icon-list__item__flip море эмоций от мала до велика
+                  //next
+                  a(href="#").icon-list__item
+                    i.ico.ico-list-1
+                    .icon-list__item__name простой
+                    .icon-list__item__flip море эмоций от мала до велика
+                  //next
+                  a(href="#").icon-list__item
+                    i.ico.ico-list-1
+                    .icon-list__item__name средний
+                    .icon-list__item__flip море эмоций от мала до велика
+                  //next
+                  a(href="#").icon-list__item
+                    i.ico.ico-list-1
+                    .icon-list__item__name сложный
+                    .icon-list__item__flip море эмоций от мала до велика
+                  //next
+                  a(href="#").icon-list__item
+                    i.ico.ico-list-1
+                    .icon-list__item__name короткий
+                    .icon-list__item__flip море эмоций от мала до велика
+                  //next
+                  a(href="#").icon-list__item
+                    i.ico.ico-list-1
+                    .icon-list__item__name длинный
+                    .icon-list__item__flip море эмоций от мала до велика
+                  //next
+                  a(href="#").icon-list__item
+                    i.ico.ico-list-1
+                    .icon-list__item__name для 2х команд
+                    .icon-list__item__flip море эмоций от мала до велика
+                  //next
+                  a(href="#").icon-list__item
+                    i.ico.ico-list-1
+                    .icon-list__item__name автоквест
+                    .icon-list__item__flip море эмоций от мала до велика
 
-    // OWL::START
-    section.owl
-      .container
-        .row
-          .col-sm-12
-            .owl-carousel#owlFirst
-              img(src="http://placehold.it/1200x300")
-              img(src="http://placehold.it/1200x300")
-              img(src="http://placehold.it/1200x300")
+        // GAME LIST
+        .game-list
+          .container
+            .row.row--wrap
+              .col.col--2-6
+                .game-list__card
+                  .game-list__card__chars
+                    span короткий
+                    span сложный
+                    span автоквест
+                    span для всей семьи
+                  .game-list__card__image
+                    img(src="images/game-list-img.png")
+                  .game-list__card__fold
+                    .game-list__card__name Привет с Бетельгейзе
+                    .game-list__card__cta
+                      .game-list__card__cta-left
+                        i.ico.ico-location
+                        span м. полянка
+                      .game-list__card__cta-right
+                        span 900
+                          span.ruble Р
+              // next card
+              .col.col--2-6
+                .game-list__card
+                  .game-list__card__chars
+                    span короткий
+                    span сложный
+                    span автоквест
+                    span для всей семьи
+                  .game-list__card__image
+                    img(src="images/game-list-img.png")
+                  .game-list__card__fold
+                    .game-list__card__name Привет с Бетельгейзе
+                    .game-list__card__cta
+                      .game-list__card__cta-left
+                        i.ico.ico-location
+                        span м. полянка
+                      .game-list__card__cta-right
+                        span 900
+                          span.ruble Р
+              // next card
+              .col.col--2-6
+                .game-list__card
+                  .game-list__card__chars
+                    span короткий
+                    span сложный
+                    span автоквест
+                    span для всей семьи
+                  .game-list__card__image
+                    img(src="images/game-list-img.png")
+                  .game-list__card__fold
+                    .game-list__card__name Привет с Бетельгейзе
+                    .game-list__card__cta
+                      .game-list__card__cta-left
+                        i.ico.ico-location
+                        span м. полянка
+                      .game-list__card__cta-right
+                        span 900
+                          span.ruble Р
+              // next card
+              .col.col--2-6
+                .game-list__card
+                  .game-list__card__chars
+                    span короткий
+                    span сложный
+                    span автоквест
+                    span для всей семьи
+                  .game-list__card__image
+                    img(src="images/game-list-img.png")
+                  .game-list__card__fold
+                    .game-list__card__name Привет с Бетельгейзе
+                    .game-list__card__cta
+                      .game-list__card__cta-left
+                        i.ico.ico-location
+                        span м. полянка
+                      .game-list__card__cta-right
+                        span 900
+                          span.ruble Р
+              // next card
+              .col.col--2-6
+                .game-list__card
+                  .game-list__card__chars
+                    span короткий
+                    span сложный
+                    span автоквест
+                    span для всей семьи
+                  .game-list__card__image
+                    img(src="images/game-list-img.png")
+                  .game-list__card__fold
+                    .game-list__card__name Привет с Бетельгейзе
+                    .game-list__card__cta
+                      .game-list__card__cta-left
+                        i.ico.ico-location
+                        span м. полянка
+                      .game-list__card__cta-right
+                        span 900
+                          span.ruble Р
+            .row
+              .col.col--full.text-center
+                a(href="#").btn.btn--primary.btn--min-width все игры
 
-    // MAGNIFIC::START
-    section.magnific
-      .container
-        .row
-          .col-sm-12
-            .popup-gallery
-              a(href='http://farm9.staticflickr.com/8242/8558295633_f34a55c1c6_b.jpg', title='The Cleaner')
-                img(src='http://farm9.staticflickr.com/8242/8558295633_f34a55c1c6_s.jpg', width='75', height='75')
-              a(href='http://farm9.staticflickr.com/8382/8558295631_0f56c1284f_b.jpg', title='Winter Dance')
-                img(src='http://farm9.staticflickr.com/8382/8558295631_0f56c1284f_s.jpg', width='75', height='75')
-              a(href='http://farm9.staticflickr.com/8225/8558295635_b1c5ce2794_b.jpg', title='The Uninvited Guest')
-                img(src='http://farm9.staticflickr.com/8225/8558295635_b1c5ce2794_s.jpg', width='75', height='75')
-              a(href='http://farm9.staticflickr.com/8383/8563475581_df05e9906d_b.jpg', title='Oh no, not again!')
-                img(src='http://farm9.staticflickr.com/8383/8563475581_df05e9906d_s.jpg', width='75', height='75')
-              a(href='http://farm9.staticflickr.com/8235/8559402846_8b7f82e05d_b.jpg', title='Swan Lake')
-                img(src='http://farm9.staticflickr.com/8235/8559402846_8b7f82e05d_s.jpg', width='75', height='75')
-              a(href='http://farm9.staticflickr.com/8235/8558295467_e89e95e05a_b.jpg', title='The Shake')
-                img(src='http://farm9.staticflickr.com/8235/8558295467_e89e95e05a_s.jpg', width='75', height='75')
-              a(href='http://farm9.staticflickr.com/8378/8559402848_9fcd90d20b_b.jpg', title="Who's that, mommy?")
-                img(src='http://farm9.staticflickr.com/8378/8559402848_9fcd90d20b_s.jpg', width='75', height='75')
 
 
-    include shared/footer.pug
+
+      include shared/footer.pug

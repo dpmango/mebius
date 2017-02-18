@@ -1,0 +1,263 @@
+// INDEX - temp
+.header
+  position: absolute
+  top: 0
+  left: 0
+  right: 0
+  z-index: 9
+  height: 60px
+  background: #fefcfa
+  &__logo
+    display: flex
+    align-items: center
+    height: 60px
+    width: 120px
+    transition: opacity .3s ease
+    &:hover
+      opacity: .7
+  &__navi
+    display: flex
+    align-items: center
+    height: 60px
+    font-size: 18px
+    color: $colorDarkChoco
+    a
+      display: inline-block
+      margin-right: 10%
+      position: relative
+      &:hover
+        &::after
+          left: 0
+          right: 0
+      &::after
+        display: inline-block
+        content: ' '
+        position: absolute
+        bottom: -3px
+        left: 50%
+        right: 50%
+        background: $colorLightChoco
+        height: 2px
+        transition: all .3s ease-in-out
+  &__contacts
+    display: flex
+    align-items: center
+    justify-content: space-between
+    height: 60px
+  &__question, &__cabinet
+    font-size: 18px
+    transition: all .3s ease
+    &:hover
+      color: $colorChoco
+
+    .ico
+      margin-top: -2px
+      margin-right: 7px
+      vertical-align: top
+  &__tel
+    > span
+      display: inline-block
+      font-size: 12px
+      color: $colorExtraLightChoco
+      > span
+        display: inline-block
+        margin-left: 10px
+        font-weight: 700
+        font-size: 18px
+
+.navi
+  position: absolute
+  top: 60px
+  left: 0
+  right: 0
+  z-index: 9
+  height: 48px
+  background: #f2eadc
+  &__list
+    display: flex
+    justify-content: space-between
+    align-items: center
+    margin: 0
+    padding: 0
+    height: 48px
+    a
+      display: inline-block
+      flex: 1 1 auto
+      font-size: 16px
+      line-height: 48px
+      text-align: center
+      vertical-align: middle
+      color: #6c6352
+      height: 100%
+      text-transform: uppercase
+      transition: all .3s ease-out .2s
+      border-right: 1px solid #e1d1b4
+      position: relative
+      &::before
+        display: block
+        content: ' '
+        position: absolute
+        background: $colorExtraLightChoco
+        left: 50%
+        right: 50%
+        top: 0
+        z-index: -1
+        height: 100%
+        transition: all .4s ease-in-out
+      &:last-child
+        border-right: none
+      &.active, &:hover
+        color: white
+        &::before
+          left: 0
+          right: 0
+
+
+// HER0
+.hero
+  background-repeat: no-repeat
+  background-size: cover
+  background-position: center
+  background-attachment: fixed
+  min-height: 650px
+  height: 100vh
+  position: relative
+  &::after
+    position: absolute 0 0 0 0
+    background: color(black a(10%))
+    display: block
+    content: ' '
+    z-index: 1
+  &::before
+    position: absolute
+    bottom: 0
+    left: 0
+    right: 0
+    height: 200px
+    background: linear-gradient(to top, color(black a(50%)), color(black a(0%)) )
+    display: block
+    content: ' '
+    z-index: 1
+  &--mainpage
+    background-image: url('../images/heroMainpage.png')
+  &__content-wrap
+    display: flex
+    flex-direction: column
+    justify-content: center
+    align-items: flex-start
+    padding-top: 110px
+    min-height: 650px
+    height: 100vh
+    .ico-down
+      position: absolute
+      bottom: 30px
+      z-index: 3
+      left: 50%
+      transform: translateX(-50%)
+      cursor: pointer
+      &:hover
+        transform: translateX(-50%) scale(1.2)
+
+  &__title
+    font-family: 'Neo-Light'
+    font-size: 52px
+    color: white
+    text-transform: uppercase
+    position: relative
+    z-index: 3
+    text-shadow: 0 3px 10px color(black a(40%))
+
+
+// ICON LIST
+.icon-list
+  &__wrapper
+    display: flex
+    justify-content: space-between
+    margin-top: 30px
+  &__item
+    flex: 1
+    text-align: center
+    padding-left: 10px
+    padding-right: 10px
+    .ico
+      transition: transform .3s ease-out
+    &__name
+      margin-top: 10px
+      color: $colorExtraLightChoco
+      text-transform: uppercase
+      font-size: 18px
+      transition: color .4s ease-in-out, transform .5s ease-out
+    &__flip
+      color: $colorExtraLightChoco
+      opacity: 0
+      margin-top: 5px
+      transition: transform .5s ease-out, opacity .3s ease
+    &:hover
+      .ico
+        transform: scale(0)
+      .icon-list__item__name
+        color: $colorYellow
+        transform: translate3d(0, -40px, 0)
+      .icon-list__item__flip
+        opacity: 1
+        transform: translate3d(0, -40px, 0)
+
+// tmp icons
+.ico-list-1
+  background-image: url('../images/sprite/ico-list-1@2x.png')
+  size: 45px 47px
+
+
+// GAME LIST
+.game-list
+  margin-top: 20px
+  &__card
+    position: relative
+    margin-bottom: 25px
+    overflow: hidden
+    &__chars
+      position: absolute
+      top: 0
+      left: 0
+      right: 0
+      z-index: 3
+      padding: 10px 20px
+      font-size: 18px
+      background: linear-gradient(to bottom, color(black a(50%)), color(black a(0%)))
+      display: flex
+      justify-content: space-between
+      color: white
+      span
+        flex: 1 0 auto
+        margin-right: 5px
+    &__image
+      font-size: 0
+      cursor: pointer
+      &:hover
+        img
+          transform: scale(1.15) rotate3d(2, 1, 3, -10deg)
+      img
+        max-width: 100%
+        transition: transform .6s ease-in-out
+    &__fold
+      background: #f2eadc
+      position: relative
+      z-index: 3
+    &__name
+      font-size: 18px
+      padding: 10px 20px 0 20px
+    &__cta
+      display: flex
+      justify-content: space-between
+      padding: 10px 20px
+      .ico
+        margin-right: 5px
+    &__cta-left
+      color: #6c6352
+    &__cta-right
+      color: #776e5e
+      font-size: 18px
+      .ruble
+        display: inline-block
+        font-size: 13px
+        margin-left: 2px

@@ -1,7 +1,10 @@
-# Gulp Starter Pack
-Gulp starter package to use with PostCss or sass, pug, autoprefixer, compile bootstrap, minify assets and perform other common front-end tasks.
+# Mebius HTML/CSS LAYOUT
+Based on Gulp starter package to use with PostCss or sass, pug, autoprefixer, compile bootstrap, minify assets and perform other common front-end tasks.
 
-## Getting stated
+## Demo link
+https://dpmango.github.io/mebius/dist
+
+## Getting started
 __Development:__
 - Install node.js and npm
 - Run `npm i`

@@ -20,6 +20,7 @@ var vmin          = require('postcss-vmin');
 var will_change   = require('postcss-will-change');
 var flexbugs      = require('postcss-flexbugs-fixes');
 var cssnano       = require('cssnano');
+var assets        = require('postcss-assets');
 var spritesmith   = require('gulp.spritesmith');
 var sass          = require('gulp-sass');
 var sassGlob      = require('gulp-sass-glob');
@@ -70,6 +71,7 @@ var processors = [
     short(),
     colorFunction(),
     svginline(),
+    assets({loadPaths: ['images/']}),
     autoprefixer({browsers: ['last 5 version', 'safari 5', 'ie 8', 'ie 9', 'opera 12.1', 'ios 6', 'android 4']}),
     sorting(),
     pixrem(),

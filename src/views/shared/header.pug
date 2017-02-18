@@ -1,10 +1,35 @@
 // HEADER::START
-- var list = ["Uno", "Dos", "Tres", "Cuatro", "Cinco", "Seis"]
-
 header.header
-  .section
-    .row
-      .col-sm-12
-        ul
-          each item in list
-            li= item
+  .container
+    .row.row--alignCenter
+      .col.col--1-6
+        a(href="#").header__logo
+          i.ico.ico-logo
+      .col.col--2-6
+        .header__navi
+          a(href="#") Как это работает?
+          a(href="#") Блог
+          a(href="#") Контакты
+      .col.col--3-6
+        .header__contacts
+          a(href="#").header__question
+            i.ico.ico-help
+            span Задать вопрос
+          a(href="tel:8912000000").header__tel
+            span с 10 до 21
+              span + 7 912 000 00 00
+          a(href="#").header__cabinet
+            i.ico.ico-cabinet
+            span личный кабинет
+
+navi.navi
+  .container
+    .row.row--jcsb
+      .col.col--full
+        .navi__list
+          a(href="#") ИГРЫ
+          a(href="#") БОЛЬШИЕ ИГРЫ
+          a(href="#") квесты для групп
+          a(href="#") ОТЗЫВЫ
+          a(href="#") В ПОДАРОК
+          a(href="#").active АКЦИИ
