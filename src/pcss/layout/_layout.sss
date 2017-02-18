@@ -17,6 +17,7 @@ $colorLightChoco: #c3b497
 $colorChoco: #746956
 $colorExtraLightChoco: #b3a488
 $colorYellow: #e9c264
+$chocoBG: #f2eadc
 
 $colorGreen: #4ab68f
 $colorRed: #f45b63
@@ -62,6 +63,12 @@ body, html
   display: flex
   margin-left: -12px
   margin-right: -12px
+  &--condenced
+    .col
+      padding-left: 0
+      padding-right: 0
+    margin-left: 0
+    margin-right: 0
   &--alignCenter
     align-items: center
   &--jcsb
@@ -87,3 +94,12 @@ body, html
     flex-basis: 83%
   &--full
     flex-basis: 100%
+  &--1-4
+    flex-basis: 25%
+  &--2-4
+    flex-basis: 50%
+  &--3-4
+    flex-basis: 75%
+
+.offset--1-6
+  margin-left: 16.6%

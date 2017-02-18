@@ -18,21 +18,11 @@ $(document).ready(function(){
 	});
 
   // owl
-  $('#owlFirst').owlCarousel({
-    loop: true,
+  $('#owlMainpageBenefits').owlCarousel({
+    loop: false,
     nav: true,
     margin: 0,
-    responsive: {
-      0:{
-        items: 1,
-      },
-      600:{
-        items: 1,
-      },
-      1000:{
-        items: 1,
-      }
-    }
+    items: 1
   });
 
   // Magnific Popup
@@ -80,5 +70,11 @@ $(document).ready(function(){
   $("input[name='phone']").mask("9 (999) 999-9999");
   $("#tin").mask("99-9999999");
   $("#ssn").mask("999-99-9999");
+
+  // CALENDAR
+  $('#inputCalendar').datepicker({
+    inline: true,
+    minDate: new Date()
+  })
 
 });

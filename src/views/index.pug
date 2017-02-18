@@ -172,7 +172,148 @@ html
               .col.col--full.text-center
                 a(href="#").btn.btn--primary.btn--min-width все игры
 
+        // HOW IT WORKS
+        .how-it-works
+          .container
+            .section-name.section-name--centrify Как это работает?
+            .row.row--condenced.mt30
+              .col.col--1-4
+                .how-it-works__image
+                  img(src="images/how-it-works-1@2x.png")
+                .how-it-works__desc
+                  span 01
+                  | Выберите игру по вкусу
+                .how-it-works__hidden
+                  span В каждом квесте есть главная игровая цель: спастись от эпидемии смертельного вируса, вспомнить своё имя или помочь инопланетной девочке вернуться домой. Достичь цели можно разными способами, и несколько раз за игру вам придётся сделать судьбоносный выбор. <br> От принятых вашей командой решений зависит концовка игры.
+              //col
+              .col.col--1-4
+                .how-it-works__desc
+                  span 02
+                  | Приезжайте на место старта <br> и сразу начинайте игру
+                .how-it-works__image
+                  img(src="images/how-it-works-2@2x.png")
+                .how-it-works__hidden
+                    span В каждом квесте есть главная игровая цель: спастись от эпидемии смертельного вируса, вспомнить своё имя или помочь инопланетной девочке вернуться домой. Достичь цели можно разными способами, и несколько раз за игру вам придётся сделать судьбоносный выбор. <br> От принятых вашей командой решений зависит концовка игры.
+              //col
+              .col.col--1-4
+                .how-it-works__image
+                  img(src="images/how-it-works-3@2x.png")
+                .how-it-works__desc
+                  span 03
+                  | Играйте
+                .how-it-works__hidden
+                    span В каждом квесте есть главная игровая цель: спастись от эпидемии смертельного вируса, вспомнить своё имя или помочь инопланетной девочке вернуться домой. Достичь цели можно разными способами, и несколько раз за игру вам придётся сделать судьбоносный выбор. <br> От принятых вашей командой решений зависит концовка игры.
+              //col
+              .col.col--1-4
+                .how-it-works__desc
+                  span 04
+                  | Раскройте один из финалов игры
+                .how-it-works__image
+                  img(src="images/how-it-works-1@2x.png")
+                .how-it-works__hidden
+                  span В каждом квесте есть главная игровая цель: спастись от эпидемии смертельного вируса, вспомнить своё имя или помочь инопланетной девочке вернуться домой. Достичь цели можно разными способами, и несколько раз за игру вам придётся сделать судьбоносный выбор. <br> От принятых вашей командой решений зависит концовка игры.
+            .row.mt40
+              .col.col--full.text-center
+                .btn-group
+                  a(href="#").btn.btn--primary.btn--min-width узнать больше
+                  a(href="#").btn.btn--primary.btn--min-width пройти тюториал
+                  a(href="#").btn.btn--primary.btn--min-width выбрать игру
+
+        // HEADING
+        .heading
+          .container
+            .row
+              .col.col--4-6.offset--1-6
+                .heading__front Большая Игра
+                .heading__desc — это мероприятие-квест, на котором классный сюжет и удобство мобильной системы превращаются в массовое городское помешательство. На старте каждая команда получает игровой пакет с картами и схемами, которые понадобятся во время игры, а в городе участников ждут агенты и реквизит. Параллельно играет несколько десятков команд, и никто не уйдёт без награды!
+
+        // NUMBERS
+        .numbers
+          .container
+            .numbers__wrapper
+              .numbers__card
+                .numbers__card__number 100
+                .numbers__card__name команд
+              .numbers__card
+                .numbers__card__number 2,5
+                .numbers__card__name часа игры
+              .numbers__card
+                .numbers__card__number 16
+                .numbers__card__name вариантов финала
+              .numbers__card
+                .numbers__card__number 20
+                .numbers__card__name организаторов
+              .numbers__card
+                .numbers__card__number 12
+                .numbers__card__name кг полиграфии
+
+        .cta-text
+          .container
+            .row
+              .col.col--full.text-center
+                .cta-text__top Ловите момент! У вас только один шанс:
+                .cta-text__bottom  Большие Игры не повторяются!
+
+        // CALENDAR
+        .calendar
+          .container
+            .row
+              .col.col--4-6
+                .calendar__title Следующая Большая Игра
+            .row
+              .col.col--4-6
+                img(src='images/calendar-img@2x.png')
+                p Щенок шестилетней Насти превратился в плюшевого, вместо Андрея в зеркале отражается брат-близнец, муж Ольги за ночь отрастил шикарную бороду, а Пётр уже неделю никак не может выспаться. Казалось бы, этим людям стоит посетить доктора. Но команда детективов уверена: здесь всё не так просто.
+              .col.col--2-6
+                .calendar__input
+                  input(type='text')#inputCalendar
+                  .calendar__input__context
+                    .calendar__input__selected-row
+                      .calendar__input__selected-day 21 сентября
+                      .calendar__input__selected-weekday воскресенье
+                    .calendar__input__selected-time
+                      i.ico.ico-message-fly
+                      span 11:00-13:00
+                .text-center.mt30
+                  a(href="#").btn.btn--primary.btn--min-width Подробнее
+
+        // BENEFITS
+        .benefits
+          .container
+            .text-center
+              .section-name Наши преимущества!
+            .row
+              .col.col--5-6.offset--1-6
+                .-owl-carousel#-owlMainpageBenefits
+                  .benefits__slide
+                    .benefits__slide__image
+                      img(src="images/benefit-girl@2x.png")
+                    .benefits__slide__content
+                      i.ico.ico-quote
+                      .benefits__slide__title
+                        span Интересные задания
+                      .benefits__slide__text Для решения наших задачек нужны не только умение ориентироваться в городе, но и наблюдательность и логическое мышление. Никаких «пустых» головоломок: каждое задание связано с сюжетом и приближает вас к цели
+
+            .row.mt50
+              .col.col--full
+                .text-center
+                  a(href="#").btn.btn--primary.btn--min-width выбрать игру
 
 
+        // QUESTION
+        .question
+          .container
+            .row
+              .col.col--4-6.offset--1-6
+                .question__title Что-то до сих пор осталось непонятным? <br> Задайте свой вопрос!
+                form(action="").question__form
+                .row
+                  .col.col--3-6
+                    textarea.ui-input(placeholder="ВАШ ВОПРОС" rows="7")
+
+                  .col.col--3-6
+                    input(type="text" placeholder="Ваше имя").ui-input
+                    input(type="email" placeholder="Email").ui-input
+                    a(href="#").btn.btn--primary.btn--block ОТПРАВИТЬ
 
       include shared/footer.pug

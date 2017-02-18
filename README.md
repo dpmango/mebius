@@ -2,7 +2,7 @@
 Based on Gulp starter package to use with PostCss or sass, pug, autoprefixer, compile bootstrap, minify assets and perform other common front-end tasks.
 
 ## Demo link
-https://dpmango.github.io/mebius/dist
+https://dpmango.github.io/mebius
 
 ## Getting started
 __Development:__
@@ -33,3 +33,9 @@ __Production__
 - Magnific Popup 1.1.0
 - Masked input
 - CSS Hamburgers
+
+
+
+### Push command (gh-pages fix)
+
+gulp build && git add . && git commit -m "mainpage layout draft" && git push origin master && git subtree push --prefix dist origin gh-pages
