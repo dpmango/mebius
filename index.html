@@ -6,58 +6,341 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <title>Site name</title>
     <link rel="stylesheet" href="css/styles.css">
-    <meta name="description" keywords=""><!--[if lt IE 9]>
+    <meta name="description" content=""><!--[if lt IE 9]>
     <script src="components/html5shiv/dist/html5shiv.js"></script><![endif]-->
   </head>
   <body>
-    <!-- HEADER::START-->
-    <header class="header">
-      <div class="section">
-        <div class="row">
-          <div class="col-sm-12">
-            <ul>
-              <li>Uno</li>
-              <li>Dos</li>
-              <li>Tres</li>
-              <li>Cuatro</li>
-              <li>Cinco</li>
-              <li>Seis</li>
-            </ul>
+    <div class="page">
+      <!-- HEADER::START-->
+      <header class="header">
+        <div class="container">
+          <div class="row row--alignCenter">
+            <div class="col col--1-6"><a class="header__logo" href="#"><i class="ico ico-logo"></i></a></div>
+            <div class="col col--2-6">
+              <div class="header__navi"><a href="#">Как это работает?</a><a href="#">Блог</a><a href="#">Контакты</a></div>
+            </div>
+            <div class="col col--3-6">
+              <div class="header__contacts"><a class="header__question" href="#"><i class="ico ico-help"></i><span>Задать вопрос</span></a><a class="header__tel" href="tel:8912000000"><span>с 10 до 21<span>+ 7 912 000 00 00</span></span></a><a class="header__cabinet" href="#"><i class="ico ico-cabinet"></i><span>личный кабинет</span></a></div>
+            </div>
+          </div>
+        </div>
+      </header>
+      <navi class="navi">
+        <div class="container">
+          <div class="row row--jcsb">
+            <div class="col col--full">
+              <div class="navi__list"><a href="#">ИГРЫ</a><a href="#">БОЛЬШИЕ ИГРЫ</a><a href="#">квесты для групп</a><a href="#">ОТЗЫВЫ</a><a href="#">В ПОДАРОК</a><a class="active" href="#">АКЦИИ</a></div>
+            </div>
+          </div>
+        </div>
+      </navi>
+      <div class="page__content">
+        <!-- HERO-->
+        <div class="hero hero--mainpage">
+          <div class="container">
+            <div class="row">
+              <div class="col col--full">
+                <div class="hero__content-wrap">
+                  <div class="hero__title">приключения начинаются <br> прямо здесь</div><a href="#sectionIntro"><i class="ico ico-down"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- HEADING-->
+        <div class="heading" id="sectionIntro">
+          <div class="container">
+            <div class="row">
+              <div class="col col--full">
+                <div class="heading__front">История, исход которой зависит только от вас!</div>
+                <div class="heading__desc">Каждая игра — это детально проработанный сюжет, разноплановые персонажи, судьбоносные решения и оригинальные загадки. <br> Для прохождения требуются 2-3 часа свободного времени, смартфон и немного воображения</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- ICON LIST-->
+        <div class="icon-list">
+          <div class="container">
+            <div class="row">
+              <div class="col col--full">
+                <div class="section-name section-name--centrify">Выберите себе игру</div>
+                <div class="icon-list__wrapper"><a class="icon-list__item" href="#"><i class="ico ico-list-1"></i>
+                    <div class="icon-list__item__name">для всей семьи</div>
+                    <div class="icon-list__item__flip">море эмоций от мала до велика</div></a>
+                  <!--next--><a class="icon-list__item" href="#"><i class="ico ico-list-1"></i>
+                    <div class="icon-list__item__name">простой</div>
+                    <div class="icon-list__item__flip">море эмоций от мала до велика</div></a>
+                  <!--next--><a class="icon-list__item" href="#"><i class="ico ico-list-1"></i>
+                    <div class="icon-list__item__name">средний</div>
+                    <div class="icon-list__item__flip">море эмоций от мала до велика</div></a>
+                  <!--next--><a class="icon-list__item" href="#"><i class="ico ico-list-1"></i>
+                    <div class="icon-list__item__name">сложный</div>
+                    <div class="icon-list__item__flip">море эмоций от мала до велика</div></a>
+                  <!--next--><a class="icon-list__item" href="#"><i class="ico ico-list-1"></i>
+                    <div class="icon-list__item__name">короткий</div>
+                    <div class="icon-list__item__flip">море эмоций от мала до велика</div></a>
+                  <!--next--><a class="icon-list__item" href="#"><i class="ico ico-list-1"></i>
+                    <div class="icon-list__item__name">длинный</div>
+                    <div class="icon-list__item__flip">море эмоций от мала до велика</div></a>
+                  <!--next--><a class="icon-list__item" href="#"><i class="ico ico-list-1"></i>
+                    <div class="icon-list__item__name">для 2х команд</div>
+                    <div class="icon-list__item__flip">море эмоций от мала до велика</div></a>
+                  <!--next--><a class="icon-list__item" href="#"><i class="ico ico-list-1"></i>
+                    <div class="icon-list__item__name">автоквест</div>
+                    <div class="icon-list__item__flip">море эмоций от мала до велика</div></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- GAME LIST-->
+        <div class="game-list">
+          <div class="container">
+            <div class="row row--wrap">
+              <div class="col col--2-6">
+                <div class="game-list__card">
+                  <div class="game-list__card__chars"><span>короткий</span><span>сложный</span><span>автоквест</span><span>для всей семьи</span></div>
+                  <div class="game-list__card__image"><img src="images/game-list-img.png"></div>
+                  <div class="game-list__card__fold">
+                    <div class="game-list__card__name">Привет с Бетельгейзе</div>
+                    <div class="game-list__card__cta">
+                      <div class="game-list__card__cta-left"><i class="ico ico-location"></i><span>м. полянка</span></div>
+                      <div class="game-list__card__cta-right"><span>900<span class="ruble">Р</span></span></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- next card-->
+              <div class="col col--2-6">
+                <div class="game-list__card">
+                  <div class="game-list__card__chars"><span>короткий</span><span>сложный</span><span>автоквест</span><span>для всей семьи</span></div>
+                  <div class="game-list__card__image"><img src="images/game-list-img.png"></div>
+                  <div class="game-list__card__fold">
+                    <div class="game-list__card__name">Привет с Бетельгейзе</div>
+                    <div class="game-list__card__cta">
+                      <div class="game-list__card__cta-left"><i class="ico ico-location"></i><span>м. полянка</span></div>
+                      <div class="game-list__card__cta-right"><span>900<span class="ruble">Р</span></span></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- next card-->
+              <div class="col col--2-6">
+                <div class="game-list__card">
+                  <div class="game-list__card__chars"><span>короткий</span><span>сложный</span><span>автоквест</span><span>для всей семьи</span></div>
+                  <div class="game-list__card__image"><img src="images/game-list-img.png"></div>
+                  <div class="game-list__card__fold">
+                    <div class="game-list__card__name">Привет с Бетельгейзе</div>
+                    <div class="game-list__card__cta">
+                      <div class="game-list__card__cta-left"><i class="ico ico-location"></i><span>м. полянка</span></div>
+                      <div class="game-list__card__cta-right"><span>900<span class="ruble">Р</span></span></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- next card-->
+              <div class="col col--2-6">
+                <div class="game-list__card">
+                  <div class="game-list__card__chars"><span>короткий</span><span>сложный</span><span>автоквест</span><span>для всей семьи</span></div>
+                  <div class="game-list__card__image"><img src="images/game-list-img.png"></div>
+                  <div class="game-list__card__fold">
+                    <div class="game-list__card__name">Привет с Бетельгейзе</div>
+                    <div class="game-list__card__cta">
+                      <div class="game-list__card__cta-left"><i class="ico ico-location"></i><span>м. полянка</span></div>
+                      <div class="game-list__card__cta-right"><span>900<span class="ruble">Р</span></span></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- next card-->
+              <div class="col col--2-6">
+                <div class="game-list__card">
+                  <div class="game-list__card__chars"><span>короткий</span><span>сложный</span><span>автоквест</span><span>для всей семьи</span></div>
+                  <div class="game-list__card__image"><img src="images/game-list-img.png"></div>
+                  <div class="game-list__card__fold">
+                    <div class="game-list__card__name">Привет с Бетельгейзе</div>
+                    <div class="game-list__card__cta">
+                      <div class="game-list__card__cta-left"><i class="ico ico-location"></i><span>м. полянка</span></div>
+                      <div class="game-list__card__cta-right"><span>900<span class="ruble">Р</span></span></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col col--full text-center"><a class="btn btn--primary btn--min-width" href="#">все игры</a></div>
+            </div>
+          </div>
+        </div>
+        <!-- HOW IT WORKS-->
+        <div class="how-it-works">
+          <div class="container">
+            <div class="section-name section-name--centrify">Как это работает?</div>
+            <div class="row row--condenced mt30">
+              <div class="col col--1-4">
+                <div class="how-it-works__image"><img src="images/how-it-works-1@2x.png"></div>
+                <div class="how-it-works__desc"><span>01</span>Выберите игру по вкусу</div>
+                <div class="how-it-works__hidden"><span>В каждом квесте есть главная игровая цель: спастись от эпидемии смертельного вируса, вспомнить своё имя или помочь инопланетной девочке вернуться домой. Достичь цели можно разными способами, и несколько раз за игру вам придётся сделать судьбоносный выбор. <br> От принятых вашей командой решений зависит концовка игры.</span></div>
+              </div>
+              <!--col-->
+              <div class="col col--1-4">
+                <div class="how-it-works__desc"><span>02</span>Приезжайте на место старта <br> и сразу начинайте игру</div>
+                <div class="how-it-works__image"><img src="images/how-it-works-2@2x.png"></div>
+                <div class="how-it-works__hidden"><span>В каждом квесте есть главная игровая цель: спастись от эпидемии смертельного вируса, вспомнить своё имя или помочь инопланетной девочке вернуться домой. Достичь цели можно разными способами, и несколько раз за игру вам придётся сделать судьбоносный выбор. <br> От принятых вашей командой решений зависит концовка игры.</span></div>
+              </div>
+              <!--col-->
+              <div class="col col--1-4">
+                <div class="how-it-works__image"><img src="images/how-it-works-3@2x.png"></div>
+                <div class="how-it-works__desc"><span>03</span>Играйте</div>
+                <div class="how-it-works__hidden"><span>В каждом квесте есть главная игровая цель: спастись от эпидемии смертельного вируса, вспомнить своё имя или помочь инопланетной девочке вернуться домой. Достичь цели можно разными способами, и несколько раз за игру вам придётся сделать судьбоносный выбор. <br> От принятых вашей командой решений зависит концовка игры.</span></div>
+              </div>
+              <!--col-->
+              <div class="col col--1-4">
+                <div class="how-it-works__desc"><span>04</span>Раскройте один из финалов игры</div>
+                <div class="how-it-works__image"><img src="images/how-it-works-1@2x.png"></div>
+                <div class="how-it-works__hidden"><span>В каждом квесте есть главная игровая цель: спастись от эпидемии смертельного вируса, вспомнить своё имя или помочь инопланетной девочке вернуться домой. Достичь цели можно разными способами, и несколько раз за игру вам придётся сделать судьбоносный выбор. <br> От принятых вашей командой решений зависит концовка игры.</span></div>
+              </div>
+            </div>
+            <div class="row mt40">
+              <div class="col col--full text-center">
+                <div class="btn-group"><a class="btn btn--primary btn--min-width" href="#">узнать больше</a><a class="btn btn--primary btn--min-width" href="#">пройти тюториал</a><a class="btn btn--primary btn--min-width" href="#">выбрать игру</a></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- HEADING-->
+        <div class="heading">
+          <div class="container">
+            <div class="row">
+              <div class="col col--4-6 offset--1-6">
+                <div class="heading__front">Большая Игра</div>
+                <div class="heading__desc">— это мероприятие-квест, на котором классный сюжет и удобство мобильной системы превращаются в массовое городское помешательство. На старте каждая команда получает игровой пакет с картами и схемами, которые понадобятся во время игры, а в городе участников ждут агенты и реквизит. Параллельно играет несколько десятков команд, и никто не уйдёт без награды!</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- NUMBERS-->
+        <div class="numbers">
+          <div class="container">
+            <div class="numbers__wrapper">
+              <div class="numbers__card">
+                <div class="numbers__card__number">100</div>
+                <div class="numbers__card__name">команд</div>
+              </div>
+              <div class="numbers__card">
+                <div class="numbers__card__number">2,5</div>
+                <div class="numbers__card__name">часа игры</div>
+              </div>
+              <div class="numbers__card">
+                <div class="numbers__card__number">16</div>
+                <div class="numbers__card__name">вариантов финала</div>
+              </div>
+              <div class="numbers__card">
+                <div class="numbers__card__number">20</div>
+                <div class="numbers__card__name">организаторов</div>
+              </div>
+              <div class="numbers__card">
+                <div class="numbers__card__number">12</div>
+                <div class="numbers__card__name">кг полиграфии</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="cta-text">
+          <div class="container">
+            <div class="row">
+              <div class="col col--full text-center">
+                <div class="cta-text__top">Ловите момент! У вас только один шанс:</div>
+                <div class="cta-text__bottom"> Большие Игры не повторяются!</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- CALENDAR-->
+        <div class="calendar">
+          <div class="container">
+            <div class="row">
+              <div class="col col--4-6">
+                <div class="calendar__title">Следующая Большая Игра</div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col col--4-6"><img src="images/calendar-img@2x.png">
+                <p>Щенок шестилетней Насти превратился в плюшевого, вместо Андрея в зеркале отражается брат-близнец, муж Ольги за ночь отрастил шикарную бороду, а Пётр уже неделю никак не может выспаться. Казалось бы, этим людям стоит посетить доктора. Но команда детективов уверена: здесь всё не так просто.</p>
+              </div>
+              <div class="col col--2-6">
+                <div class="calendar__input">
+                  <input type="text" id="inputCalendar">
+                  <div class="calendar__input__context">
+                    <div class="calendar__input__selected-row">
+                      <div class="calendar__input__selected-day">21 сентября</div>
+                      <div class="calendar__input__selected-weekday">воскресенье</div>
+                    </div>
+                    <div class="calendar__input__selected-time"><i class="ico ico-message-fly"></i><span>11:00-13:00</span></div>
+                  </div>
+                </div>
+                <div class="text-center mt30"><a class="btn btn--primary btn--min-width" href="#">Подробнее</a></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- BENEFITS-->
+        <div class="benefits">
+          <div class="container">
+            <div class="text-center">
+              <div class="section-name">Наши преимущества!</div>
+            </div>
+            <div class="row">
+              <div class="col col--5-6 offset--1-6">
+                <div class="-owl-carousel" id="-owlMainpageBenefits">
+                  <div class="benefits__slide">
+                    <div class="benefits__slide__image"><img src="images/benefit-girl@2x.png"></div>
+                    <div class="benefits__slide__content"><i class="ico ico-quote"></i>
+                      <div class="benefits__slide__title"><span>Интересные задания</span></div>
+                      <div class="benefits__slide__text">Для решения наших задачек нужны не только умение ориентироваться в городе, но и наблюдательность и логическое мышление. Никаких «пустых» головоломок: каждое задание связано с сюжетом и приближает вас к цели</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="row mt50">
+              <div class="col col--full">
+                <div class="text-center"><a class="btn btn--primary btn--min-width" href="#">выбрать игру</a></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- QUESTION-->
+        <div class="question">
+          <div class="container">
+            <div class="row">
+              <div class="col col--4-6 offset--1-6">
+                <div class="question__title">Что-то до сих пор осталось непонятным? <br> Задайте свой вопрос!</div>
+                <form class="question__form" action=""></form>
+                <div class="row">
+                  <div class="col col--3-6">
+                    <textarea class="ui-input" placeholder="ВАШ ВОПРОС" rows="7"></textarea>
+                  </div>
+                  <div class="col col--3-6">
+                    <input class="ui-input" type="text" placeholder="Ваше имя">
+                    <input class="ui-input" type="email" placeholder="Email"><a class="btn btn--primary btn--block" href="#">ОТПРАВИТЬ</a>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
-    </header>
-    <!-- SECTION::START-->
-    <section class="section"></section>
-    <!-- OWL::START-->
-    <section class="owl">
-      <div class="container">
-        <div class="row">
-          <div class="col-sm-12">
-            <div class="owl-carousel" id="owlFirst"><img src="http://placehold.it/1200x300"><img src="http://placehold.it/1200x300"><img src="http://placehold.it/1200x300"></div>
+      <!-- FOOTER::START-->
+      <footer class="footer">
+        <div class="container">
+          <div class="row">
+            <div class="col-sm-12"></div>
           </div>
         </div>
-      </div>
-    </section>
-    <!-- MAGNIFIC::START-->
-    <section class="magnific">
-      <div class="container">
-        <div class="row">
-          <div class="col-sm-12">
-            <div class="popup-gallery"><a href="http://farm9.staticflickr.com/8242/8558295633_f34a55c1c6_b.jpg" title="The Cleaner"><img src="http://farm9.staticflickr.com/8242/8558295633_f34a55c1c6_s.jpg" width="75" height="75"></a><a href="http://farm9.staticflickr.com/8382/8558295631_0f56c1284f_b.jpg" title="Winter Dance"><img src="http://farm9.staticflickr.com/8382/8558295631_0f56c1284f_s.jpg" width="75" height="75"></a><a href="http://farm9.staticflickr.com/8225/8558295635_b1c5ce2794_b.jpg" title="The Uninvited Guest"><img src="http://farm9.staticflickr.com/8225/8558295635_b1c5ce2794_s.jpg" width="75" height="75"></a><a href="http://farm9.staticflickr.com/8383/8563475581_df05e9906d_b.jpg" title="Oh no, not again!"><img src="http://farm9.staticflickr.com/8383/8563475581_df05e9906d_s.jpg" width="75" height="75"></a><a href="http://farm9.staticflickr.com/8235/8559402846_8b7f82e05d_b.jpg" title="Swan Lake"><img src="http://farm9.staticflickr.com/8235/8559402846_8b7f82e05d_s.jpg" width="75" height="75"></a><a href="http://farm9.staticflickr.com/8235/8558295467_e89e95e05a_b.jpg" title="The Shake"><img src="http://farm9.staticflickr.com/8235/8558295467_e89e95e05a_s.jpg" width="75" height="75"></a><a href="http://farm9.staticflickr.com/8378/8559402848_9fcd90d20b_b.jpg" title="Who's that, mommy?"><img src="http://farm9.staticflickr.com/8378/8559402848_9fcd90d20b_s.jpg" width="75" height="75"></a></div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-- FOOTER::START-->
-    <footer class="footer">
-      <div class="container">
-        <div class="row">
-          <div class="col-sm-12"></div>
-        </div>
-      </div>
-    </footer>
-    <!-- SCRIPTS-->
-    <script src="js/scripts.min.js"></script>
+      </footer>
+      <!-- SCRIPTS-->
+      <script src="js/scripts.min.js"></script>
+    </div>
   </body>
 </html>
