@@ -1,118 +1,3 @@
-// INDEX - temp
-.header
-  position: absolute
-  top: 0
-  left: 0
-  right: 0
-  z-index: 9
-  height: 60px
-  background: #fefcfa
-  &__logo
-    display: flex
-    align-items: center
-    height: 60px
-    width: 120px
-    transition: opacity .3s ease
-    &:hover
-      opacity: .7
-  &__navi
-    display: flex
-    align-items: center
-    height: 60px
-    font-size: 18px
-    color: $colorDarkChoco
-    a
-      display: inline-block
-      margin-right: 10%
-      position: relative
-      &:hover
-        &::after
-          left: 0
-          right: 0
-      &::after
-        display: inline-block
-        content: ' '
-        position: absolute
-        bottom: -3px
-        left: 50%
-        right: 50%
-        background: $colorLightChoco
-        height: 2px
-        transition: all .3s ease-in-out
-  &__contacts
-    display: flex
-    align-items: center
-    justify-content: space-between
-    height: 60px
-  &__question, &__cabinet
-    font-size: 18px
-    transition: all .3s ease
-    &:hover
-      color: $colorChoco
-
-    .ico
-      margin-top: -2px
-      margin-right: 7px
-      vertical-align: top
-  &__tel
-    > span
-      display: inline-block
-      font-size: 12px
-      color: $colorExtraLightChoco
-      > span
-        display: inline-block
-        margin-left: 10px
-        font-weight: 700
-        font-size: 18px
-
-.navi
-  position: absolute
-  top: 60px
-  left: 0
-  right: 0
-  z-index: 9
-  height: 48px
-  background: $chocoBG
-  &__list
-    display: flex
-    justify-content: space-between
-    align-items: center
-    margin: 0
-    padding: 0
-    height: 48px
-    a
-      display: inline-block
-      flex: 1 1 auto
-      font-size: 16px
-      line-height: 48px
-      text-align: center
-      vertical-align: middle
-      color: #6c6352
-      height: 100%
-      text-transform: uppercase
-      transition: all .3s ease-out .2s
-      border-right: 1px solid #e1d1b4
-      position: relative
-      &::before
-        display: block
-        content: ' '
-        position: absolute
-        background: $colorExtraLightChoco
-        left: 50%
-        right: 50%
-        top: 0
-        z-index: -1
-        height: 100%
-        transition: all .4s ease-in-out
-      &:last-child
-        border-right: none
-      &.active, &:hover
-        color: white
-        &::before
-          left: 0
-          right: 0
-
-
 // HER0
 .hero
   background-repeat: no-repeat
@@ -139,7 +24,7 @@
     content: ' '
     z-index: 1
   &--mainpage
-    background-image: url('../images/heroMainpage.png')
+    background-image: url('../images/heroGorodok.png')
   &__content-wrap
     display: flex
     flex-direction: column
@@ -210,7 +95,8 @@
 
 // GAME LIST
 .game-list
-  margin-top: 20px
+  margin-top: 5px
+  margin-bottom: 15px
   &__card
     position: relative
     margin-bottom: 25px
@@ -244,17 +130,20 @@
       position: relative
       z-index: 3
     &__name
+      font-family: 'Neo-Light'
       font-size: 18px
       padding: 10px 20px 0 20px
     &__cta
       display: flex
       justify-content: space-between
-      padding: 10px 20px
+      padding: 8px 10px 10px 20px
       .ico
         margin-right: 5px
     &__cta-left
       color: #6c6352
     &__cta-right
+      font-family: 'Neo-Light'
+      margin-right: 0px
       color: #776e5e
       font-size: 18px
       .ruble
@@ -282,7 +171,6 @@
         background: #c3b497
         opacity: 1
         width: auto
-        height: auto
     &:nth-child(odd)
       .how-it-works__desc
         border-top: 1px solid #c3b497
@@ -320,7 +208,8 @@
   &__desc
     font-size: 18px
     padding-left: 25px
-    padding-top: 25px
+    padding-top: 20px
+    padding-right: 20px
     height: 160px
     display: flex
     flex-wrap: wrap
@@ -329,18 +218,22 @@
     position: relative
     z-index: 2
     text-transform: uppercase
-    transition: transform .4s ease-out, padding-top .4s ease, height .4s ease
+    transition: all .4s ease-out
     span
       display: block
       color: #b3a488
       font-family: 'Neo-Light'
       font-size: 60px
+      line-height: 1
+      margin-bottom: -5px
   &__hidden
     opacity: 0
     width: 0.1px
     height: 0.1px
     overflow: hidden
-    padding: 25px
+    padding: 25px 10px 25px 25px
+    line-height: 1.2
+    height: 320px
     transition: transform .4s ease-out
 
 // NUMBERs
@@ -351,15 +244,16 @@
   &__card
     flex: 1 1 20%
     border-left: 1px solid $colorLightChoco
-    padding-left: 20px
+    padding-left: 15px
     &:last-child
-      flex-basis: 10%
+      flex-basis: 14%
     &__number
       color: $colorLightChoco
       font-family: 'Neo-light'
       font-size: 60px
       line-height: 1
     &__name
+      margin-top: -7px
       font-size: 18px
 
 
@@ -367,7 +261,7 @@
 .calendar
   background: $chocoBG
   padding-top: 30px
-  padding-bottom: 60px
+  padding-bottom: 45px
   img
     max-width: 100%
   p
@@ -377,7 +271,7 @@
   &__title
     font-family: 'Neo-Light'
     font-size: 32px
-    margin-bottom: 10px
+    margin-bottom: 12px
     color: #6c6352
   &__input
     input
@@ -386,6 +280,7 @@
       width: 100%
       border: 1px solid #c3b497
       overflow: hidden
+      font-family: 'Neo-Light'
       &--days-names
         display: none
         font-size: 0
@@ -397,6 +292,9 @@
         border: 1px solid #c3b497
         margin-left: -1px
         margin-bottom: -1px
+      .datepicker--nav-title
+        text-transform: uppercase
+        font-size: 14px
       .datepicker--cells.datepicker--cells-days
         margin-right: -8px
       &--content
@@ -435,18 +333,20 @@
     align-items: center
     padding-top: 70px
     position: relative
+    overflow: hidden
+    margin-left: 10%
     &__image
       flex: 0 0 200px
       img
         max-width: 100%
     &__content
       flex: 1 1 auto
-      margin-right: 10%
-      margin-left: 60px
+      margin-right: 15%
+      margin-left: 95px
       position: relative
     .ico-quote
       position: absolute
-      left: -60px
+      left: -65px
       top: 0
     &__title
       font-family: 'Neo-Light'
@@ -466,6 +366,7 @@
         background: #f2eadc
         z-index: 1
     &__text
+      margin-top: 10px
       font-size: 22px
 
 // QUestions

@@ -2,18 +2,23 @@
 .heading
   text-align: center
   margin-top: 90px
-  margin-bottom: 90px
+  margin-bottom: 110px
   &__front
     font-family: 'Neo-Light'
     font-size: 44px
   &__desc
-    margin-top: 10px
+    margin-top: 13px
     font-size: 22px
+  &--less-m
+    margin-top: 80px
+    margin-bottom: 60px
 
 .section-name
   font-family: 'Neo-Light'
   font-size: 32px
   color: #6c6352
+  &--small
+    font-size: 28px
   &--centrify
     text-align: center
 
@@ -25,3 +30,204 @@
     color: $colorExtraLightChoco
   &__bottom
     font-size: 26px
+
+// HEADER
+.header
+  position: absolute
+  top: 0
+  left: 0
+  right: 0
+  z-index: 9
+  height: 60px
+  background: #fefcfa
+  &__logo
+    display: flex
+    align-items: center
+    height: 60px
+    width: 120px
+    transition: opacity .3s ease
+    &:hover
+      opacity: .7
+  &__navi
+    display: flex
+    align-items: center
+    height: 60px
+    font-size: 18px
+    color: $colorDarkChoco
+    a
+      display: inline-block
+      margin-right: 13%
+      position: relative
+      &:hover
+        &::after
+          left: 0
+          right: 0
+      &::after
+        display: inline-block
+        content: ' '
+        position: absolute
+        bottom: -3px
+        left: 50%
+        right: 50%
+        background: $colorLightChoco
+        height: 2px
+        transition: all .3s ease-in-out
+  &__contacts
+    display: flex
+    align-items: center
+    justify-content: space-between
+    height: 60px
+  &__question, &__cabinet
+    font-size: 18px
+    transition: all .3s ease
+    &:hover
+      color: $colorChoco
+    .ico
+      margin-top: -2px
+      margin-right: 10px
+      vertical-align: top
+  &__tel
+    > span
+      display: inline-block
+      font-size: 12px
+      color: $colorExtraLightChoco
+      > span
+        display: inline-block
+        margin-left: 10px
+        font-weight: 700
+        font-size: 18px
+
+.navi
+  position: absolute
+  top: 60px
+  left: 0
+  right: 0
+  z-index: 9
+  height: 48px
+  background: $chocoBG
+  &__list
+    display: flex
+    justify-content: space-between
+    align-items: center
+    margin: 0
+    padding: 0
+    height: 48px
+    a
+      display: inline-block
+      flex: 1 1 auto
+      font-size: 16px
+      line-height: 48px
+      text-align: center
+      vertical-align: middle
+      color: #6c6352
+      height: 100%
+      text-transform: uppercase
+      transition: all .3s ease-out .2s
+      border-right: 1px solid #e1d1b4
+      position: relative
+      &::before
+        display: block
+        content: ' '
+        position: absolute
+        background: $colorExtraLightChoco
+        left: 50%
+        right: 50%
+        top: 0
+        z-index: -1
+        height: 100%
+        transition: all .4s ease-in-out
+      &:last-child
+        border-right: none
+      &.active, &:hover
+        color: white
+        padding-left: 15px
+        padding-right: 15px
+        &::before
+          left: 0
+          right: 0
+      .ico
+        margin-right: 5px
+        vertical-align: -1px
+
+
+// FOOTER
+.footer
+  background: #bdb098
+  padding-top: 15px
+  padding-bottom: 30px
+  &__navi
+    display: flex
+    align-items: center
+    height: 60px
+    margin-top: 10px
+    a
+      display: inline-block
+      text-transform: uppercase
+      margin-right: 3%
+      position: relative
+      &:hover
+        &::after
+          left: 0
+          right: 0
+      &::after
+        display: inline-block
+        content: ' '
+        position: absolute
+        bottom: -3px
+        left: 50%
+        right: 50%
+        background: $colorLightChoco
+        height: 2px
+        transition: all .3s ease-in-out
+  &__socials
+    height: 60px
+    display: flex
+    flex-wrap: wrap
+    text-align: right
+    align-items: center
+    &__title
+      font-family: 'Neo-Light'
+      color: #514c4a
+      flex: 1 1 100%
+      margin-bottom: 5px
+    a
+      flex: 1 0 35px
+  &__copy
+    margin-top: 0px
+    font-size: 12px
+    text-transform: uppercase
+
+// OWL
+.owl-carousel
+  max-width: 980px
+  &--numberic-dots
+    .owl-dots
+      position: absolute
+      right: 20px
+      top: 40%
+    .owl-dot
+      display: block
+      font-family: 'Neo-Light'
+      font-size: 0px
+      background: transparent
+      color: #6c6352
+      size: 24px
+      text-align: center
+      position: relative
+      margin-bottom: px
+      &::before
+        position: absolute
+        size: 5px
+        top: 50%
+        left: 50%
+        display: inlineblock
+        content: ' '
+        border: 1px solid #b5a68b
+        border-radius: 50%
+        transform: translate(-50%, -50%)
+      &:last-child
+        margin-bottom: 0
+      &.active
+        font-size: 24px
+        &:before
+          display: none

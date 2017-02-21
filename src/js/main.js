@@ -20,9 +20,15 @@ $(document).ready(function(){
   // owl
   $('#owlMainpageBenefits').owlCarousel({
     loop: false,
-    nav: true,
+    nav: false,
+    dots: true,
     margin: 0,
     items: 1
+  });
+
+  $('#owlMainpageBenefits .owl-dot').each(function(i){
+    i ++
+    $(this).text('0' + i);
   });
 
   // Magnific Popup
