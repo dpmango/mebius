@@ -242,7 +242,7 @@
           size: 10px 16px
 
     &__cta-left
-      color: #6c6352
+      color: #706350
       @media($desktop)
         font-size: 22px
       @media($tablet)
@@ -370,7 +370,10 @@
       transform: translate(-50%, -50%)
       display: block
       max-width: 110%
+      @media($tablet)
+        max-width: 120%
       @media($mobile)
+        max-width: 110%
         left: auto
         top: auto
         transform: translate(0)
@@ -396,11 +399,14 @@
       margin-top: -10px
     @media($mobile)
       height: auto
+      min-height: 215px
       padding-top: 45px
       padding-bottom: 40px
       margin-bottom: 10px
       padding-right: 20px
       font-size: 20px
+    @media($width <= 500px)
+      height: auto
     span
       display: block
       color: #b3a488
@@ -437,10 +443,12 @@
     @media($mobile)
       height: auto
       margin-bottom: 20px
-      padding-right: 0
+      padding-right: 10px
       flex: 1 1 100%
       font-size: 20px
       padding: 10px 0
+    @media(width <= 500px)
+      padding-right: 0
 
   &__visible
     @media($desktop)
@@ -547,7 +555,7 @@
     font-family: 'Neo-Light'
     font-size: 32px
     margin-bottom: 12px
-    color: #6c6352
+    color: #706350
     @media($desktop)
       margin-top: 5px
       font-size: 44px
@@ -588,13 +596,18 @@
         display: none
       &--cell.-weekend-
         color: #e9c162
+        &.-selected-
+          color: white
       &--cell-day
         border: 1px solid #c3b497
         margin-left: -1px
         margin-bottom: -1px
       .datepicker--nav-title
+        vertical-align: middle
+        font-family: 'PTSans-Light'
         text-transform: uppercase
         font-size: 14px
+        font-size: 18px
         @media($desktop)
           font-size: 26px
         @media($mobile)
@@ -703,6 +716,8 @@
       position: relative
       @media($desktop)
         margin-left: 80px
+      @media(width <=870px)
+        margin-left: 60px
       @media($mobile)
         margin-left: 50px
     .ico-quote
@@ -720,6 +735,7 @@
       display: inline-block
       @media($desktop)
         font-size: 42px
+        white-space: nowrap
       @media($tablet)
         font-size: 34px
       @media($mobile)

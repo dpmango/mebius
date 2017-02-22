@@ -25,10 +25,12 @@ $(document).ready(function(){
 
   // owl
   $('#owlMainpageBenefits').owlCarousel({
-    loop: false,
+    loop: true,
     dots: true,
     margin: 0,
     items: 1,
+    animateOut: 'slideOutDown',
+    animateIn: 'flipInX',
     responsive : {
       0 : {
         nav: true

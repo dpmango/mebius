@@ -9,13 +9,13 @@ $desktop: width <= 940px
 $desktop-from: width >= 940px
 
 // variables
-$fontColor: #3b3a3a
-$colorDarkChoco: #514c4a
-$colorLightChoco: #c3b497
+$fontColor: #393738
+$colorDarkChoco: #524b48
+$colorLightChoco: #cab597
 $colorChoco: #746956
-$colorExtraLightChoco: #b3a488
-$colorYellow: #e9c264
-$chocoBG: #f2eadc
+$colorExtraLightChoco: #baa688
+$colorYellow: #f7c35d
+$chocoBG: #f5ebdc
 
 $colorGreen: #4ab68f
 $colorRed: #f45b63
@@ -41,6 +41,8 @@ body, html
   font-size: 16px
   max-width: 100%
   overflow-x: hidden
+  -webkit-font-smoothing: antialiased
+  -moz-osx-font-smoothing: grayscale
 
 .page
   position: relative
@@ -149,7 +151,7 @@ body, html
 
 .offset
   &--1-6
-  margin-left: 16.6%
+    margin-left: 16.6%
 
 @media($desktop)
   .offset
