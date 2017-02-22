@@ -13,7 +13,7 @@ html
               .col.col--full
                 .hero__content-wrap
                   .hero__title приключения начинаются <br> прямо здесь
-                  a(href="#sectionIntro")
+                  a(href="#sectionIntro").hidden-desktop-down
                     i.ico.ico-down
         // HEADING
         .heading#sectionIntro
@@ -73,8 +73,8 @@ html
         // GAME LIST
         .game-list
           .container
-            .row.row--wrap
-              .col.col--2-6
+            .row.row--wrap.row--jcc--desktop
+              .col.col--2-6.col--360--desktop
                 .game-list__card
                   .game-list__card__chars
                     span короткий
@@ -93,7 +93,7 @@ html
                         span 900
                           span.ruble Р
               // next card
-              .col.col--2-6
+              .col.col--2-6.col--360--desktop
                 .game-list__card
                   .game-list__card__chars
                     span короткий
@@ -112,7 +112,7 @@ html
                         span 900
                           span.ruble Р
               // next card
-              .col.col--2-6
+              .col.col--2-6.col--360--desktop
                 .game-list__card
                   .game-list__card__chars
                     span короткий
@@ -131,7 +131,7 @@ html
                         span 900
                           span.ruble Р
               // next card
-              .col.col--2-6
+              .col.col--2-6.col--360--desktop
                 .game-list__card
                   .game-list__card__chars
                     span короткий
@@ -150,7 +150,7 @@ html
                         span 900
                           span.ruble Р
               // next card
-              .col.col--2-6
+              .col.col--2-6.hidden-desktop-down
                 .game-list__card
                   .game-list__card__chars
                     span короткий
@@ -168,7 +168,7 @@ html
                       .game-list__card__cta-right
                         span 900
                           span.ruble Р
-            .row.mt20
+            .row.mt20.mt50--desktop.mt20--mobile
               .col.col--full.text-center
                 a(href="#").btn.btn--primary.btn--min-width все игры
 
@@ -176,43 +176,47 @@ html
         .how-it-works
           .container
             .section-name.section-name--centrify Как это работает?
-            .row.row--condenced.mt30
-              .col.col--1-4
-                .how-it-works__image
-                  img(src="images/how-it-works-1@2x.png")
-                .how-it-works__desc
-                  span 01
-                  | Выберите игру по вкусу
+            .row.row--condenced.row--wrap--desktop.row--jcc--desktop.mt30
+              .col.col--1-4.col--640--desktop
+                .how-it-works__visible
+                  .how-it-works__image
+                    img(src="images/how-it-works-1@2x.png")
+                  .how-it-works__desc
+                    span 01
+                    | Выберите игру по вкусу
                 .how-it-works__hidden
                   span В каждом квесте есть главная игровая цель: спастись от эпидемии смертельного вируса, вспомнить своё имя или помочь инопланетной девочке вернуться домой. Достичь цели можно разными способами, и несколько раз за игру вам придётся сделать судьбоносный выбор. <br> От принятых вашей командой решений зависит концовка игры.
               //col
-              .col.col--1-4
-                .how-it-works__desc
-                  span 02
-                  | Приезжайте на место старта <br> и сразу начинайте игру
-                .how-it-works__image
-                  img(src="images/how-it-works-2@2x.png")
+              .col.col--1-4.col--640--desktop
+                .how-it-works__visible
+                  .how-it-works__desc
+                    span 02
+                    | Приезжайте на место старта <br> и сразу начинайте игру
+                  .how-it-works__image
+                    img(src="images/how-it-works-2@2x.png")
                 .how-it-works__hidden
                     span В каждом квесте есть главная игровая цель: спастись от эпидемии смертельного вируса, вспомнить своё имя или помочь инопланетной девочке вернуться домой. Достичь цели можно разными способами, и несколько раз за игру вам придётся сделать судьбоносный выбор. <br> От принятых вашей командой решений зависит концовка игры.
               //col
-              .col.col--1-4
-                .how-it-works__image
-                  img(src="images/how-it-works-3@2x.png")
-                .how-it-works__desc
-                  span 03
-                  | Играйте
+              .col.col--1-4.col--640--desktop
+                .how-it-works__visible
+                  .how-it-works__image
+                    img(src="images/how-it-works-3@2x.png")
+                  .how-it-works__desc
+                    span 03
+                    | Играйте
                 .how-it-works__hidden
                     span В каждом квесте есть главная игровая цель: спастись от эпидемии смертельного вируса, вспомнить своё имя или помочь инопланетной девочке вернуться домой. Достичь цели можно разными способами, и несколько раз за игру вам придётся сделать судьбоносный выбор. <br> От принятых вашей командой решений зависит концовка игры.
               //col
-              .col.col--1-4
-                .how-it-works__desc
-                  span 04
-                  | Раскройте один из финалов игры
-                .how-it-works__image
-                  img(src="images/how-it-works-1@2x.png")
+              .col.col--1-4.col--640--desktop
+                .how-it-works__visible
+                  .how-it-works__desc
+                    span 04
+                    | Раскройте один из финалов игры
+                  .how-it-works__image
+                    img(src="images/how-it-works-1@2x.png")
                 .how-it-works__hidden
                   span В каждом квесте есть главная игровая цель: спастись от эпидемии смертельного вируса, вспомнить своё имя или помочь инопланетной девочке вернуться домой. Достичь цели можно разными способами, и несколько раз за игру вам придётся сделать судьбоносный выбор. <br> От принятых вашей командой решений зависит концовка игры.
-            .row.mt40
+            .row.mt40.mt80--desktop.mt20--mobile
               .col.col--full.text-center
                 .btn-group
                   a(href="#").btn.btn--primary.btn--min-width узнать больше
@@ -223,7 +227,7 @@ html
         .heading.heading--less-m
           .container
             .row
-              .col.col--4-6.offset--1-6
+              .col.col--4-6.col--auto--desktop.col--grow--desktop.offset--1-6.offset--10--desktop
                 .heading__front Большая Игра
                 .heading__desc — это мероприятие-квест, на котором классный сюжет и удобство мобильной системы превращаются в массовое городское помешательство. На старте каждая команда получает игровой пакет с картами и схемами, которые понадобятся во время игры, а в городе участников ждут агенты и реквизит. Параллельно играет несколько десятков команд, и никто не уйдёт без награды!
 
@@ -258,23 +262,23 @@ html
         .calendar
           .container
             .row
-              .col.col--4-6
+              .col.col--4-6.col--full--desktop
                 .calendar__title Следующая Большая Игра
-            .row
-              .col.col--4-6
+            .row.row--wrap--desktop
+              .col.col--4-6.col--full--desktop
                 img(src='images/calendar-img@2x.png')
                 p Щенок шестилетней Насти превратился в плюшевого, вместо Андрея в зеркале отражается брат-близнец, муж Ольги за ночь отрастил шикарную бороду, а Пётр уже неделю никак не может выспаться. Казалось бы, этим людям стоит посетить доктора. Но команда детективов уверена: здесь всё не так просто.
-              .col.col--2-6
+              .col.col--2-6.col--450--desktop.col--auto-m--desktop
                 .calendar__input
                   input(type='text')#inputCalendar
                   .calendar__input__context
                     .calendar__input__selected-row
-                      .calendar__input__selected-day 21 сентября
+                      .calendar__input__selected-day 21 <span>сентября</span>
                       .calendar__input__selected-weekday воскресенье
                     .calendar__input__selected-time
                       i.ico.ico-message-fly
                       span 11:00-13:00
-                .text-center.mt60
+                .text-center.mt60.mt20--mobile
                   a(href="#").btn.btn--primary.btn--min-width Подробнее
 
         // BENEFITS
@@ -330,7 +334,7 @@ html
                         span Интересные задания
                       .benefits__slide__text Для решения наших задачек нужны не только умение ориентироваться в городе, но и наблюдательность и логическое мышление. Никаких «пустых» головоломок: каждое задание связано с сюжетом и приближает вас к цели
 
-            .row.mt70
+            .row.mt70.mt40--mobile
               .col.col--full
                 .text-center
                   a(href="#").btn.btn--primary.btn--min-width выбрать игру
@@ -339,11 +343,11 @@ html
         // QUESTION
         .question
           .container
-            .row
-              .col.col--4-6.offset--1-6
+            .row.row--jcc
+              .col.col--4-6.offset--1-6.col--full--desktop
                 .question__title Что-то до сих пор осталось непонятным? <br> Задайте свой вопрос!
                 form(action="").question__form
-                .row
+                .row.row--mobile
                   .col.col--3-6
                     textarea.ui-input(placeholder="ВАШ ВОПРОС" rows="7")
 

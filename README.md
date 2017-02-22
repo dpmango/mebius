@@ -27,15 +27,6 @@ __Production__
 - `browserSync` - serve assets with hot reload from `./src` folder
 - `clean:dist` - clean dist folder to prevent conflicts before build
 
-## Installed plugins
-- jQuery 3.1.1
-- owl.carousel 2.2.0
-- Magnific Popup 1.1.0
-- Masked input
-- CSS Hamburgers
-
-
 
 ### Push command (gh-pages fix)
-
-gulp build && git add . && git commit -m "pixel perfect" && git push origin master && git subtree push --prefix dist origin gh-pages
+gulp build && git add . && git commit -m "reponsive mobile" && git push origin master && git subtree push --prefix dist origin gh-pages

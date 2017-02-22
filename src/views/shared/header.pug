@@ -2,17 +2,17 @@
 header.header
   .container
     .row.row--alignCenter
-      .col.col--1-6
+      .col.col--1-6.col--auto--desktop.col--grow--desktop
         a(href="#").header__logo
           i.ico.ico-logo
-      .col.col--2-6
+      .col.col--2-6.hidden-desktop-down
         .header__navi
           a(href="#") Как это работает?
           a(href="#") Блог
           a(href="#") Контакты
-      .col.col--3-6
+      .col.col--3-6.col--auto--desktop.col--grow--desktop
         .header__contacts
-          a(href="#").header__question
+          a(href="#").header__question.hidden-desktop-down
             i.ico.ico-help
             span Задать вопрос
           a(href="tel:8912000000").header__tel
@@ -21,8 +21,13 @@ header.header
           a(href="#").header__cabinet
             i.ico.ico-cabinet
             span Личный кабинет
+          .visible-desktop-down.inline
+            button.hamburger.hamburger--stand(type='button')#headerHamburger
+              span.hamburger-box
+                span.hamburger-inner
 
-navi.navi
+
+navi.navi.hidden-desktop-down
   .container
     .row.row--jcsb
       .col.col--full
@@ -35,3 +40,21 @@ navi.navi
             i.ico.ico-gift
             span В ПОДАРОК
           a(href="#").active АКЦИИ
+
+navi.navi-mobile
+  .container
+    .row
+      .col.col--full
+        a(href="#")
+          span ИГРЫ
+        a(href="#")
+          span БОЛЬШИЕ ИГРЫ
+        a(href="#")
+          span квесты для групп
+        a(href="#")
+          span ОТЗЫВЫ
+        a(href="#")
+          i.ico.ico-gift
+          span В ПОДАРОК
+        a(href="#").active
+          span АКЦИИ

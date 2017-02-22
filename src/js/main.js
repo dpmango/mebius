@@ -17,13 +17,29 @@ $(document).ready(function(){
         return false;
 	});
 
+  // HEADER Hamburger
+  $('#headerHamburger').on('click', function(){
+    $(this).toggleClass('is-active');
+    $('.navi-mobile').toggleClass('is-active');
+  });
+
   // owl
   $('#owlMainpageBenefits').owlCarousel({
     loop: false,
-    nav: false,
     dots: true,
     margin: 0,
-    items: 1
+    items: 1,
+    responsive : {
+      0 : {
+        nav: true
+      },
+      768 : {
+        nav: true
+      },
+      992 : {
+        nav: false
+      }
+    }
   });
 
   $('#owlMainpageBenefits .owl-dot').each(function(i){

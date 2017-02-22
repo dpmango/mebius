@@ -52,3 +52,29 @@
 
 .text-center
   text-align: center
+
+// RESPONSIVE
+@media($desktop)
+  .mt50--desktop
+    margin-top: 50px
+  .mt80--desktop
+    margin-top: 80px
+
+@media($mobile)
+  .mt20--mobile
+    margin-top: 20px
+  .mt40--mobile
+    margin-top: 40px
+
+// UTILITIES
+.hidden-desktop-down
+  @media($desktop)
+    display: none
+
+.visible-desktop-down
+  display: none
+  @media($desktop)
+    display: block
+  &.inline
+    @media($desktop)
+      display: inline-block

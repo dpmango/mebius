@@ -1,14 +1,12 @@
 // LAYOUT
+$mobile-s: width <= 475px
+$mobile-s-from: width >= 475px
 $mobile: width <= 568px
 $mobile-from: width >= 568px
 $tablet: width <= 768px
 $tablet-from: width <= 768px
-$desktop: width <= 992px
-$desktop-from: width >= 992px
-$wide: width <= 1200px
-$wide-from: width >= 1200px
-$hd: width <= 1680px
-$hd-from: width >= 1680px
+$desktop: width <= 940px
+$desktop-from: width >= 940px
 
 // variables
 $fontColor: #3b3a3a
@@ -58,6 +56,12 @@ body, html
   margin-right: auto
   padding-left: 20px
   padding-right: 20px
+  @media($mobile)
+    padding-left: 15px
+    padding-right: 15px
+  @media(width <= 475px)
+    padding-left: 10px
+    padding-right: 10px
 
 .row
   display: flex
@@ -75,6 +79,19 @@ body, html
     justify-content: space-between
   &--wrap
     flex-wrap: wrap
+  &--jcc
+    justify-content: center
+  @media($desktop)
+    &--jcc--desktop
+      justify-content: center
+    &--wrap--desktop
+      flex-wrap: wrap
+    &--end--desktop
+      justify-content: flex-end
+  @media($mobile)
+    &--mobile
+      flex-direction: column
+
 
 //desktop first method
 .col
@@ -101,5 +118,47 @@ body, html
   &--3-4
     flex-basis: 75%
 
-.offset--1-6
+  @media($desktop)
+    &--full--desktop
+      flex-basis: 100%
+    &--360--desktop
+      flex-basis: 360px
+    &--450--desktop
+      flex-basis: 450px
+    &--640--desktop
+      flex-basis: 640px
+    &--auto--desktop
+      flex-basis: auto
+    &--grow--desktop
+      flex-grow: 1
+    &--auto-m--desktop
+      margin-left: auto
+      margin-right: auto
+
+  @media(width <= 785px)
+    &--360--desktop
+      flex-basis: 340px
+
+  @media($mobile)
+    &--360--desktop
+      flex-basis: 260px
+
+    &--640--desktop
+      flex-basis: 235px
+
+
+.offset
+  &--1-6
   margin-left: 16.6%
+
+@media($desktop)
+  .offset
+    &--10--desktop
+      margin-left: 10%
+      margin-right: 10%
+
+@media($tablet)
+  .offset
+    &--10--desktop
+      margin-left: 5%
+      margin-right: 5%

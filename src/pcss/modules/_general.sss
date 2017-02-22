@@ -3,33 +3,101 @@
   text-align: center
   margin-top: 90px
   margin-bottom: 110px
+  @media($desktop)
+    margin-top: 80px
+    margin-bottom: 60px
+  @media($tablet)
+    margin-top: 60px
+    margin-bottom: 20px
+  @media($mobile)
+    margin-top: 30px
+  @media($mobile-s)
+    margin-top: 20px
+
   &__front
     font-family: 'Neo-Light'
     font-size: 44px
+    @media($tablet)
+      font-size: 34px
+    @media($mobile)
+      font-size: 26px
+    @media($mobile-s)
+      font-size: 22px
   &__desc
     margin-top: 13px
     font-size: 22px
+    @media($desktop)
+      margin-top: 15px
+      line-height: 1.25em
+      font-size: 28px
+      br
+        display: none
+    @media($tablet)
+      margin-top: 10px
+      font-size: 25px
+    @media($mobile)
+      font-size: 24px
+    @media($mobile-s)
+      margin-top: 8px
+      font-size: 20px
   &--less-m
     margin-top: 80px
     margin-bottom: 60px
+    @media($desktop)
+      margin-top: 70px
+      .heading__front
+        font-size: 42px
+    @media($mobile)
+      margin-top: 35px
+      .heading__front
+        font-size: 24px
+
 
 .section-name
   font-family: 'Neo-Light'
   font-size: 32px
   color: #6c6352
+  @media($desktop)
+    font-size: 44px
+  @media($tablet)
+    font-size: 30px
+  @media($mobile)
+    font-size: 20px
+
   &--small
     font-size: 28px
+    @media($desktop)
+      font-size: 32px
+    @media($tablet)
+      font-size: 30px
   &--centrify
     text-align: center
+    @media($tablet)
+      font-size: 42px
+    @media($mobile)
+      font-size: 20px
 
 .cta-text
   margin-top: 60px
   margin-bottom: 50px
+  @media($desktop)
+    margin-top: 65px
+  @media($mobile)
+    margin-top: 15px
+    margin-bottom: 30px
   &__top
     font-size: 22px
     color: $colorExtraLightChoco
+    @media($desktop)
+      font-size: 28px
+    @media($mobile)
+      font-size: 20px
   &__bottom
     font-size: 26px
+    @media($desktop)
+      font-size: 30px
+    @media($mobile)
+      font-size: 22px
 
 // HEADER
 .header
@@ -40,11 +108,38 @@
   z-index: 9
   height: 60px
   background: #fefcfa
+  @media($desktop)
+    height: 78px
+  @media($mobile-s)
+    height: 40px
+    .col--1-6
+      flex-basis: 80px
+      padding-right: 0
   &__logo
     display: flex
     align-items: center
     height: 60px
     width: 120px
+    @media($desktop)
+      height: 78px
+      width: 140px
+      .ico
+        height: 78px
+        width: 140px
+    @media($mobile)
+      width: 100px
+      height: 40px
+      .ico
+        height: 78px
+        width: 140px
+    @media($mobile-s)
+      width: 80px
+      height: 35px
+      margin-left: 10px
+      .ico
+        width: 80px
+        height: 35px
+
     transition: opacity .3s ease
     &:hover
       opacity: .7
@@ -77,25 +172,58 @@
     align-items: center
     justify-content: space-between
     height: 60px
+    @media($desktop)
+      height: 78px
+    @media($mobile-s)
+      height: 40px
   &__question, &__cabinet
     font-size: 18px
     transition: all .3s ease
+    @media($desktop)
+      font-size: 28px
     &:hover
       color: $colorChoco
     .ico
       margin-top: -2px
       margin-right: 10px
       vertical-align: top
+      @media($desktop)
+        size: 32px
+      @media(width <= 700px)
+        size: 25px
+      @media(width <= 700px)
+        vertical-align: 0px
+      @media($mobile-s)
+        vertical-align: middle
+    span
+      @media(width <= 700px)
+        display: none
   &__tel
     > span
       display: inline-block
       font-size: 12px
       color: $colorExtraLightChoco
+      @media($desktop)
+        font-size: 18px
+      @media($tablet)
+        font-size: 16px
+      @media($mobile)
+        font-size: 12px
+        vertical-align: bottom
       > span
+        font-family: 'PTSans-Regular'
         display: inline-block
         margin-left: 10px
         font-weight: 700
         font-size: 18px
+        @media($desktop)
+          font-size: 28px
+        @media($tablet)
+          font-size: 24px
+          margin-left: 5px
+        @media($mobile-s)
+          font-size: 14px
+          margin-left: 2px
 
 .navi
   position: absolute
@@ -150,11 +278,74 @@
         vertical-align: -1px
 
 
+.navi-mobile
+  opacity: 0
+  pointer-events: none
+  position: absolute
+  padding: 30px 20px
+  top: 78px
+  left: 0
+  right: 0
+  z-index: 8
+  background: $chocoBG
+  text-align: center
+  transform: translate3d(0, -200%, 0)
+  transition: transform .6s ease-out, opacity .4s ease
+  @media($mobile-s)
+    top: 40px
+  &.is-active
+    opacity: 1
+    pointer-events: all
+    transform: translate3d(0, 0, 0)
+  a
+    display: block
+    font-size: 22px
+    line-height: 48px
+    text-align: center
+    vertical-align: middle
+    color: #6c6352
+    text-transform: uppercase
+    transition: all .3s ease-out .2s
+    position: relative
+    cursor: pointer
+    @media($mobile-s)
+      font-size: 20px
+      line-height: 44px
+    span
+      position: relative
+      cursor: pointer
+      &::before
+        display: block
+        content: ' '
+        position: absolute
+        background: $colorExtraLightChoco
+        left: 50%
+        right: 50%
+        bottom: -2px
+        z-index: -1
+        height: 2px
+        transition: all .4s ease-in-out
+      &:last-child
+        border-right: none
+      &.active, &:hover
+        &::before
+          left: 0
+          right: 0
+    .ico
+      margin-right: 5px
+      vertical-align: 1px
+
 // FOOTER
 .footer
   background: #bdb098
   padding-top: 15px
   padding-bottom: 30px
+  @media($desktop)
+    padding-top: 10px
+    padding-bottom: 10px
+  @media($mobile)
+    padding-top: 10px
+    padding-bottom: 10px
   &__navi
     display: flex
     align-items: center
@@ -185,6 +376,11 @@
     flex-wrap: wrap
     text-align: right
     align-items: center
+    @media($desktop)
+      justify-content: flex-end
+      text-align: right
+    @media($mobile)
+      height: auto
     &__title
       font-family: 'Neo-Light'
       color: #514c4a
@@ -192,19 +388,45 @@
       margin-bottom: 5px
     a
       flex: 1 0 35px
+      @media($desktop)
+        flex-grow: 0
+        flex-basis: 60px
+        .ico
+          size: 36px 38px
+      @media($tablet)
+        .ico
+          size: 30px 32px
+      @media($mobile)
+        flex: 0 0 30px
+        .ico
+          size: 16px 18px
   &__copy
     margin-top: 0px
     font-size: 12px
     text-transform: uppercase
+    @media($desktop)
+      font-size: 26px
+      margin-top: -35px
+    @media($tablet)
+      font-size: 24px
+    @media($mobile)
+      font-size: 14px
+      margin-top: -17px
 
 // OWL
 .owl-carousel
   max-width: 980px
+  @media($desktop)
+    max-width: 95vw
+  @media($mobile)
+    max-width: 100vw
   &--numberic-dots
     .owl-dots
       position: absolute
       right: 20px
       top: 40%
+      @media($mobile)
+        top: 30%
     .owl-dot
       display: block
       font-family: 'Neo-Light'
@@ -214,7 +436,6 @@
       size: 24px
       text-align: center
       position: relative
-      margin-bottom: px
       &::before
         position: absolute
         size: 5px
@@ -229,5 +450,37 @@
         margin-bottom: 0
       &.active
         font-size: 24px
+        @media($mobile)
+          font-size: 20px
         &:before
           display: none
+
+  .owl-nav
+    text-align: center
+    margin-top: 50px
+    @media($mobile)
+      margin-top: 20px
+  .owl-next, .owl-prev
+    display: inline-block
+    font-size: 0
+    size: 68px 33px
+    transition: all .4s ease
+    cursor: pointer
+    @media($tablet)
+      size: 50px 25px
+    @media($mobile)
+      size: 40px 18px
+    &:hover
+      opacity: .7
+  .owl-next
+    background: url('../images/sprite/owl-next@2x.png') no-repeat center
+    margin-left: 25px
+    background-size: cover
+    @media($mobile)
+      margin-right: 20px
+  .owl-prev
+    background: url('../images/sprite/owl-prev@2x.png') no-repeat center
+    margin-right: 25px
+    background-size: cover
+    @media($mobile)
+      margin-left: 20px
