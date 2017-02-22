@@ -291,6 +291,8 @@
   text-align: center
   transform: translate3d(0, -200%, 0)
   transition: transform .6s ease-out, opacity .4s ease
+  @media($desktop-from)
+    display: none !important
   @media($mobile-s)
     top: 40px
   &.is-active

@@ -2245,6 +2245,11 @@ body, html {
     margin-right: 5px;
     vertical-align: 1px;
 }
+@media(min-width: 940px) {
+    .navi-mobile {
+        display: none !important;
+    }
+}
 @media(max-width: 475px) {
     .navi-mobile {
         top: 40px;
