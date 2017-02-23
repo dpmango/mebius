@@ -39,6 +39,7 @@ body, html
   color: $fontColor
   font-family: 'PTSans-Light', sans-serif
   font-size: 16px
+  min-width: 320px
   max-width: 100%
   overflow-x: hidden
   -webkit-font-smoothing: antialiased
@@ -144,7 +145,8 @@ body, html
   @media($mobile)
     &--360--desktop
       flex-basis: 260px
-
+      
+  @media($mobile-s)
     &--640--desktop
       flex-basis: 235px
 

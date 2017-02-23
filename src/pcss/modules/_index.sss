@@ -306,7 +306,7 @@
           order: 1
           padding-left: 0
           padding-right: 25px
-    @media($mobile)
+    @media($mobile-s)
       height: auto
       flex-wrap: wrap
       &:nth-child(odd)
@@ -360,7 +360,7 @@
     transition: transform .4s ease-out
     @media($desktop)
       height: 215px
-    @media($mobile)
+    @media($mobile-s)
       height: auto
       max-height: 180px
     img
@@ -373,6 +373,9 @@
       @media($tablet)
         max-width: 120%
       @media($mobile)
+        top: 45%
+        max-width: 130%
+      @media($mobile-s)
         max-width: 110%
         left: auto
         top: auto
@@ -399,14 +402,16 @@
       margin-top: -10px
     @media($mobile)
       height: auto
+    @media($width <= 500px)
+      height: auto
+    @media($mobile-s)
+      height: auto
       min-height: 215px
       padding-top: 45px
       padding-bottom: 40px
       margin-bottom: 10px
       padding-right: 20px
       font-size: 20px
-    @media($width <= 500px)
-      height: auto
     span
       display: block
       color: #b3a488
@@ -419,7 +424,9 @@
         margin-bottom: -10px
         font-size: 90px
       @media($mobile)
+        font-size: 70px
         margin-bottom: 0
+      @media($mobile-s)
         font-size: 58px
   &__hidden
     opacity: 0
@@ -441,11 +448,12 @@
       font-size: 25px
       padding-top: 50px
     @media($mobile)
+      font-size: 22px
+    @media($mobile-s)
       height: auto
       margin-bottom: 20px
       padding-right: 10px
       flex: 1 1 100%
-      font-size: 20px
       padding: 10px 0
     @media(width <= 500px)
       padding-right: 0
@@ -460,7 +468,7 @@
         order: 1
       .how-it-works__desc
         order: 2
-    @media($mobile)
+    @media($mobile-s)
       flex: 1 1 100%
 
 // NUMBERs
@@ -470,6 +478,7 @@
     justify-content: space-between
     @media($mobile)
       justify-content: center
+      align-items: center
       flex-wrap: wrap
       margin-left: -5px
       margin-right: -5px
@@ -481,11 +490,15 @@
       border-width: 2px
     @media($mobile)
       margin-bottom: 30px
-      flex: 0 1 auto
+      flex: 0 1 33%
       padding-left: 12px
       padding-right: 10px
       border-width: 1px
-      margin-left: 10px
+      margin-left: 0px
+      &:nth-child(2)
+        flex-basis: 30%
+      &:nth-child(3)
+        flex-basis: 37%
     &:last-child
       flex-basis: 14%
       @media($tablet)
@@ -505,6 +518,8 @@
       line-height: 1
       @media($desktop)
         font-size: 68px
+      @media(width <= 870px)
+        font-size: 55px
       @media($tablet)
         font-size: 52px
       @media($mobile)
@@ -518,6 +533,8 @@
       @media($desktop)
         font-size: 26px
         margin-top: -10px
+      @media(width <= 870px)
+        font-size: 22px
       @media($tablet)
         margin-top: -5px
         font-size: 23px

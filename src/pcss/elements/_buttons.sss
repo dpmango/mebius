@@ -85,6 +85,8 @@
       margin-bottom: 20px
       &:first-child
         margin-left: 100px
+      &--min-width
+        min-width: 270px
 
     @media($mobile)
       width: 160px
@@ -92,7 +94,14 @@
       padding-right: 10px
       border-radius: 4px
       margin-bottom: 10px
-      margin-left: 10px
-      margin-right: 10px
+      margin-left: 100px
+      margin-right: 100px
       &:first-child
-        margin-left: 10px
+        margin-left: 100px
+      &--min-width
+        min-width: auto
+    @media($mobile-s)
+      margin-left: 30px
+      margin-right: 30px
+      &:first-child
+        margin-left: 30px
