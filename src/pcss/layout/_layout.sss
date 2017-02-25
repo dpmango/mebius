@@ -14,7 +14,7 @@ $colorDarkChoco: #524b48
 $colorLightChoco: #cab597
 $colorChoco: #746956
 $colorExtraLightChoco: #baa688
-$colorYellow: #f7c35d
+$colorYellow: #f7bb40
 $chocoBG: #f5ebdc
 
 $colorGreen: #4ab68f
@@ -120,6 +120,12 @@ body, html
     flex-basis: 50%
   &--3-4
     flex-basis: 75%
+  &--auto
+    flex: 1 1 auto
+  &--65-100
+    flex-basis: 65%
+  &--35-100
+    flex-basis: 35%
 
   @media($desktop)
     &--full--desktop
@@ -145,7 +151,7 @@ body, html
   @media($mobile)
     &--360--desktop
       flex-basis: 260px
-      
+
   @media($mobile-s)
     &--640--desktop
       flex-basis: 235px

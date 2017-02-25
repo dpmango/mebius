@@ -217,6 +217,22 @@ body, html {
             flex-basis: 75%;
         -ms-flex-preferred-size: 75%;
 }
+.col--auto {
+    -webkit-flex: 1 1 auto;
+        -ms-flex: 1 1 auto;
+            flex: 1 1 auto;
+    -webkit-box-flex: 1;
+}
+.col--65-100 {
+    -webkit-flex-basis: 65%;
+            flex-basis: 65%;
+        -ms-flex-preferred-size: 65%;
+}
+.col--35-100 {
+    -webkit-flex-basis: 35%;
+            flex-basis: 35%;
+        -ms-flex-preferred-size: 35%;
+}
 @media(max-width: 940px) {
     .col {}
     .col--full--desktop {
@@ -545,6 +561,16 @@ body, html {
 }
 .ico-fb:hover {
     background-image: url('../images/sprite/ico-fb-a@2x.png');
+}
+.ico-pdf {
+    width: 18px;
+    height: 23px;
+    background-image: url('../images/sprite/ico-pdf@2x.png');
+}
+.ico-wallet {
+    width: 25px;
+    height: 21px;
+    background-image: url('../images/sprite/ico-wallet@2x.png');
 }
 /* buttons */
 .btn {
@@ -1775,9 +1801,9 @@ body, html {
 }
 .ui-input:focus {
     outline: none;
-    border-color: #f7c35d;
-    -webkit-box-shadow: 0 0 0px 1px #f7c35d;
-            box-shadow: 0 0 0px 1px #f7c35d;
+    border-color: #f7bb40;
+    -webkit-box-shadow: 0 0 0px 1px #f7bb40;
+            box-shadow: 0 0 0px 1px #f7bb40;
 }
 @media(max-width: 568px) {
     textarea {
@@ -2926,7 +2952,7 @@ body, html {
             transform: scale(0);
 }
 .icon-list__item:hover .icon-list__item__name {
-    color: #f7c35d;
+    color: #f7bb40;
     -webkit-transform: translate3d(0, -40px, 0);
             transform: translate3d(0, -40px, 0);
 }
@@ -4165,4 +4191,181 @@ body, html {
         margin-top: 10px;
         margin-left: -65px;
     }
+}
+/* INTRO */
+.intro {
+    margin-top: 170px;
+}
+.intro img {
+    max-width: 100%;
+}
+.intro__title {
+    margin-bottom: 25px;
+    font-size: 32px;
+    font-family: 'Neo-Light';
+}
+.intro__text {
+    font-size: 20px;
+}
+/* TABS */
+.tabs {
+    margin-top: 50px;
+}
+.tabs__navi {
+    border-bottom: 1px solid #c3b298;
+}
+.tabs__navi ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+.tabs__navi li {
+    display: inline-block;
+    margin-right: 5px;
+    margin-bottom: -1px;
+    padding: 10px 20px 7px 20px;
+    min-width: 160px;
+    border: 1px solid #f5ebdc;
+    border-bottom: 1px solid #c3b298;
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+    background: #fefefe;
+    color: #baa588;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 20px;
+    line-height: 1;
+    cursor: pointer;
+    -webkit-transition: background .4s ease-in-out;
+    transition: background .4s ease-in-out;
+}
+.tabs__navi li.active {
+    border-color: #c3b298;
+    border-bottom: none;
+    color: #706350;
+}
+.tabs__navi li:hover:not(.active) {
+    background: #c3b298;
+    background: rgba(195, 178, 152, 0.15);
+}
+.tabs__content {
+    margin: 50px 0;
+}
+.tabs__content p {
+    font-size: 22px;
+}
+.tabs__content .t-colored {
+    color: #baa588;
+    font-size: 24px;
+}
+.tabs__content .t-ttu {
+    text-transform: uppercase;
+}
+.tabs__content .t-price {
+    font-size: 22px;
+}
+.tabs__content .t-price .ico {
+    vertical-align: top;
+}
+.tabs__content .t-price > span {
+    display: inline-block;
+    margin-left: 10px;
+}
+.tabs__content .t-price > span > span {
+    display: inline-block;
+    margin-left: 5px;
+    color: #f7bb40;
+    font-size: 24px;
+    font-family: 'Neo-Light';
+}
+.list {}
+.list--checkmark {
+    margin-left: 0;
+    padding-left: 0;
+    font-size: 22px;
+}
+.list--checkmark li {
+    position: relative;
+    display: block;
+    margin-bottom: 2px;
+    padding-left: 35px;
+}
+.list--checkmark li:before {
+    position: absolute;
+    top: 3px;
+    left: 0;
+    display: block;
+    width: 21px;
+    height: 14px;
+    background: url('../images/sprite/list-checkmark.png') no-repeat center;
+    content: ' ';
+}
+/* Quest card */
+.quest-card {
+    margin-bottom: 20px;
+}
+.quest-card__image {
+    position: relative;
+    display: block;
+    overflow: hidden;
+    height: 235px;
+    border: 1px solid #c3b298;
+    border-right: none;
+}
+.quest-card__image img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    max-width: 105%;
+    -webkit-transition: -webkit-transform .6s ease-in-out;
+    transition: -webkit-transform .6s ease-in-out;
+    transition: transform .6s ease-in-out;
+    transition: transform .6s ease-in-out, -webkit-transform .6s ease-in-out;
+    -webkit-transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+}
+.quest-card__image:hover img {
+    -webkit-transform: translate(-50%, -50%) scale(1.15) rotate3d(2, 1, 3, -10deg);
+            transform: translate(-50%, -50%) scale(1.15) rotate3d(2, 1, 3, -10deg);
+}
+.quest-card__content {
+    padding: 25px 20px 10px 20px;
+    height: 235px;
+    border: 1px solid #c3b298;
+    border-left: none;
+}
+.quest-card__name {
+    font-size: 24px;
+    font-family: 'Neo-Light';
+}
+.quest-card__desc {
+    margin-top: 20px;
+    font-size: 18px;
+}
+.quest-card__cta {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-align-items: center;
+            align-items: center;
+    -webkit-justify-content: space-between;
+            justify-content: space-between;
+    margin-top: 20px;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+}
+.quest-card__cta__price {
+    color: #bead91;
+    text-transform: uppercase;
+    font-size: 18px;
+}
+.quest-card__cta__price .ico {
+    margin-right: 10px;
+}
+.quest-card__cta__price span {
+    vertical-align: -2px;
 }

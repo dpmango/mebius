@@ -1,0 +1,110 @@
+doctype html
+html
+  include shared/head.pug
+
+  body
+    .page
+      include shared/header.pug
+      .page__content
+        // INTRO
+        .intro
+          .container
+            .row.row--wrap--desktop
+              .col.col--65-100
+                .intro__title Игры для корпоративов, праздников <br> и больших компаний
+                .intro__text Для большого числа участников мы предлагаем проведение мероприятия с нашим игротехником. <br> Игротехник - он же ведущий квеста - встречает участников в начале игры, проводит разминку, объясняет правила и делит на команды. В случае затруднений игротехник готов прийти на помощь, а в конце проводит награждение участников. Ведущие квестов - опытные и проверенные ребята, которые сумеют расшевелить даже самого незаинтересованного участника! Все игротехники проходят жёсткий отбор и обучение по каждой новой игре.
+              .col.col--35-100
+                img(src="images/gamesIntroPic@2x.png")
+
+        // TABS
+        .tabs
+          .tabs__navi
+            .container
+              .row
+                .col.col--full
+                  ul
+                    li(data-tab='1').active 6-11 участников
+                    li(data-tab='2') 12-24 участника
+                    li(data-tab='3')
+                      | > 25 человек
+                    li(data-tab='4') выездной квест
+
+          .tabs__content(data-panel="1")
+            .container
+              .row
+                .col.col--full
+                  p Для такого количества игроков мы можем предложить самостоятельную игру: просто закажите понравившийся вам квест для двух команд.
+                  p.t-colored Для игры двумя командами доступны:
+
+                  // card
+                  .row.row--condenced.quest-card
+                    .col.col--2-6
+                      a(href='#').quest-card__image
+                        img(src="images/image_quest_1@2x.png")
+                    .col.col--4-6
+                      .quest-card__content
+                        .quest-card__name Привет с Бетельгейзе
+                        .quest-card__desc Сегодня вечером должна открыться выставка, на которой картину знаменитого абстракциониста впервые представят широкой публике. Всё готово к открытию, вот только сама картина пропала! <br> Полиция в замешательстве, работники художественной галереи в панике. Раскройте преступление, найдите преступника и спасите выставку.
+                        .quest-card__cta
+                          a(href="#").quest-card__cta__price
+                            i.ico.ico-pdf
+                            span Скачать презентацию с подробным описанием
+                          a(href='#').btn.btn--primary Заказать игру
+
+                  // card
+                  .row.row--condenced.quest-card
+                    .col.col--2-6
+                      a(href='#').quest-card__image
+                        img(src="images/image_quest_2@2x.png")
+                    .col.col--4-6
+                      .quest-card__content
+                        .quest-card__name Привет с Бетельгейзе
+                        .quest-card__desc Сегодня вечером должна открыться выставка, на которой картину знаменитого абстракциониста впервые представят широкой публике. Всё готово к открытию, вот только сама картина пропала! <br> Полиция в замешательстве, работники художественной галереи в панике. Раскройте преступление, найдите преступника и спасите выставку.
+                        .quest-card__cta
+                          a(href="#").quest-card__cta__price
+                            i.ico.ico-pdf
+                            span Скачать презентацию с подробным описанием
+                          a(href='#').btn.btn--primary Заказать игру
+
+                  p Каждая команда получает свою серию заданий и двигается своим маршрутом. Несколько раз за время квеста необходимо передать какую-то информацию между командами, поэтому игроки могут достичь успеха лишь благодаря равному вкладу обеих команд!
+
+                  p.t-colored.t-price
+                    i.ico.ico-wallet
+                    span Стоимость самостоятельной игры двумя командами:
+                      span 1600 Р
+
+                  p По желанию мы можем также организовать такую игру с выездом игротехника: так вы сможете переложить все организационные хлопоты на профессионалов. Ведущий квеста разогреет участников, проведёт инструктаж и настроит всех на игру, а в конце участников ждут небольшие приятные призы.
+                  p.t-colored.t-price
+                    i.ico.ico-wallet
+                    span Стоимость квеста на две команды с игротехниками:
+                      span 4900 Р
+
+                  p.t-ttu в стоимость включены:
+
+                  ul.list.list--checkmark
+                    li мобильный квест на две команды,
+                    li работа игротехника по организации игры,
+                    li подведение итогов,
+                    li памятные призы.
+
+        // QUESTION
+        .question
+          .container
+            .row.row--jcc
+              .col.col--4-6.col--full--desktop
+                .question__title Что-то до сих пор осталось непонятным? <br> Задайте свой вопрос!
+                form(action="").question__form.question__form--condenced
+                .row.row--mobile
+                  .col.col--3-6
+                    input(type="text" placeholder="Ваше имя").ui-input
+                    input(type="email" placeholder="Email").ui-input
+                    input(type="tel" placeholder="Телефон").ui-input
+                    input(type="text" placeholder="Выбранный квест").ui-input
+                    input(type="text" placeholder="количество игроков").ui-input
+
+                  .col.col--3-6
+                    textarea.ui-input(placeholder="ВАШ ВОПРОС" rows="8")
+                    a(href="#").btn.btn--primary.btn--block.btn--no-skew-hover ОТПРАВИТЬ
+
+
+      include shared/footer.pug
