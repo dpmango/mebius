@@ -37,6 +37,11 @@
       display: none
   &--mainpage
     background-image: url('../images/heroGorodok.png')
+  &--big-game
+    background-image: url('../images/heroMainpage.png')
+    height: auto
+    min-height: auto
+    max-height: 620px
   &__content-wrap
     display: flex
     flex-direction: column
@@ -56,6 +61,16 @@
     @media($mobile-s)
       padding-top: 50px
       max-height: 260px
+    &--centrify
+      align-items: center
+      height: auto
+      min-height: 620px
+      max-height: 620px
+      .hero__title
+        width: 100%
+      .hero__desc
+        width: 100%
+
     .ico-down
       position: absolute
       bottom: 30px
@@ -82,6 +97,17 @@
       font-size: 32px
     @media($mobile-s)
       font-size: 22px
+    &--mega
+      text-align: center
+      font-size: 126px
+
+  &__desc
+    font-size: 27px
+    text-align: center
+    color: white
+    position: relative
+    z-index: 2
+    margin-top: 5vh
 
 // ICON LIST
 .icon-list

@@ -133,3 +133,78 @@
         margin-right: 10px
       span
         vertical-align: -2px
+
+
+.big-game
+  margin-top: 50px
+  p
+    font-size: 20px
+  .quote
+    display: flex
+    justify-content: space-between
+    padding-top: 20px
+    &__image
+      flex: 0 0 200px
+      img
+        max-width: 100%
+    &__text
+      flex: 1 1 auto
+      margin-left: 6%
+      border: 1px solid #cab597
+      border-radius: 4px
+      padding: 25px 15px 5px 25px
+      position: relative
+      &::after
+        position: absolute
+        display: block
+        content: ' '
+        top: 25%
+        left: -16px
+        background: #fefefe
+        transform: rotate(45deg)
+        size: 30px 30px
+        border: 1px solid #cab597
+        border-right: none
+        border-top: none
+      &__title
+        font-family: 'Neo-Light'
+        font-size: 27px
+        color: #706350
+        margin-bottom: 5px
+      p
+        font-size: 20px
+
+.form-buy
+  border: 1px solid #cab597
+  padding: 25px 35px
+  &__date
+    display: flex
+    justify-content: space-between
+    align-items: flex-end
+    padding-bottom: 20px
+    &__datetime
+      font-size: 24px
+      font-family: 'Neo-Light'
+    &__weekday
+      font-size: 18px
+      text-transform: uppercase
+      color: #baa588
+
+  &__from-to
+    margin-left: -35px
+    margin-right: -35px
+    padding: 10px 35px
+    background: #f5ebdc
+    display: flex
+    justify-content: space-around
+    align-items: center
+    .ico-arrow-spacer
+      flex: 1 1 auto
+    &__item
+      flex: 0 1 auto
+      span
+        display: block
+        font-size: 18px
+        font-family: 'Neo-Light'
+        color: #baa588
+      font-size: 15px
