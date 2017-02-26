@@ -1,0 +1,40 @@
+doctype html
+html
+  include shared/head.pug
+
+  body
+    .page
+      include shared/header.pug
+      .page__content
+        // Profile
+        .profile
+          .container
+            .row
+              .col.col--2-6.no-pad-r
+                .profile__scope
+                  .profile__scope__left
+                    .profile__scope__image
+                      img(src="images/profilePic.png")
+                    .profile__scope__name Каролина
+                    .profile__scope__rate
+                      span Накоплено 12
+                      i.ico.ico-pulp
+                    .profile__scope__next-left Ещё 11 до бесплатного квеста!
+                  .profile__scope__right
+                    a(href='#').btn.btn--primary.btn--darker.btn--block Профиль
+                    a(href='#').btn.btn--primary.btn--darker.btn--block Мои игры
+                    a(href='#').btn.btn--primary.btn--block Тюториал
+
+            .row
+              .col.col--full
+                .profile__game
+                  .profile__game__person.profile__game__person--cat.tooltip.tooltip--top
+                    .tooltip__content Планета Плутон перестала считаться планетой в 2006 году, но в некоторых штатах США по закону до сих пор является планетой
+                  .profile__game__person.profile__game__person--flower.tooltip.tooltip--top
+                    .tooltip__content Выживший <br> Вы не смогли помочь заражённым, но покинули город и остались в живых.
+
+
+
+
+
+      include shared/footer.pug

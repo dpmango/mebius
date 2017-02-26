@@ -486,3 +486,117 @@
     background-size: cover
     @media($mobile)
       margin-left: 20px
+  &--controlls-l-to-r
+    .owl-prev, .owl-next
+      transform: scale(.75)
+      position: absolute
+      top: 45%
+    .owl-prev
+      left: -80px
+    .owl-next
+      right: -80px
+
+
+// MODAL
+
+.modal
+  display: none
+  position: fixed 0 0 0 0
+  background: color(#3b3a3a a(55%))
+  z-index: 5
+  &--offset-top
+    padding-top: 120px
+    transition: padding .25s ease
+    &.floated
+      padding-top: 0
+  &.active
+    display: block
+  &__wrapper
+    position: relative
+    width: 100%
+    height: 100%
+    .container
+      height: 100vh
+      width: 100vw
+      .col
+        position: relative
+    .row
+      height: 100vh
+  &__content
+    position: absolute
+    top: 50%
+    left: 50%
+    width: 100%
+    transform: translate(-50%, -50%)
+    margin: 0px auto
+    background: white
+    padding: 50px 25px 30px 60px
+    max-height: 90vh
+    display: flex
+    flex-direction: column
+    @media($tablet)
+      overflow-y: scroll
+      padding-top: 50px
+      padding: 40px 30px
+      width: 100%
+    @media($mobile)
+      padding-top: 50px
+      padding: 30px 20px
+  &__heading
+    font-family: 'Neo-Light'
+    font-size: 27px
+    margin-bottom: 20px
+    @media($tablet)
+      font-size: 32px
+    @media($mobile)
+      font-size: 24px
+  &__datetime
+    font-family: 'Neo-Light'
+    font-size: 14px
+    line-height: 1
+    margin-bottom: 15px
+    color: #b3a488
+  &__close
+    position: absolute
+    top: 0px
+    right: 0px
+    padding: 15px
+    cursor: pointer
+    cursor: pointer
+    transition: background .3s ease
+    &:hover
+      background: $colorYellow
+      .ico-close
+        filter: brightness(100)
+
+    .ico-close
+      background-image: url('../images/sprite/ico-close.png')
+      size: 25px
+      cursor: pointer
+      transition: none
+      transition: all .3s ease
+
+  &__scrollable-area
+    max-height: 100%
+    overflow-y: scroll
+    padding-right: 40px
+    img
+      max-width: 100%
+      margin-bottom: 10px
+    p
+      font-size: 20px
+  &__footer
+    color: #b3a488
+    font-size: 16px
+    text-transform: uppercase
+    padding-top: 30px
+    padding-right: 40px
+    display: flex
+    justify-content: space-between
+    .ico
+      cursor: pointer
+    span
+      vertical-align: -2px
+    .inactive
+      filter: grayscale(1)
+      cursor: not-allowed

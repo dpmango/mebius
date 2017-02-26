@@ -1,0 +1,64 @@
+doctype html
+html
+  include shared/head.pug
+
+  body
+    .page
+      include shared/header.pug
+      .page__content
+        // CONTACT
+        .contact
+          .container
+            .row.row--jcc
+              .col.col--4-6.col--full--desktop
+                .contact__wrapper
+                  .contact__block
+                    i.ico.ico-call
+                    .contact__block__action Позвонить
+                    .contact__block__coors
+                      a(href='#') + 7 912 000 00 00
+                    .contact__block__additional с 10  до 21
+                  .contact__block
+                    i.ico.ico-mail
+                    .contact__block__action Написать
+                    .contact__block__coors
+                      a(href='mailto:post@gmail.com') post@gmail.com
+                      a(href='mailto:newpost@gmail.com') newpost@gmail.com
+
+        // SOCIALS
+        .socials-contact
+          .row
+            .col.col--full
+              .socials-contact__title Узнавать первым все новости!
+
+          .row.row--jcc
+            .col.col--4-6.col--full--desktop
+              .socials-contact__wrapper
+                a(href='#').socials-contact__item
+                  i.ico.ico-fb
+                  span mebius_good
+                a(href='#').socials-contact__item
+                  i.ico.ico-instagram
+                  span mebius_good
+                a(href='#').socials-contact__item
+                  i.ico.ico-vk
+                  span vk\mebius_good
+
+        // QUESTION
+        .question.question--no-bg
+          .container
+            .row.row--jcc
+              .col.col--4-6.col--full--desktop
+                .question__title Что-то до сих пор осталось непонятным? <br> Задайте свой вопрос!
+                form(action="").question__form
+                .row.row--mobile
+                  .col.col--3-6
+                    textarea.ui-input(placeholder="ВАШ ВОПРОС" rows="7")
+
+                  .col.col--3-6
+                    input(type="text" placeholder="Ваше имя").ui-input
+                    input(type="email" placeholder="Email").ui-input
+                    a(href="#").btn.btn--primary.btn--block.btn--no-skew-hover ОТПРАВИТЬ
+
+
+      include shared/footer.pug

@@ -1,0 +1,105 @@
+doctype html
+html
+  include shared/head.pug
+
+  body
+    .page
+      include shared/header.pug
+      .page__content
+        // INTRO
+        .intro
+
+        // HOW IT WORKS
+        .how-it-works.how-it-works--no-bg
+          .container
+            .section-name.section-name--centrify Как это работает? Всё очень просто!
+            .row.row--condenced.row--wrap--desktop.row--jcc--desktop.mt30
+              .col.col--1-4.col--640--desktop
+                .how-it-works__visible
+                  .how-it-works__image
+                    img(src="images/how-it-works-1.jpg")
+                  .how-it-works__desc
+                    span 01
+                    | Выберите игру по вкусу
+                .how-it-works__hidden
+                  span В каждом квесте есть главная игровая цель: спастись от эпидемии смертельного вируса, вспомнить своё имя или помочь инопланетной девочке вернуться домой. Достичь цели можно разными способами, и несколько раз за игру вам придётся сделать судьбоносный выбор. <br> От принятых вашей командой решений зависит концовка игры.
+              //col
+              .col.col--1-4.col--640--desktop
+                .how-it-works__visible
+                  .how-it-works__desc
+                    span 02
+                    | Приезжайте на место старта <br> и сразу начинайте игру
+                  .how-it-works__image
+                    img(src="images/how-it-works-2.jpg")
+                .how-it-works__hidden
+                    span В каждом квесте есть главная игровая цель: спастись от эпидемии смертельного вируса, вспомнить своё имя или помочь инопланетной девочке вернуться домой. Достичь цели можно разными способами, и несколько раз за игру вам придётся сделать судьбоносный выбор. <br> От принятых вашей командой решений зависит концовка игры.
+              //col
+              .col.col--1-4.col--640--desktop
+                .how-it-works__visible
+                  .how-it-works__image
+                    img(src="images/how-it-works-3.jpg")
+                  .how-it-works__desc
+                    span 03
+                    | Играйте
+                .how-it-works__hidden
+                    span В каждом квесте есть главная игровая цель: спастись от эпидемии смертельного вируса, вспомнить своё имя или помочь инопланетной девочке вернуться домой. Достичь цели можно разными способами, и несколько раз за игру вам придётся сделать судьбоносный выбор. <br> От принятых вашей командой решений зависит концовка игры.
+              //col
+              .col.col--1-4.col--640--desktop
+                .how-it-works__visible
+                  .how-it-works__desc
+                    span 04
+                    | Раскройте один из финалов игры
+                  .how-it-works__image
+                    img(src="images/how-it-works-4.jpg")
+                .how-it-works__hidden
+                  span В каждом квесте есть главная игровая цель: спастись от эпидемии смертельного вируса, вспомнить своё имя или помочь инопланетной девочке вернуться домой. Достичь цели можно разными способами, и несколько раз за игру вам придётся сделать судьбоносный выбор. <br> От принятых вашей командой решений зависит концовка игры.
+            .row.mt40.mt80--desktop.mt20--mobile
+              .col.col--full.text-center
+                a(href="#").btn.btn--primary.btn--min-width пройти тюториал
+
+        //FAQ CONTENT
+        .faq.faq--inner
+          .container
+            .row
+              .col.col--full
+                .faq__section Общие вопросы
+                .faq__item.active
+                  .faq__question Что такое квест?
+                  .faq__answer.active Городской квест — это история, сюжет которой вы выбираете сами. Помимо обычных вопросов и перемещений по городу, вы встретите несколько сюжетных поворотов с разными вариантами развития. У каждого квеста — от 4 до 16 вариантов финала.
+                .faq__item.active
+                  .faq__question Что нужно для участия в квесте?
+                  .faq__answer Вам понадобится смартфон или планшет с доступом в Интернет.
+                .faq__item.active
+                  .faq__question Нужно ли бронировать время?
+                  .faq__answer Городской квест — это история, сюжет которой вы выбираете сами. Помимо обычных вопросов и перемещений по городу, вы встретите несколько сюжетных поворотов с разными вариантами развития. У каждого квеста — от 4 до 16 вариантов финала.
+                .faq__item.active
+                  .faq__question Сколько человек может быть в команде?
+                  .faq__answer Поскольку вся команда играет с одного устройства, мы сочли, что максимальное удобное количество человек — 5. <br> Но если вы приведёте кого-то ещё, мы вам ничего не запретим :)
+
+                .faq__section Про квесты на две команды
+                .faq__item.active
+                  .faq__question Что такое квест?
+                  .faq__answer.active Городской квест — это история, сюжет которой вы выбираете сами. Помимо обычных вопросов и перемещений по городу, вы встретите несколько сюжетных поворотов с разными вариантами развития. У каждого квеста — от 4 до 16 вариантов финала.
+                .faq__item.active
+                  .faq__question Что нужно для участия в квесте?
+                  .faq__answer Вам понадобится смартфон или планшет с доступом в Интернет.
+
+
+
+        // QUESTION
+        .question
+          .container
+            .row.row--jcc
+              .col.col--4-6.col--full--desktop
+                .question__title Что-то до сих пор осталось непонятным? <br> Задайте свой вопрос!
+                form(action="").question__form
+                .row.row--mobile
+                  .col.col--3-6
+                    textarea.ui-input(placeholder="ВАШ ВОПРОС" rows="7")
+
+                  .col.col--3-6
+                    input(type="text" placeholder="Ваше имя").ui-input
+                    input(type="email" placeholder="Email").ui-input
+                    a(href="#").btn.btn--primary.btn--block.btn--no-skew-hover ОТПРАВИТЬ
+
+      include shared/footer.pug

@@ -37,6 +37,15 @@
       display: none
   &--mainpage
     background-image: url('../images/heroGorodok.png')
+  &--bonus, &--quest
+    background-image: url('../images/heroBonus.png')
+    height: auto
+    min-height: auto
+    max-height: 620px
+    &::after
+      background: color(black a(15%))
+    &::before
+      display: none
   &--big-game
     background-image: url('../images/heroMainpage.png')
     height: auto
@@ -70,7 +79,12 @@
         width: 100%
       .hero__desc
         width: 100%
-
+    &--quest
+      justify-content: flex-start
+      padding-top: 220px
+      height: auto
+      min-height: 620px
+      max-height: 620px
     .ico-down
       position: absolute
       bottom: 30px
@@ -108,6 +122,39 @@
     position: relative
     z-index: 2
     margin-top: 5vh
+
+  &__quest-types
+    position: relative
+    z-index: 2
+    font-size: 22px
+    color: white
+    margin-top: 5px
+    span
+      margin-right: 10px
+      margin-left: -7px
+    .ico
+      transform: scale(.5)
+      filter: contrast(100)
+      margin-right: 5px
+  &__quest-teams
+    position: relative
+    z-index: 2
+    margin-top: 10px
+    border: 1px solid white
+    border-radius: 6px
+    font-size: 20px
+    text-transform: uppercase
+    line-height: 1
+    span
+      display: inline-block
+      padding: 5px 10px
+      cursor: pointer
+      &.selected
+        background: white
+        color: $fontColor
+
+
+
 
 // ICON LIST
 .icon-list
@@ -193,10 +240,19 @@
   margin-bottom: 15px
   @media($tablet)
     margin-top: 30px
+  &.mt50
+    margin-top: 50px
+
   &__card
     position: relative
     margin-bottom: 25px
     overflow: hidden
+    &--huge
+      .game-list__card__image
+        &:hover
+          img
+            transform: scale(1.1)
+
     &__chars
       position: absolute
       top: 0
@@ -218,6 +274,17 @@
       span
         flex: 1 0 auto
         margin-right: 5px
+    &__promo
+      position: absolute
+      top: 40px
+      left: 0
+      z-index: 3
+      color: white
+      padding: 7px 13px
+      font-family: 'Neo-Light'
+      text-transform: uppercase
+      color: $fontColor
+      background: #f7c25b
     &__image
       font-size: 0
       cursor: pointer
@@ -305,6 +372,8 @@
     margin-top: 50px
     padding-top: 30px
     padding-bottom: 20px
+  &--no-bg
+    background: #fefefe
 
   .col--1-4
     overflow: hidden
@@ -821,6 +890,8 @@
   @media($mobile)
     padding-top: 20px
     padding-bottom: 30px
+  &--no-bg
+    background: #fefefe
   &__title
     text-align: center
     font-family: 'Neo-Light'

@@ -73,7 +73,7 @@
                   </div>
                 </div>
               </div>
-              <div class="col col--2-6">
+              <div class="col col--2-6 no-pad-l">
                 <form class="form-buy" action="#">
                   <div class="form-buy__date">
                     <div class="form-buy__date__datetime">21 сентября</div>
@@ -83,7 +83,32 @@
                     <div class="form-buy__from-to__item"><span>Старт</span> м. чкаловская</div><i class="ico ico-arrow-spacer"></i>
                     <div class="form-buy__from-to__item"><span>Финиш</span> м. чкаловская</div>
                   </div>
+                  <div class="form-buy__selector"><span>Выберите время старта:</span>
+                    <div class="ui-group">
+                      <div class="ui-checkbox">
+                        <input type="checkbox" name="startDate" id="startDate_1">
+                        <label for="startDate_1">11:00-13:00</label>
+                      </div>
+                      <div class="ui-checkbox">
+                        <input type="checkbox" name="startDate" id="startDate_2">
+                        <label for="startDate_2">13:00-15:00</label>
+                      </div>
+                      <div class="ui-checkbox">
+                        <input type="checkbox" name="startDate" id="startDate_3">
+                        <label for="startDate_3">15:00-18:00</label>
+                      </div>
+                    </div>
+                  </div>
+                  <input class="ui-input" type="text" placeholder="НАЗВАНИЕ КОМАНДЫ">
+                  <input class="ui-input" type="email" placeholder="E-MAIL"><span class="form-buy__team-input">В моей команде
+                    <input class="ui-input ui-input--short" type="text" placeholder="?">человек</span>
+                  <div class="form-buy__promo">
+                    <input class="ui-input ui-input--bottom-dashed" type="text" placeholder="ВВЕДИТЕ ПРОМОКОД"><i class="ico ico-info-tooltip tooltip tooltip--left">
+                      <div class="tooltip__content">Какой то контент тултипа</div></i>
+                  </div>
+                  <div class="form-buy__price">1400 <span>Р</spam></div>
                 </form>
+                <div class="text-center mt20"><a class="btn btn--primary" href="#" id="submitFormAbove">Купить</a></div>
               </div>
             </div>
           </div>
@@ -95,7 +120,7 @@
             <div class="row row--condenced row--wrap--desktop row--jcc--desktop mt30">
               <div class="col col--1-4 col--640--desktop">
                 <div class="how-it-works__visible">
-                  <div class="how-it-works__image"><img src="images/how-it-works-1@2x.png"></div>
+                  <div class="how-it-works__image"><img src="images/how-it-works-1.jpg"></div>
                   <div class="how-it-works__desc"><span>01</span>Выберите игру по вкусу</div>
                 </div>
                 <div class="how-it-works__hidden"><span>В каждом квесте есть главная игровая цель: спастись от эпидемии смертельного вируса, вспомнить своё имя или помочь инопланетной девочке вернуться домой. Достичь цели можно разными способами, и несколько раз за игру вам придётся сделать судьбоносный выбор. <br> От принятых вашей командой решений зависит концовка игры.</span></div>
@@ -104,14 +129,14 @@
               <div class="col col--1-4 col--640--desktop">
                 <div class="how-it-works__visible">
                   <div class="how-it-works__desc"><span>02</span>Приезжайте на место старта <br> и сразу начинайте игру</div>
-                  <div class="how-it-works__image"><img src="images/how-it-works-2@2x.png"></div>
+                  <div class="how-it-works__image"><img src="images/how-it-works-2.jpg"></div>
                 </div>
                 <div class="how-it-works__hidden"><span>В каждом квесте есть главная игровая цель: спастись от эпидемии смертельного вируса, вспомнить своё имя или помочь инопланетной девочке вернуться домой. Достичь цели можно разными способами, и несколько раз за игру вам придётся сделать судьбоносный выбор. <br> От принятых вашей командой решений зависит концовка игры.</span></div>
               </div>
               <!--col-->
               <div class="col col--1-4 col--640--desktop">
                 <div class="how-it-works__visible">
-                  <div class="how-it-works__image"><img src="images/how-it-works-3@2x.png"></div>
+                  <div class="how-it-works__image"><img src="images/how-it-works-3.jpg"></div>
                   <div class="how-it-works__desc"><span>03</span>Играйте</div>
                 </div>
                 <div class="how-it-works__hidden"><span>В каждом квесте есть главная игровая цель: спастись от эпидемии смертельного вируса, вспомнить своё имя или помочь инопланетной девочке вернуться домой. Достичь цели можно разными способами, и несколько раз за игру вам придётся сделать судьбоносный выбор. <br> От принятых вашей командой решений зависит концовка игры.</span></div>
@@ -120,7 +145,7 @@
               <div class="col col--1-4 col--640--desktop">
                 <div class="how-it-works__visible">
                   <div class="how-it-works__desc"><span>04</span>Раскройте один из финалов игры</div>
-                  <div class="how-it-works__image"><img src="images/how-it-works-1@2x.png"></div>
+                  <div class="how-it-works__image"><img src="images/how-it-works-4.jpg"></div>
                 </div>
                 <div class="how-it-works__hidden"><span>В каждом квесте есть главная игровая цель: спастись от эпидемии смертельного вируса, вспомнить своё имя или помочь инопланетной девочке вернуться домой. Достичь цели можно разными способами, и несколько раз за игру вам придётся сделать судьбоносный выбор. <br> От принятых вашей командой решений зависит концовка игры.</span></div>
               </div>
@@ -128,6 +153,37 @@
             <div class="row mt40 mt80--desktop mt20--mobile">
               <div class="col col--full text-center">
                 <div class="btn-group"><a class="btn btn--primary btn--min-width" href="#">узнать больше</a><a class="btn btn--primary btn--min-width" href="#">пройти тюториал</a><a class="btn btn--primary btn--min-width" href="#">выбрать игру</a></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- FAQ-->
+        <div class="faq">
+          <div class="container">
+            <div class="row">
+              <div class="col col--4-6 col--auto--desktop col--grow--desktop offset--1-6 offset--10--desktop">
+                <div class="row">
+                  <div class="col col--1-6">
+                    <div class="faq__question-box"><span>?</span></div>
+                  </div>
+                  <div class="col col--5-6">
+                    <div class="faq__item active">
+                      <div class="faq__question">Чем большая игра отличается от обычной?</div>
+                      <div class="faq__answer active">Игра происходит на специальном сайте, поэтому вам понадобится смартфон или планшет с подключённым мобильным интернетом. На экране вы увидите задания, реплики персонажей и свой игровой прогресс. Перемещайтесь по городу и продвигайтесь по сюжету. На случай сложностей в квесте предусмотрены подсказки. <br> Время на прохождение не ограничено: при желании можно прерваться на кофе или даже продолжить в другой день.</div>
+                    </div>
+                    <div class="faq__item">
+                      <div class="faq__question">Сколько может быть игроков?</div>
+                      <div class="faq__answer">Игра происходит на специальном сайте, поэтому вам понадобится смартфон или планшет с подключённым мобильным интернетом. На экране вы увидите задания, реплики персонажей и свой игровой прогресс. Перемещайтесь по городу и продвигайтесь по сюжету. На случай сложностей в квесте предусмотрены подсказки. <br> Время на прохождение не ограничено: при желании можно прерваться на кофе или даже продолжить в другой день.</div>
+                    </div>
+                    <div class="faq__item">
+                      <div class="faq__question">А что если мы глупые вороны?</div>
+                      <div class="faq__answer">Игра происходит на специальном сайте, поэтому вам понадобится смартфон или планшет с подключённым мобильным интернетом. На экране вы увидите задания, реплики персонажей и свой игровой прогресс. Перемещайтесь по городу и продвигайтесь по сюжету. На случай сложностей в квесте предусмотрены подсказки. <br> Время на прохождение не ограничено: при желании можно прерваться на кофе или даже продолжить в другой день.</div>
+                    </div>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col col--full text-center mt30"><a class="btn btn--primary" href="#">ЕЩЁ ВОПРОСЫ</a></div>
+                </div>
               </div>
             </div>
           </div>

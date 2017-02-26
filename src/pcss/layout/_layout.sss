@@ -49,8 +49,9 @@ body, html
   position: relative
   display: flex
   flex-direction: column
+  min-height: 100vh
   &__content
-    flex: 1
+    flex-grow: 1
 
 .container
   max-width: 1000px
@@ -174,3 +175,12 @@ body, html
     &--10--desktop
       margin-left: 5%
       margin-right: 5%
+
+.no-pad
+  padding: 0
+  
+.no-pad-l
+  padding-left: 0
+
+.no-pad-r
+  padding-right: 0

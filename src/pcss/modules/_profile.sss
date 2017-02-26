@@ -1,0 +1,76 @@
+// PROFILE
+.profile
+  min-height: 100vh
+  background: url('../images/profileBg.png') no-repeat center
+  background-size: cover
+  padding-top: 125px
+  &--no-bg
+    background: #fefefe
+    padding-bottom: 50px
+
+  &__scope
+    display: flex
+    background: #ffffff
+    padding: 10px 15px
+    &__left
+      text-align: center
+      flex-basis: 50%
+      padding-right: 10px
+    &__right
+      flex-basis: 50%
+      padding-left: 10px
+      padding-top: 20px
+      .btn
+        font-size: 15px
+        margin-bottom: 10px
+        &.active
+          background-color: #f7c25b
+          border-color: #f7c25b
+    &__image
+      display: inline-block
+      size: 85px
+      border-radius: 50%
+      overflow: hidden
+      position: relative
+      img
+        max-width: 100%
+        position: absolute
+        top: 50%
+        left: 50%
+        transform: translate(-50%, -50%)
+    &__name
+      font-size: 20px
+      color: #706350
+      margin-top: 5px
+    &__rate
+      font-size: 20px
+      color: #f7c25b
+      .ico
+        vertical-align: top
+    &__next-left
+      font-size: 16px
+      color: #baa588
+
+
+  &__game
+    &__person
+      background-size: contain !important
+      &:hover
+        box-shadow: 0px 0px 30px color($colorYellow a(50%))
+      &--cat
+        background: url('../images/profileGameCat@2x.png') no-repeat center
+        size: 114px 111px
+        left: 15%
+        margin-top: 30vh
+      &--flower
+        background: url('../images/profileGameFlower@2x.png') no-repeat center
+        size: 83px 114px
+        left: 65%
+        margin-top: -35vh
+
+
+  &__heading
+    font-family: 'Neo-Light'
+    font-size: 32px
+    margin-top: 30px
+    margin-bottom: 15px

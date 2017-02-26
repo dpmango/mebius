@@ -1,0 +1,170 @@
+doctype html
+html
+  include shared/head.pug
+
+  body
+    .page
+      include shared/header.pug
+      .page__content
+        // Profile
+        .profile.profile--no-bg
+          .container
+            .row
+              .col.col--2-6.no-pad-r
+                .profile__scope
+                  .profile__scope__left
+                    .profile__scope__image
+                      img(src="images/profilePic.png")
+                    .profile__scope__name Каролина
+                    .profile__scope__rate
+                      span Накоплено 12
+                      i.ico.ico-pulp
+                    .profile__scope__next-left Ещё 11 до бесплатного квеста!
+                  .profile__scope__right
+                    a(href='#').btn.btn--primary.btn--darker.btn--block Профиль
+                    a(href='#').btn.btn--primary.btn--darker.btn--block.active Мои игры
+                    a(href='#').btn.btn--primary.btn--block Тюториал
+
+              .col.col--4-6
+                .profile__heading Мои самые классные игры
+                // card
+                .game-list__card.game-list__card--huge
+                  .game-list__card__image
+                    img(src="images/heroMainpage.png")
+                  .game-list__card__fold
+                    .game-list__card__name БОЛЬШАЯ ИГРА: Привет с Бетельгейзе
+                    .game-list__card__cta
+                      .game-list__card__cta-left
+                        i.ico.ico-location
+                        span м. полянка
+                      .game-list__card__cta-right
+                        span 21 сентября
+                          span.ruble 11:00-13:00
+                .row
+                  // game card
+                  .col.col--2-4
+                    .game-list__card
+                      .game-list__card__chars
+                        span короткий
+                        span сложный
+                        span автоквест
+                        span для всей семьи
+                      .game-list__card__image
+                        img(src="images/game-list-img.png")
+                      .game-list__card__fold
+                        .game-list__card__name Привет с Бетельгейзе
+                        .game-list__card__cta
+                          .game-list__card__cta-left
+                            i.ico.ico-location
+                            span м. полянка
+                          .game-list__card__cta-right
+                            span 900
+                              span.ruble Р
+
+                  // game card
+                  .col.col--2-4
+                    .game-list__card
+                      .game-list__card__chars
+                        span короткий
+                        span сложный
+                        span автоквест
+                        span для всей семьи
+                      .game-list__card__image
+                        img(src="images/game-list-img.png")
+                      .game-list__card__fold
+                        .game-list__card__name Привет с Бетельгейзе
+                        .game-list__card__cta
+                          .game-list__card__cta-left
+                            i.ico.ico-location
+                            span м. полянка
+                          .game-list__card__cta-right
+                            span 900
+                              span.ruble Р
+
+                // next line
+                .profile__heading Еще могут понравиться
+                .row
+                  // game card
+                  .col.col--2-4
+                    .game-list__card
+                      .game-list__card__chars
+                        span короткий
+                        span сложный
+                        span автоквест
+                        span для всей семьи
+                      .game-list__card__image
+                        img(src="images/game-list-img.png")
+                      .game-list__card__fold
+                        .game-list__card__name Привет с Бетельгейзе
+                        .game-list__card__cta
+                          .game-list__card__cta-left
+                            i.ico.ico-location
+                            span м. полянка
+                          .game-list__card__cta-right
+                            span 900
+                              span.ruble Р
+
+                  // game card
+                  .col.col--2-4
+                    .game-list__card
+                      .game-list__card__chars
+                        span короткий
+                        span сложный
+                        span автоквест
+                        span для всей семьи
+                      .game-list__card__image
+                        img(src="images/game-list-img.png")
+                      .game-list__card__fold
+                        .game-list__card__name Привет с Бетельгейзе
+                        .game-list__card__cta
+                          .game-list__card__cta-left
+                            i.ico.ico-location
+                            span м. полянка
+                          .game-list__card__cta-right
+                            span 900
+                              span.ruble Р
+
+                // next line
+                .profile__heading Уже прошёл
+                .row
+                  // game card
+                  .col.col--2-4
+                    .game-list__card
+                      .game-list__card__chars
+                        span короткий
+                        span сложный
+                        span автоквест
+                        span для всей семьи
+                      .game-list__card__image
+                        img(src="images/game-list-img.png")
+                      .game-list__card__fold
+                        .game-list__card__name Привет с Бетельгейзе
+                        .game-list__card__cta
+                          .game-list__card__cta-left
+                            i.ico.ico-location
+                            span м. полянка
+                          .game-list__card__cta-right
+                            span 900
+                              span.ruble Р
+
+                  // game card
+                  .col.col--2-4
+                    .game-list__card
+                      .game-list__card__chars
+                        span короткий
+                        span сложный
+                        span автоквест
+                        span для всей семьи
+                      .game-list__card__image
+                        img(src="images/game-list-img.png")
+                      .game-list__card__fold
+                        .game-list__card__name Привет с Бетельгейзе
+                        .game-list__card__cta
+                          .game-list__card__cta-left
+                            i.ico.ico-location
+                            span м. полянка
+                          .game-list__card__cta-right
+                            span 900
+                              span.ruble Р
+
+      include shared/footer.pug

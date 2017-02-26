@@ -60,9 +60,10 @@
     .links{
        background-color: white;
        border-radius: 10px;
-       margin: 5vh 3vw;
+       margin: 5vh 2.5vw;
        padding: 5vh 3vw;
        width: 45vw;
+       flex: 1 1 40%
        float: left;
        color: rgba(0,0,0,.7);
       }
@@ -135,17 +136,17 @@
     .footer a{
       color: white;
     }
+    .flexWrap{
+      -webkit-flex-wrap: wrap;
+          -ms-flex-wrap: wrap;
+              flex-wrap: wrap;
+    }
     @media(max-width: 700px){
       h1{
         font-size: 1.75em;
       }
       .container{
         display: block;
-      }
-      .flexWrap{
-        -webkit-flex-wrap: wrap;
-            -ms-flex-wrap: wrap;
-                flex-wrap: wrap;
       }
       .links{
         width: 94vw;
@@ -169,16 +170,30 @@
         <div class="links">
           <h2>Core</h2>
           <ul class="">
-            <li><a href="mainpage.html" target="_blank">Mainpage <span>(Главная)</span></a></li>
+            <li><a href="mainpage.html" target="_blank">Homepage <span>(Главная)</span></a></li>
             <li><a href="games.html" target="_blank">Games <span>(Праздники - игры)</span></a></li>
             <li><a href="big-games.html" target="_blank">Big Games <span>(Большие игры)</span></a></li>
-
+            <li><a href="blog.html" target="_blank">Blog <span>(Блог)</span></a></li>
+            <li><a href="testimonials.html" target="_blank">Testimonials <span>(Отзывы)</span></a></li>
+            <li><a href="contact.html" target="_blank">Contacts <span>(Контакты)</span></a></li>
           </ul>
         </div>
         <div class="links">
-          <h2>Static pages</h2>
+          <h2>Similar</h2>
           <ul class="">
-
+            <li><a href="promos.html" target="_blank">Promos <span>(Акции)</span></a></li>
+            <li><a href="all-games.html" target="_blank">All games <span>(Все игры)</span></a></li>
+            <li><a href="bonus.html" target="_blank">Bonus <span>(Бонус)</span></a></li>
+            <li><a href="quest.html" target="_blank">Quest <span>(Страница квеста)</span></a></li>
+            <li><a href="faq.html" target="_blank">FAQ <span>(Вопрос-ответ)</span></a></li>
+          </ul>
+        </div>
+        <div class="links">
+          <h2>Profile</h2>
+          <ul class="">
+            <li><a href="cabinet.html" target="_blank">Profile intro <span>(Личный кабинет)</span></a></li>
+            <li><a href="cabinet-games.html" target="_blank">Profile games <span>(Мои игры)</span></a></li>
+            <li><a href="cabinet-edit.html" target="_blank">Edit profile <span>(Редактировать профиль)</span></a></li>
           </ul>
         </div>
       </div>

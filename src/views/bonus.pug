@@ -1,0 +1,60 @@
+doctype html
+html
+  include shared/head.pug
+
+  body
+    .page
+      include shared/header.pug
+      .page__content
+        // HERO
+        .hero.hero--bonus
+          .container
+            .row
+              .col.col--full
+                .hero__content-wrap.hero__content-wrap--centrify
+                  .hero__title Не знаете, что подарить? <br> Дарите впечатления!
+
+        // BIG GAME
+        .big-game
+          .container
+            .row
+              .col.col--4-6.col--pad-r-7
+                p Сегодня вы нашли в кустах странный мобильный телефон с ярко горящими красными буквами: SOS! <br> Остаться в стороне никак нельзя: ситуация требует немедленного вмешательства. Маленькая девочка отстала от инопланетной экскурсионной группы. Её шлюпка разбилась где-то в Москве, а сама девочка ужасно напугана и хочет как можно скорее попасть домой...
+                .quote
+                  .quote__image
+                    img(src="images/benefit-girl@2x.png")
+                  .quote__text
+                    .quote__text__title Важно!
+                    p При заказе до 14:00 сертификат доставляется в тот же день, при более позднем заказе - на следующий. <br> Доставка в пределах МКАД бесплатная.
+
+              .col.col--2-6.no-pad-l
+                form(action='#').form-buy
+
+                  input.ui-input(type="text" placeholder="ВАШЕ ИМЯ")
+                  input.ui-input(type="email" placeholder="E-MAIL")
+
+                  input.ui-input(type="tel" placeholder="ТЕЛЕФОН")
+                  input.ui-input(type="email" placeholder="АДРЕС ДОСТАВКИ")
+
+                  .form-buy__price 1400 <span>Р</spam>
+
+                .text-center.mt20
+                  a(href="#").btn.btn--primary#submitFormAbove Купить
+
+        // QUESTION
+        .question.mt90
+          .container
+            .row.row--jcc
+              .col.col--4-6.col--full--desktop
+                .question__title Что-то до сих пор осталось непонятным? <br> Задайте свой вопрос!
+                form(action="").question__form
+                .row.row--mobile
+                  .col.col--3-6
+                    textarea.ui-input(placeholder="ВАШ ВОПРОС" rows="7")
+
+                  .col.col--3-6
+                    input(type="text" placeholder="Ваше имя").ui-input
+                    input(type="email" placeholder="Email").ui-input
+                    a(href="#").btn.btn--primary.btn--block.btn--no-skew-hover ОТПРАВИТЬ
+
+      include shared/footer.pug

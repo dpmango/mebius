@@ -1,6 +1,6 @@
 // UI
 
-.ui-input
+.ui-input, .ui-input input
   display: block
   width: 100%
   background: white
@@ -19,6 +19,23 @@
   @media($mobile)
     padding: 6px 12px
     font-size: 18px
+  &--short
+    display: inline-block
+    width: 36px
+    margin-left: 10px
+    margin-right: 10px
+  &--bottom-dashed
+    border: none
+    border-bottom: 1px solid #e1d1b4
+  &.has-error
+    border-color: tomato
+    box-shadow: 0 0 0 2px tomato
+  &--labeled
+    border: none
+    padding: 0
+    margin-bottom: 20px
+
+
 
   &:focus
     outline: none
@@ -28,6 +45,90 @@
   ::placeholder
     color: #8e8e8e
 
+  label
+    display: inline-block
+    font-size: 18px
+    color: #706350
+    text-transform: none
+    padding-left: 12px
+    margin-bottom: 5px
+    span
+      color: #f7c25b
+      font-size: 30px
+      vertical-align: middle
+
 @media($mobile)
   textarea
     max-height: 100px
+
+.ui-checkbox
+  position: relative
+  font-size: 18px
+  text-transform: uppercase
+  margin-bottom: 5px
+  input
+    position: absolute
+    top: 0
+    left: 0
+    opacity: 0
+    width: 0.1px
+    height: 0.1px
+  label
+    padding-left: 25px
+    cursor: pointer
+    &::before
+      display: inline-block
+      content: ' '
+      border: 1px solid #e8d2b4
+      size: 16px
+      background: transparent
+      vertical-align: middle
+      position: absolute
+      top: 50%
+      left: 0
+      transform: translateY(-50%)
+      transition: all .3s ease
+  input:checked
+    + label
+      &::before
+        border-color: #f7c25b
+        background-color: #f7c25b
+
+// UI UTILITIES
+.form-required-text
+  font-size: 18px
+  color: #baa588
+  span
+    color: #f7c25b
+    font-size: 30px
+    vertical-align: -8px
+
+// TOOLTIPS
+.tooltip
+  position: relative
+  cursor: pointer
+  &:hover
+    .tooltip__content
+      opacity: 1
+      pointer-events: all
+  &__content
+    position: absolute
+    opacity: 0
+    pointer-events: none
+    border-radius: 6px
+    background: color(black a(80%))
+    color: white
+    font-size: 16px
+    padding: 5px 10px
+    min-width: 150px
+    text-align: center
+    transition: all .3s ease-in
+  &--top
+    .tooltip__content
+      bottom: 20px
+      left: 50%
+      transform: translateX(-50%)
+  &--left
+    .tooltip__content
+      bottom: -5px
+      right: 25px

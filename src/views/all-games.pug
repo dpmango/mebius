@@ -1,0 +1,233 @@
+doctype html
+html
+  include shared/head.pug
+
+  body
+    .page
+      include shared/header.pug
+      .page__content
+        // INTRO
+        .intro
+          .container
+            .row.row--wrap--desktop
+              .col.col--full
+                .intro__title У нас есть игры на любой вкус и цвет!
+                .intro__text Для большого числа участников мы предлагаем проведение мероприятия с нашим игротехником. Игротехник - он же ведущий квеста - встречает участников в начале игры, проводит разминку, объясняет правила и делит на команды. В случае затруднений игротехник готов прийти на помощь, а в конце проводит награждение участников. <br> Ведущие квестов - опытные и проверенные ребята, которые сумеют расшевелить даже самого незаинтересованного участника! Все игротехники проходят жёсткий отбор и обучение по каждой новой игре.
+
+        // ICON LIST
+        .icon-list.mt40--mobile
+          .container
+            .row
+              .col.col--full
+                .icon-list__wrapper
+                  a(href="#").icon-list__item
+                    i.ico.ico-list-1
+                    .icon-list__item__name для всей семьи
+                    .icon-list__item__flip море эмоций от мала до велика
+                  //next
+                  a(href="#").icon-list__item
+                    i.ico.ico-list-1
+                    .icon-list__item__name простой
+                    .icon-list__item__flip море эмоций от мала до велика
+                  //next
+                  a(href="#").icon-list__item
+                    i.ico.ico-list-1
+                    .icon-list__item__name средний
+                    .icon-list__item__flip море эмоций от мала до велика
+                  //next
+                  a(href="#").icon-list__item
+                    i.ico.ico-list-1
+                    .icon-list__item__name сложный
+                    .icon-list__item__flip море эмоций от мала до велика
+                  //next
+                  a(href="#").icon-list__item
+                    i.ico.ico-list-1
+                    .icon-list__item__name короткий
+                    .icon-list__item__flip море эмоций от мала до велика
+                  //next
+                  a(href="#").icon-list__item
+                    i.ico.ico-list-1
+                    .icon-list__item__name длинный
+                    .icon-list__item__flip море эмоций от мала до велика
+                  //next
+                  a(href="#").icon-list__item
+                    i.ico.ico-list-1
+                    .icon-list__item__name для 2х команд
+                    .icon-list__item__flip море эмоций от мала до велика
+                  //next
+                  a(href="#").icon-list__item
+                    i.ico.ico-list-1
+                    .icon-list__item__name автоквест
+                    .icon-list__item__flip море эмоций от мала до велика
+
+        // GAME LIST
+        .game-list
+          .container
+            .row.row--wrap.row--jcc--desktop
+              .col.col--2-6.col--360--desktop
+                .game-list__card
+                  .game-list__card__chars
+                    span короткий
+                    span сложный
+                    span автоквест
+                    span для всей семьи
+                  .game-list__card__image
+                    img(src="images/game-list-img.png")
+                  .game-list__card__fold
+                    .game-list__card__name Привет с Бетельгейзе
+                    .game-list__card__cta
+                      .game-list__card__cta-left
+                        i.ico.ico-location
+                        span м. полянка
+                      .game-list__card__cta-right
+                        span 900
+                          span.ruble Р
+              // next card
+              .col.col--2-6.col--360--desktop
+                .game-list__card
+                  .game-list__card__chars
+                    span короткий
+                    span сложный
+                    span автоквест
+                    span для всей семьи
+                  .game-list__card__image
+                    img(src="images/game-list-img.png")
+                  .game-list__card__fold
+                    .game-list__card__name Привет с Бетельгейзе
+                    .game-list__card__cta
+                      .game-list__card__cta-left
+                        i.ico.ico-location
+                        span м. полянка
+                      .game-list__card__cta-right
+                        span 900
+                          span.ruble Р
+              // next card
+              .col.col--2-6.col--360--desktop
+                .game-list__card
+                  .game-list__card__chars
+                    span короткий
+                    span сложный
+                    span автоквест
+                    span для всей семьи
+                  .game-list__card__image
+                    img(src="images/game-list-img.png")
+                  .game-list__card__fold
+                    .game-list__card__name Привет с Бетельгейзе
+                    .game-list__card__cta
+                      .game-list__card__cta-left
+                        i.ico.ico-location
+                        span м. полянка
+                      .game-list__card__cta-right
+                        span 900
+                          span.ruble Р
+              // next card
+              .col.col--2-6.col--360--desktop
+                .game-list__card
+                  .game-list__card__chars
+                    span короткий
+                    span сложный
+                    span автоквест
+                    span для всей семьи
+                  .game-list__card__image
+                    img(src="images/game-list-img.png")
+                  .game-list__card__fold
+                    .game-list__card__name Привет с Бетельгейзе
+                    .game-list__card__cta
+                      .game-list__card__cta-left
+                        i.ico.ico-location
+                        span м. полянка
+                      .game-list__card__cta-right
+                        span 900
+                          span.ruble Р
+              // next card
+              .col.col--2-6.hidden-desktop-down
+                .game-list__card
+                  .game-list__card__chars
+                    span короткий
+                    span сложный
+                    span автоквест
+                    span для всей семьи
+                  .game-list__card__image
+                    img(src="images/game-list-img.png")
+                  .game-list__card__fold
+                    .game-list__card__name Привет с Бетельгейзе
+                    .game-list__card__cta
+                      .game-list__card__cta-left
+                        i.ico.ico-location
+                        span м. полянка
+                      .game-list__card__cta-right
+                        span 900
+                          span.ruble Р
+            .row.mt20.mt50--desktop.mt20--mobile
+              .col.col--full.text-center
+                a(href="#").btn.btn--primary.btn--min-width все игры
+
+        // HOW IT WORKS
+        .how-it-works
+          .container
+            .section-name.section-name--centrify Как это работает?
+            .row.row--condenced.row--wrap--desktop.row--jcc--desktop.mt30
+              .col.col--1-4.col--640--desktop
+                .how-it-works__visible
+                  .how-it-works__image
+                    img(src="images/how-it-works-1.jpg")
+                  .how-it-works__desc
+                    span 01
+                    | Выберите игру по вкусу
+                .how-it-works__hidden
+                  span В каждом квесте есть главная игровая цель: спастись от эпидемии смертельного вируса, вспомнить своё имя или помочь инопланетной девочке вернуться домой. Достичь цели можно разными способами, и несколько раз за игру вам придётся сделать судьбоносный выбор. <br> От принятых вашей командой решений зависит концовка игры.
+              //col
+              .col.col--1-4.col--640--desktop
+                .how-it-works__visible
+                  .how-it-works__desc
+                    span 02
+                    | Приезжайте на место старта <br> и сразу начинайте игру
+                  .how-it-works__image
+                    img(src="images/how-it-works-2.jpg")
+                .how-it-works__hidden
+                    span В каждом квесте есть главная игровая цель: спастись от эпидемии смертельного вируса, вспомнить своё имя или помочь инопланетной девочке вернуться домой. Достичь цели можно разными способами, и несколько раз за игру вам придётся сделать судьбоносный выбор. <br> От принятых вашей командой решений зависит концовка игры.
+              //col
+              .col.col--1-4.col--640--desktop
+                .how-it-works__visible
+                  .how-it-works__image
+                    img(src="images/how-it-works-3.jpg")
+                  .how-it-works__desc
+                    span 03
+                    | Играйте
+                .how-it-works__hidden
+                    span В каждом квесте есть главная игровая цель: спастись от эпидемии смертельного вируса, вспомнить своё имя или помочь инопланетной девочке вернуться домой. Достичь цели можно разными способами, и несколько раз за игру вам придётся сделать судьбоносный выбор. <br> От принятых вашей командой решений зависит концовка игры.
+              //col
+              .col.col--1-4.col--640--desktop
+                .how-it-works__visible
+                  .how-it-works__desc
+                    span 04
+                    | Раскройте один из финалов игры
+                  .how-it-works__image
+                    img(src="images/how-it-works-4.jpg")
+                .how-it-works__hidden
+                  span В каждом квесте есть главная игровая цель: спастись от эпидемии смертельного вируса, вспомнить своё имя или помочь инопланетной девочке вернуться домой. Достичь цели можно разными способами, и несколько раз за игру вам придётся сделать судьбоносный выбор. <br> От принятых вашей командой решений зависит концовка игры.
+            .row.mt40.mt80--desktop.mt20--mobile
+              .col.col--full.text-center
+                .btn-group
+                  a(href="#").btn.btn--primary.btn--min-width узнать больше
+                  a(href="#").btn.btn--primary.btn--min-width пройти тюториал
+                  a(href="#").btn.btn--primary.btn--min-width выбрать игру
+
+
+        // QUESTION
+        .question.question--no-bg
+          .container
+            .row.row--jcc
+              .col.col--4-6.col--full--desktop
+                .question__title Что-то до сих пор осталось непонятным? <br> Задайте свой вопрос!
+                form(action="").question__form
+                .row.row--mobile
+                  .col.col--3-6
+                    textarea.ui-input(placeholder="ВАШ ВОПРОС" rows="7")
+
+                  .col.col--3-6
+                    input(type="text" placeholder="Ваше имя").ui-input
+                    input(type="email" placeholder="Email").ui-input
+                    a(href="#").btn.btn--primary.btn--block.btn--no-skew-hover ОТПРАВИТЬ
+
+      include shared/footer.pug

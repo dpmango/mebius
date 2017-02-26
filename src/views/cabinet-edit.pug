@@ -1,0 +1,51 @@
+doctype html
+html
+  include shared/head.pug
+
+  body
+    .page
+      include shared/header.pug
+      .page__content
+        // Profile
+        .profile.profile--no-bg
+          .container
+            .row
+              .col.col--2-6.no-pad-r
+                .profile__scope
+                  .profile__scope__left
+                    .profile__scope__image
+                      img(src="images/profilePic.png")
+                    .profile__scope__name Каролина
+                    .profile__scope__rate
+                      span Накоплено 12
+                      i.ico.ico-pulp
+                    .profile__scope__next-left Ещё 11 до бесплатного квеста!
+                  .profile__scope__right
+                    a(href='#').btn.btn--primary.btn--darker.btn--block Профиль
+                    a(href='#').btn.btn--primary.btn--darker.btn--block.active Мои игры
+                    a(href='#').btn.btn--primary.btn--block Тюториал
+
+              .col.col--4-6
+                .profile__heading Информация о вас
+                .ui-input.ui-input--labeled
+                  label Имя
+                  input(type="text" placeholder="" value="КАРОЛИНА")
+                .ui-input.ui-input--labeled
+                  label Логин/почта
+                  input(type="text" placeholder="" value="ЛОГИН")
+                .ui-input.ui-input--labeled
+                  label Пароль
+                  input(type="text" placeholder="" value="Пароль")
+                .ui-input.ui-input--labeled
+                  label Номер телефона
+                  input(type="text" placeholder="" value="891290808877")
+                .ui-input.ui-input--labeled
+                  label День рождения <span>*</span>
+                  input(type="text" placeholder="" value="891290808877")
+
+                .form-required-text <span>*</span> это можно сделать ровно один раз, после этого поле становится неизменяемым
+
+                .mt30
+                  a(href='#').btn.btn--primary Сохранить изминения
+
+      include shared/footer.pug
