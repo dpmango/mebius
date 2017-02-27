@@ -1,19 +1,47 @@
 // INTRO
 .intro
-  margin-top: 170px
+  margin-top: 185px
   &__title
     font-family: 'Neo-Light'
     font-size: 32px
-    margin-bottom: 25px
+    margin-bottom: 30px
   &__text
     font-size: 20px
+    line-height: 1.2em
   img
     max-width: 100%
+
+@media($desktop)
+  .intro
+    margin-top: 150px
+    &__title
+      font-size: 44px
+    &__text
+      margin-top: 30px
+      font-size: 28px
+    .col--65-100
+      flex-basis: 57%
+    .col--35-100
+      flex-basis: 43%
+
+@media($tablet)
+  .intro
+    margin-top: 170px
+    &__title
+      font-size: 48px
+    &__text
+      margin-top: 45px
+      font-size: 44px
+    img
+      max-width: 80%
+      display: block
+      margin-left: auto
+      margin-right: auto
 
 
 // TABS
 .tabs
-  margin-top: 50px
+  margin-top: 45px
   &__navi
     border-bottom: 1px solid #c3b298
     ul
@@ -29,9 +57,9 @@
       line-height: 1
       text-transform: uppercase
       color: #baa588
-      margin-right: 5px
-      border-top-left-radius: 4px
-      border-top-right-radius: 4px
+      margin-right: 4px
+      border-top-left-radius: 6px
+      border-top-right-radius: 6px
       border: 1px solid #f5ebdc
       border-bottom: 1px solid #c3b298
       background: #fefefe
@@ -46,8 +74,12 @@
         background: color(#c3b298 a(15%))
 
   &__content
-    margin: 50px 0
+    margin: 20px 0 40px 0
+    display: none
+    &.active
+      display: block
     p
+      padding-top: 10px
       font-size: 22px
     .t-colored
       font-size: 24px
@@ -68,16 +100,63 @@
           font-family: 'Neo-Light'
           color: $colorYellow
 
+@media($desktop)
+  .tabs
+    &__navi
+      li
+        font-size: 26px
+        min-width: 1px
+        width: 24%
+        padding: 10px 10px 7px 10px
+    &__content
+      margin: 10px 0 40px 0
+      p
+        font-size: 30px
+      .t-colored
+        font-size: 30px
+        color: #baa588
+      .t-price
+        font-size: 30px
+        .ico
+          transform: scale(1.5)
+          margin-left: 5px
+          margin-right: 10px
+        > span
+          > span
+            font-size: 40px
+
+@media($tablet)
+  .tabs
+    &__navi
+      border-bottom: none
+      ul
+        display: flex
+        justify-content: space-between
+        flex-wrap: wrap
+      li
+        flex: 0 1 48%
+        padding-top: 25px
+        padding-bottom: 20px
+        font-size: 46px
+        margin-right: 0
+        margin-bottom: 15px
+        border: 1px solid #f5ebdc
+        border-radius: 12px
+        &.active
+          border: 1px solid #c3b298
+
+
 .list
   &--checkmark
     margin-left: 0
     padding-left: 0
+    margin-top: -5px
     font-size: 22px
     li
       display: block
       position: relative
       padding-left: 35px
-      margin-bottom: 2px
+      margin-bottom: 3px
       &::before
         position: absolute
         left: 0
@@ -87,10 +166,24 @@
         background: url('../images/sprite/list-checkmark.png') no-repeat center
         size: 21px 14px
 
+@media($desktop)
+  .list
+    &--checkmark
+      font-size: 30px
+      li
+        padding-left: 45px
+        &::before
+          size: 28px 20px
+
 
 // Quest card
 .quest-card
   margin-bottom: 20px
+  .col--2-6
+    flex-basis: 31.5%
+  .col--4-6
+    flex-basis: 68.5%
+
   &__image
     display: block
     position: relative
@@ -109,7 +202,7 @@
       img
         transform: translate(-50%, -50%) scale(1.15) rotate3d(2, 1, 3, -10deg)
   &__content
-    padding: 25px 20px 10px 20px
+    padding: 28px 20px 10px 42px
     height: 235px
     border: 1px solid #c3b298
     border-left: none
@@ -131,8 +224,85 @@
       color: #bead91
       .ico
         margin-right: 10px
+        margin-left: 5px
       span
         vertical-align: -2px
+    .btn
+      min-width: 190px
+
+@media($desktop)
+  .quest-card
+    &__image
+      height: 275px
+    &__content
+      padding: 28px 20px 10px 30px
+      height: 275px
+    &__name
+      font-size: 30px
+    &__desc
+      font-size: 26px
+      max-height: 90px
+      overflow: hidden
+      margin-top: 10px
+    &__cta
+      margin-top: 30px
+      &__price
+        font-size: 22px
+        position: relative
+        .ico
+          transform: scale(1.5)
+          position: absolute
+          top: 0
+          left: 0
+          margin-left: 8px
+        span
+          display: inline-block
+          padding-left: 40px
+          line-height: 1.3em
+      .btn
+        span
+          display: none
+
+@media($tablet)
+  .quest-card
+    flex-direction: column
+    &__image
+      height: auto
+      border-right: 1px solid #c3b298
+      height: 490px
+      img
+        width: 105%
+    &__content
+      height: auto
+      padding-left: 26px
+      padding-top: 45px
+      border-left: 1px solid #c3b298
+    &__name
+      font-size: 46px
+    &__desc
+      font-size: 44px
+      max-height: 100%
+      margin-top: 15px
+      line-height: 1.2
+    &__cta
+      flex-direction: column
+      &__price
+        font-size: 42px
+        margin-bottom: 25px
+        .ico
+          transform: scale(3)
+          margin-left: 0
+          left: 15px
+          top: 35%
+        span
+          padding-left: 75px
+      .btn
+        font-size: 38px
+        min-width: 350px
+        padding-top: 20px
+        padding-bottom: 17px
+        margin-bottom: 30px
+
 
 
 .big-game

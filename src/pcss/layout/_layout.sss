@@ -92,6 +92,9 @@ body, html
       flex-wrap: wrap
     &--end--desktop
       justify-content: flex-end
+  @media($tablet)
+    &--column--tablet
+      flex-direction: column
   @media($mobile)
     &--mobile
       flex-direction: column
@@ -124,9 +127,9 @@ body, html
   &--auto
     flex: 1 1 auto
   &--65-100
-    flex-basis: 65%
+    flex-basis: 62%
   &--35-100
-    flex-basis: 35%
+    flex-basis: 38%
   &--pad-r-7
     padding-right: 7%
 
@@ -178,9 +181,19 @@ body, html
 
 .no-pad
   padding: 0
-  
+
 .no-pad-l
   padding-left: 0
 
 .no-pad-r
   padding-right: 0
+
+.hidden--desktop
+  display: block
+  @media($desktop)
+    display: none
+
+.visible--desktop
+  display: none
+  @media($desktop)
+    display: block
