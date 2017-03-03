@@ -57,10 +57,10 @@ $(document).ready(function(){
       0 : {
         items: 1
       },
-      768 : {
+      568 : {
         items: 2
       },
-      992 : {
+      940 : {
         items: 3
       }
     }
@@ -153,7 +153,7 @@ $(document).ready(function(){
 
   // BOOTSTRAP TOOLTIPS
   $('[data-toggle="tooltip"]').tooltip()
-  
+
 
   ///////////////
   // FAKE THINGS

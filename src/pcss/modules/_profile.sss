@@ -53,8 +53,10 @@
     &__person
       position: relative
       background-size: contain !important
+      cursor: pointer
       &:hover
-        box-shadow: 0px 0px 30px color($colorYellow a(50%))
+        filter: drop-shadow(0px 0px 30px color($colorYellow a(50%)))
+
       &--cat
         background: url('../images/profileGameCat@2x.png') no-repeat center
         size: 114px 111px
@@ -77,7 +79,7 @@
     &__game
       &__person
         transform: scale(.8)
-        
+
 @media($mobile-s)
   .profile
     padding-top: 40px

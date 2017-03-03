@@ -327,6 +327,12 @@
           display: inline-block
           padding-left: 40px
           line-height: 1.3em
+      &__more
+        font-size: 26px
+        color: $colorYellow
+        text-transform: uppercase
+        @media($mobile)
+          font-size: 24px
       .btn
         span
           display: none
@@ -796,14 +802,52 @@
 // TEXT
 .blog
   opacity: 1
+  margin-bottom: 80px
+  @media($mobile)
+    margin-bottom: 40px
+  .quest-card
+    @media($mobile)
+      margin-left: 0
+      margin-right: 0
+  .quest-card__image
+    img
+      @media($desktop)
+        max-width: 200%
+        width: auto
+        height: 100%
+      @media($tablet)
+        width: 100%
+        height: auto
+  .quest-card__cta__price
+    span
+      @media($desktop)
+        padding-left: 0
+  .quest-card__cta
+    @media($tablet)
+      flex-direction: row
+
 
 .testimonials
   min-height: 100vh
   padding-top: 180px
   padding-bottom: 70px
+  @media($desktop)
+    padding-top: 140px
+  @media($tablet)
+    padding-top: 100px
+    padding-bottom: 50px
+  @media($mobile)
+    padding-top: 90px
+  @media($mobile-s)
+    padding-top: 80px
+    padding-bottom: 40px
   &__title
     font-family: 'Neo-Light'
     font-size: 32px
+    @media($tablet)
+      font-size: 25px
+    @media($mobile)
+      font-size: 20px
 
   &__card
     padding-left: 45px
@@ -858,20 +902,70 @@
       margin-top: 20px
     &__coors
       font-size: 23px
-      margin-top: 15px
+      margin-top: 12px
       a
         display: block
         margin-top: 5px
+        transition: all .4s ease
+        &:hover
+          color: $colorYellow
     &__additional
       font-size: 16px
+      margin-top: 5px
+      text-transform: uppercase
       color: #baa588
+
+@media($desktop)
+  .contact
+    padding-top: 150px
+    padding-bottom: 80px
+    &__wrapper
+      margin-left: 10%
+      margin-right: 10%
+    &__block
+      .ico
+        transform: scale(1.25)
+      &__action
+        font-size: 30px
+        margin-top: 30px
+      &__coors
+        margin-top: 15px
+        font-size: 30px
+      &__additional
+        font-size: 24px
+        margin-top: 10px
+
+@media($mobile)
+  .contact
+    padding-top: 100px
+    padding-bottom: 40px
+    &__wrapper
+      margin-left: 0
+      margin-right: 0
+    &__block
+      .ico
+        transform: scale(.8)
+      &__action
+        font-size: 20px
+        margin-top: 10px
+      &__coors
+        margin-top: 10px
+        font-size: 20px
+      &__additional
+        font-size: 16px
+        margin-top: 5px
+
+@media($mobile-s)
+  .contact
+    padding-top: 80px
+
 
 .socials-contact
   background: #f5ebdc
-  padding: 75px 0
+  padding: 80px 0 75px 0
   &__wrapper
     display: flex
-    justify-content: space-around
+    justify-content: space-between
   &__title
     font-family: 'Neo-Light'
     font-size: 24px
@@ -882,6 +976,48 @@
     text-align: center
     font-size: 23px
     color: #796954
+    transition: all .4s ease
+    &:hover
+      color: $colorYellow
+    .ico
+      transform: scale(1.2)
+      pointer-events: none
     span
       display: block
-      margin-top: 15px
+      margin-top: 20px
+
+
+@media($desktop)
+  .socials-contact
+    padding: 80px 0 85px 0
+    &__title
+      font-size: 36px
+      margin-bottom: 50px
+    &__wrapper
+      margin-left: 15%
+      margin-right: 15%
+
+    &__item
+      font-size: 30px
+      .ico
+        transform: scale(1.75)
+      span
+        margin-top: 35px
+
+@media($desktop)
+  .socials-contact
+    padding: 40px 0 40px 0
+    margin-bottom: 30px
+    &__title
+      font-size: 20px
+      margin-bottom: 30px
+    &__wrapper
+      margin-left: 5%
+      margin-right: 5%
+
+    &__item
+      font-size: 20px
+      .ico
+        transform: scale(1)
+      span
+        margin-top: 10px
