@@ -19,7 +19,7 @@ html
         .big-game
           .container
             .row
-              .col.col--4-6.col--pad-r-7
+              .col.col--4-6.col--pad-r-9
                 p Сегодня вы нашли в кустах странный мобильный телефон с ярко горящими красными буквами: SOS! <br> Остаться в стороне никак нельзя: ситуация требует немедленного вмешательства. Маленькая девочка отстала от инопланетной экскурсионной группы. Её шлюпка разбилась где-то в Москве, а сама девочка ужасно напугана и хочет как можно скорее попасть домой...
                 .quote
                   .quote__image
@@ -51,7 +51,12 @@ html
                       .ui-checkbox
                         input(type="checkbox" name="startDate" id="startDate_3")
                         label(for="startDate_3") 15:00-18:00
-
+                      .ui-checkbox
+                        input(type="checkbox" name="startDate" id="startDate_4")
+                        label(for="startDate_4") 18:00-20:00
+                      .ui-checkbox
+                        input(type="checkbox" name="startDate" id="startDate_5")
+                        label(for="startDate_5") 20:00-22:00
                   input.ui-input(type="text" placeholder="НАЗВАНИЕ КОМАНДЫ")
                   input.ui-input(type="email" placeholder="E-MAIL")
 
@@ -67,7 +72,7 @@ html
                   .form-buy__price 1400 <span>Р</spam>
 
                 .text-center.mt20
-                  a(href="#").btn.btn--primary#submitFormAbove Купить
+                  a(href="#").btn.btn--primary.btn--min-width#submitFormAbove Купить
 
 
         // HOW IT WORKS
@@ -116,10 +121,7 @@ html
                   span В каждом квесте есть главная игровая цель: спастись от эпидемии смертельного вируса, вспомнить своё имя или помочь инопланетной девочке вернуться домой. Достичь цели можно разными способами, и несколько раз за игру вам придётся сделать судьбоносный выбор. <br> От принятых вашей командой решений зависит концовка игры.
             .row.mt40.mt80--desktop.mt20--mobile
               .col.col--full.text-center
-                .btn-group
-                  a(href="#").btn.btn--primary.btn--min-width узнать больше
-                  a(href="#").btn.btn--primary.btn--min-width пройти тюториал
-                  a(href="#").btn.btn--primary.btn--min-width выбрать игру
+                a(href="#").btn.btn--primary.btn--min-width правила большой игры
 
         // FAQ
         .faq
@@ -127,10 +129,10 @@ html
             .row
               .col.col--4-6.col--auto--desktop.col--grow--desktop.offset--1-6.offset--10--desktop
                 .row
-                  .col.col--1-6
+                  .col.col--1-6.col--pad-r-9
                     .faq__question-box
                       span ?
-                  .col.col--5-6
+                  .col.col--5-6.no-pad-r
                     .faq__item.active
                       .faq__question Чем большая игра отличается от обычной?
                       .faq__answer.active Игра происходит на специальном сайте, поэтому вам понадобится смартфон или планшет с подключённым мобильным интернетом. На экране вы увидите задания, реплики персонажей и свой игровой прогресс. Перемещайтесь по городу и продвигайтесь по сюжету. На случай сложностей в квесте предусмотрены подсказки. <br> Время на прохождение не ограничено: при желании можно прерваться на кофе или даже продолжить в другой день.
@@ -143,7 +145,7 @@ html
 
                 .row
                   .col.col--full.text-center.mt30
-                    a(href='#').btn.btn--primary ЕЩЁ ВОПРОСЫ
+                    a(href='#').btn.btn--primary.btn--min-width ЕЩЁ ВОПРОСЫ
 
 
         // QUESTION

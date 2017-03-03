@@ -26,18 +26,23 @@
 
 @media($tablet)
   .intro
-    margin-top: 170px
     &__title
-      font-size: 48px
-    &__text
-      margin-top: 45px
-      font-size: 44px
+      font-size: 38px
+
+@media($mobile)
+  .intro
+    margin-top: 75px
+    &__title
+      font-size: 20px
+      margin-bottom: 15px
     img
-      max-width: 80%
       display: block
+      max-width: 70%
       margin-left: auto
       margin-right: auto
-
+    &__text
+      margin-top: 20px
+      font-size: 20px
 
 // TABS
 .tabs
@@ -137,14 +142,59 @@
         flex: 0 1 48%
         padding-top: 25px
         padding-bottom: 20px
-        font-size: 46px
         margin-right: 0
         margin-bottom: 15px
         border: 1px solid #f5ebdc
         border-radius: 12px
         &.active
           border: 1px solid #c3b298
+    &__content
+      p
+        font-size: 25px
+      .t-colored
+        font-size: 30px
+      .t-price
+        font-size: 25px
+        position: relative
+        .ico
+          transform: scale(1.2)
+          position: absolute
+          top: 15px
+          left: 0
+        > span
+          padding-left: 40px
+          > span
+            font-size: 32px
 
+
+@media($mobile)
+  .tabs
+    margin-top: 30px
+    &__navi
+      ul
+        li
+          padding: 7px 10px
+          border-radius: 4px
+          font-size: 20px
+          margin-bottom: 7px
+    &__content
+      p
+        padding-top: 0
+        font-size: 20px
+      .t-colored
+        font-size: 20px
+      .t-price
+        font-size: 20px
+        position: relative
+        .ico
+          transform: scale(1)
+          position: absolute
+          top: 15px
+          left: 0
+        > span
+          padding-left: 40px
+          > span
+            font-size: 30px
 
 .list
   &--checkmark
@@ -175,6 +225,24 @@
         &::before
           size: 28px 20px
 
+@media($tablet)
+  .list
+    &--checkmark
+      font-size: 25px
+      li
+        margin-bottom: 0
+        padding-left: 40px
+        &::before
+          size: 24px 18px
+
+@media($mobile)
+  .list
+    &--checkmark
+      font-size: 20px
+      li
+        padding-left: 30px
+        &::before
+          size: 20px 15px
 
 // Quest card
 .quest-card
@@ -267,9 +335,9 @@
   .quest-card
     flex-direction: column
     &__image
-      height: auto
       border-right: 1px solid #c3b298
-      height: 490px
+      height: 300px
+      margin-bottom: -1px
       img
         width: 105%
     &__content
@@ -277,49 +345,80 @@
       padding-left: 26px
       padding-top: 45px
       border-left: 1px solid #c3b298
-    &__name
-      font-size: 46px
     &__desc
-      font-size: 44px
       max-height: 100%
       margin-top: 15px
       line-height: 1.2
     &__cta
       flex-direction: column
+      margin-top: 30px
       &__price
-        font-size: 42px
         margin-bottom: 25px
+        text-align: left
         .ico
-          transform: scale(3)
+          transform: scale(2)
           margin-left: 0
           left: 15px
-          top: 35%
+          top: 0px
         span
-          padding-left: 75px
+          padding-left: 55px
       .btn
-        font-size: 38px
         min-width: 350px
         padding-top: 20px
         padding-bottom: 17px
         margin-bottom: 30px
+        margin-top: 15px
 
+@media($mobile)
+  .quest-card
+    margin-left: 10px
+    margin-right: 10px
+    &__image
+      height: 200px
+    &__content
+      padding: 20px 15px 10px 15px
+    &__name
+      font-size: 22px
+    &__desc
+      margin-top: 10px
+      font-size: 20px
+    &__cta
+      flex-direction: column
+      margin-top: 20px
+      &__price
+        margin-bottom: 5px
+        text-align: left
+        .ico
+          transform: scale(1.4) translateY(-50%)
+          margin-left: 0
+          left: 5px
+          top: 50%
+        span
+          font-size: 18px
+          padding-left: 35px
 
+    .btn
+      padding-top: 10px
+      padding-bottom: 8px
+      margin-bottom: 15px
+      min-width: 160px
 
 .big-game
   margin-top: 50px
   p
+    margin-top: 0
     font-size: 20px
   .quote
     display: flex
     justify-content: space-between
     padding-top: 20px
     &__image
-      flex: 0 0 200px
+      flex: 0 0 160px
       img
         max-width: 100%
     &__text
       flex: 1 1 auto
-      margin-left: 6%
+      margin-left: 4.5%
       border: 1px solid #cab597
       border-radius: 4px
       padding: 25px 15px 5px 25px
@@ -331,7 +430,7 @@
         top: 25%
         left: -16px
         background: #fefefe
-        transform: rotate(45deg)
+        transform: rotate(57deg) skewY(-20deg)
         size: 30px 30px
         border: 1px solid #cab597
         border-right: none
@@ -346,7 +445,8 @@
 
 .form-buy
   border: 1px solid #cab597
-  padding: 25px 20px 25px 35px
+  padding: 25px 20px 20px 35px
+  margin-left: -15px
   &__date
     display: flex
     justify-content: space-between
@@ -356,14 +456,14 @@
       font-size: 24px
       font-family: 'Neo-Light'
     &__weekday
-      font-size: 18px
+      font-size: 16px
       text-transform: uppercase
       color: #baa588
 
   &__from-to
     margin-left: -35px
     margin-right: -20px
-    padding: 10px 20px 10px 35px
+    padding: 15px 20px 15px 35px
     background: #f5ebdc
     display: flex
     justify-content: space-around
@@ -380,23 +480,42 @@
         font-size: 18px
         font-family: 'Neo-Light'
         color: #baa588
-      font-size: 15px
+      font-size: 16px
 
   &__selector
     display: flex
     padding-top: 25px
-    padding-bottom: 20px
+    padding-bottom: 30px
     justify-content: space-between
     span
       font-size: 18px
       text-transform: uppercase
     .ui-group
       max-height: 70px
+      padding-right: 10px
       overflow-y: scroll
+      border-right: 1px solid #cab597
+      ::-webkit-scrollbar
+        width: 5px
+
+      ::-webkit-scrollbar-track
+        -webkit-box-shadow: none
+        -webkit-border-radius: 0px
+        border-radius: 0px
+
+      ::-webkit-scrollbar-thumb
+        -webkit-border-radius: 5px
+        border-radius: 5px
+        background: #cab597
+        width: 5px
+        -webkit-box-shadow: none
 
   &__team-input
     font-size: 18px
+    margin-left: 10px
     text-transform: uppercase
+    input
+      text-align: center
 
   &__promo
     display: flex
@@ -411,6 +530,7 @@
     text-align: center
     font-family: 'Neo-Light'
     font-size: 28px
+    margin-top: 8px
     span
       font-size: 18px
 
@@ -444,6 +564,8 @@
     margin-top: 50px
     margin-bottom: 15px
   &__item
+    &:first-child
+      margin-top: 12px
   &__question
     font-family: 'Neo-Light'
     font-size: 20px
@@ -455,7 +577,7 @@
     display: none
     font-size: 18px
     padding-top: 10px
-    padding-bottom: 20px
+    padding-bottom: 25px
     &.active
       display: block
 
