@@ -62,8 +62,11 @@
         <!-- BIG GAME-->
         <div class="big-game">
           <div class="container">
-            <div class="row">
-              <div class="col col--4-6 col--pad-r-9">
+            <div class="row row--jcc--desktop row--wrap--desktop">
+              <div class="col col--full visible--mobile">
+                <div class="hero__desc hero__desc--mobile">это мероприятие-квест, на котором классный сюжет и удобство мобильной системы <br> превращаются в массовое городское помешательство</div>
+              </div>
+              <div class="col col--4-6 col--pad-r-9 col--full--desktop">
                 <p>Сегодня вы нашли в кустах странный мобильный телефон с ярко горящими красными буквами: SOS! <br> Остаться в стороне никак нельзя: ситуация требует немедленного вмешательства. Маленькая девочка отстала от инопланетной экскурсионной группы. Её шлюпка разбилась где-то в Москве, а сама девочка ужасно напугана и хочет как можно скорее попасть домой...</p>
                 <div class="quote">
                   <div class="quote__image"><img src="images/benefit-girl@2x.png"></div>
@@ -73,7 +76,7 @@
                   </div>
                 </div>
               </div>
-              <div class="col col--2-6 no-pad-l">
+              <div class="col col--2-6 no-pad-l col--full--desktop">
                 <form class="form-buy" action="#">
                   <div class="form-buy__date">
                     <div class="form-buy__date__datetime">21 сентября</div>
@@ -111,7 +114,7 @@
                   <input class="ui-input" type="email" placeholder="E-MAIL"><span class="form-buy__team-input">В моей команде
                     <input class="ui-input ui-input--short" type="text" placeholder="?">человек</span>
                   <div class="form-buy__promo">
-                    <input class="ui-input ui-input--bottom-dashed" type="text" placeholder="ВВЕДИТЕ ПРОМОКОД"><i class="ico ico-info-tooltip" data-tooltip="Weeeeee" data-tooltip-position="top center"></i>
+                    <input class="ui-input ui-input--bottom-dashed" type="text" placeholder="ВВЕДИТЕ ПРОМОКОД"><i class="ico ico-info-tooltip" data-toggle="tooltip" data-placement="top" title="Tooltip on top"></i>
                   </div>
                   <div class="form-buy__price">1400 <span>Р</spam></div>
                 </form>
@@ -166,8 +169,8 @@
         <div class="faq">
           <div class="container">
             <div class="row">
-              <div class="col col--4-6 col--auto--desktop col--grow--desktop offset--1-6 offset--10--desktop">
-                <div class="row">
+              <div class="col col--4-6 col--auto--desktop col--grow--desktop offset--1-6 offset--no--desktop">
+                <div class="row row--mobile">
                   <div class="col col--1-6 col--pad-r-9">
                     <div class="faq__question-box"><span>?</span></div>
                   </div>
@@ -187,7 +190,7 @@
                   </div>
                 </div>
                 <div class="row">
-                  <div class="col col--full text-center mt30"><a class="btn btn--primary btn--min-width" href="#">ЕЩЁ ВОПРОСЫ</a></div>
+                  <div class="col col--full text-center mt30 mt60--desktop mt20--mobile"><a class="btn btn--primary btn--min-width" href="#">ЕЩЁ ВОПРОСЫ</a></div>
                 </div>
               </div>
             </div>

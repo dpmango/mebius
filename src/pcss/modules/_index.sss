@@ -51,6 +51,12 @@
     height: auto
     min-height: auto
     max-height: 620px
+    @media($tablet)
+      max-height: 500px
+    @media($mobile)
+      max-height: 340px
+    @media($mobile-s)
+      max-height: 280px
   &__content-wrap
     display: flex
     flex-direction: column
@@ -79,6 +85,15 @@
         width: 100%
       .hero__desc
         width: 100%
+      @media($tablet)
+        min-height: 500px
+        max-height: 500px
+      @media($mobile)
+        min-height: 340px
+        max-height: 340px
+      @media($mobile-s)
+        min-height: 280px
+        max-height: 280px
     &--quest
       justify-content: flex-start
       padding-top: 220px
@@ -114,6 +129,10 @@
     &--mega
       text-align: center
       font-size: 126px
+      @media($tablet)
+        font-size: 90px
+      @media($mobile)
+        font-size: 40px
 
   &__desc
     font-size: 27px
@@ -122,6 +141,19 @@
     position: relative
     z-index: 2
     margin-top: 8vh
+    @media($desktop)
+      font-size: 34px
+    @media($tablet)
+      margin-top: 10px
+    @media($mobile)
+      display: none
+      &--mobile
+        display: block
+        font-size: 20px
+        line-height: 1em
+        color: #baa588
+        margin-bottom: 10px
+        margin-top: 0
 
   &__quest-types
     position: relative

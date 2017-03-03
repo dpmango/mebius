@@ -18,8 +18,10 @@ html
         // BIG GAME
         .big-game
           .container
-            .row
-              .col.col--4-6.col--pad-r-9
+            .row.row--jcc--desktop.row--wrap--desktop
+              .col.col--full.visible--mobile
+                .hero__desc.hero__desc--mobile это мероприятие-квест, на котором классный сюжет и удобство мобильной системы <br> превращаются в массовое городское помешательство
+              .col.col--4-6.col--pad-r-9.col--full--desktop
                 p Сегодня вы нашли в кустах странный мобильный телефон с ярко горящими красными буквами: SOS! <br> Остаться в стороне никак нельзя: ситуация требует немедленного вмешательства. Маленькая девочка отстала от инопланетной экскурсионной группы. Её шлюпка разбилась где-то в Москве, а сама девочка ужасно напугана и хочет как можно скорее попасть домой...
                 .quote
                   .quote__image
@@ -28,7 +30,7 @@ html
                     .quote__text__title Важно!
                     p Это семейный квест, который будет интересен под-росткам и детям старше десяти лет. Мы не рекомендуем проходить этот квест в тёмное время суток. Если вы всё-таки хотите рискнуть, — возьмите с собой фонарик!
 
-              .col.col--2-6.no-pad-l
+              .col.col--2-6.no-pad-l.col--full--desktop
                 form(action='#').form-buy
                   .form-buy__date
                     .form-buy__date__datetime 21 сентября
@@ -67,7 +69,7 @@ html
 
                   .form-buy__promo
                     input.ui-input.ui-input--bottom-dashed(type="text" placeholder="ВВЕДИТЕ ПРОМОКОД")
-                    i.ico.ico-info-tooltip(data-tooltip="Weeeeee" data-tooltip-position="top center")
+                    i.ico.ico-info-tooltip(data-toggle="tooltip" data-placement="top" title="Tooltip on top")
 
                   .form-buy__price 1400 <span>Р</spam>
 
@@ -127,8 +129,8 @@ html
         .faq
           .container
             .row
-              .col.col--4-6.col--auto--desktop.col--grow--desktop.offset--1-6.offset--10--desktop
-                .row
+              .col.col--4-6.col--auto--desktop.col--grow--desktop.offset--1-6.offset--no--desktop
+                .row.row--mobile
                   .col.col--1-6.col--pad-r-9
                     .faq__question-box
                       span ?
@@ -144,7 +146,7 @@ html
                       .faq__answer Игра происходит на специальном сайте, поэтому вам понадобится смартфон или планшет с подключённым мобильным интернетом. На экране вы увидите задания, реплики персонажей и свой игровой прогресс. Перемещайтесь по городу и продвигайтесь по сюжету. На случай сложностей в квесте предусмотрены подсказки. <br> Время на прохождение не ограничено: при желании можно прерваться на кофе или даже продолжить в другой день.
 
                 .row
-                  .col.col--full.text-center.mt30
+                  .col.col--full.text-center.mt30.mt60--desktop.mt20--mobile
                     a(href='#').btn.btn--primary.btn--min-width ЕЩЁ ВОПРОСЫ
 
 

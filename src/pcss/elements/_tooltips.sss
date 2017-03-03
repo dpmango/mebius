@@ -10,15 +10,15 @@
   display: none
   &.tooltip-open
     display: block
-  &.tooltip-theme-twipsy
+  &.tooltip-theme-arrows
     max-width: 100%
     max-height: 100%
     .tooltip-content
       border-radius: 5px
       position: relative
       font-family: inherit
-      background: #414141
-      color: #fff
+      background: #f5ebdc
+      color: #393737
       padding: 1em
       font-size: 1.1em
       line-height: 1.5em
@@ -29,101 +29,88 @@
         width: 0
         height: 0
         border-color: transparent
-        border-width: 10px
+        border-width: 8px
         border-style: solid
     &.tooltip-element-attached-bottom.tooltip-element-attached-center .tooltip-content
-      margin-bottom: 10px
+      margin-bottom: 8px
       &:before
         top: 100%
         left: 50%
-        margin-left: -10px
-        border-top-color: #414141
+        margin-left: -8px
+        border-top-color: #f5ebdc
     &.tooltip-element-attached-top.tooltip-element-attached-center .tooltip-content
-      margin-top: 10px
+      margin-top: 8px
       &:before
         bottom: 100%
         left: 50%
-        margin-left: -10px
-        border-bottom-color: #414141
+        margin-left: -8px
+        border-bottom-color: #f5ebdc
     &.tooltip-element-attached-right.tooltip-element-attached-middle .tooltip-content
-      margin-right: 10px
+      margin-right: 8px
       &:before
         left: 100%
         top: 50%
-        margin-top: -10px
-        border-left-color: #414141
+        margin-top: -8px
+        border-left-color: #f5ebdc
     &.tooltip-element-attached-left.tooltip-element-attached-middle .tooltip-content
-      margin-left: 10px
+      margin-left: 8px
       &:before
         right: 100%
         top: 50%
-        margin-top: -10px
-        border-right-color: #414141
+        margin-top: -8px
+        border-right-color: #f5ebdc
     &.tooltip-element-attached-top
       &.tooltip-element-attached-left.tooltip-target-attached-bottom .tooltip-content
-        margin-top: 10px
+        margin-top: 8px
         &:before
           bottom: 100%
-          left: 10px
-          border-bottom-color: #414141
+          left: 8px
+          border-bottom-color: #f5ebdc
       &.tooltip-element-attached-right.tooltip-target-attached-bottom .tooltip-content
-        margin-top: 10px
+        margin-top: 8px
         &:before
           bottom: 100%
-          right: 10px
-          border-bottom-color: #414141
+          right: 8px
+          border-bottom-color: #f5ebdc
     &.tooltip-element-attached-bottom
       &.tooltip-element-attached-left.tooltip-target-attached-top .tooltip-content
-        margin-bottom: 10px
+        margin-bottom: 8px
         &:before
           top: 100%
-          left: 10px
-          border-top-color: #414141
+          left: 8px
+          border-top-color: #f5ebdc
       &.tooltip-element-attached-right.tooltip-target-attached-top .tooltip-content
-        margin-bottom: 10px
+        margin-bottom: 8px
         &:before
           top: 100%
-          right: 10px
-          border-top-color: #414141
+          right: 8px
+          border-top-color: #f5ebdc
     &.tooltip-element-attached-top
       &.tooltip-element-attached-right.tooltip-target-attached-left .tooltip-content
-        margin-right: 10px
+        margin-right: 8px
         &:before
-          top: 10px
+          top: 8px
           left: 100%
-          border-left-color: #414141
+          border-left-color: #f5ebdc
       &.tooltip-element-attached-left.tooltip-target-attached-right .tooltip-content
-        margin-left: 10px
+        margin-left: 8px
         &:before
-          top: 10px
+          top: 8px
           right: 100%
-          border-right-color: #414141
+          border-right-color: #f5ebdc
     &.tooltip-element-attached-bottom
       &.tooltip-element-attached-right.tooltip-target-attached-left .tooltip-content
-        margin-right: 10px
+        margin-right: 8px
         &:before
-          bottom: 10px
+          bottom: 8px
           left: 100%
-          border-left-color: #414141
+          border-left-color: #f5ebdc
       &.tooltip-element-attached-left.tooltip-target-attached-right .tooltip-content
-        margin-left: 10px
+        margin-left: 8px
         &:before
-          bottom: 10px
+          bottom: 8px
           right: 100%
-          border-right-color: #414141
-    opacity: 0
-    -webkit-transition: opacity 150ms
-    transition: opacity 150ms
+          border-right-color: #f5ebdc
     pointer-events: none
     .tooltip-content
       padding: 0.5em 1em
-      box-shadow: 0 3px 7px rgba(0, 0, 0, 0.2)
-      border-radius: 2px
-      font-family: "Helvetica Neue", Helvetica, Arial, sans-serif
-      padding: 3px 8px
-      line-height: 18px
-      font-size: 11px
-    &.tooltip-open-transitionend
-      display: block
-    &.tooltip-after-open
-      opacity: 1

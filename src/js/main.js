@@ -151,6 +151,10 @@ $(document).ready(function(){
     $('#modalBlog' + triggerModalNumber).fadeIn()
   });
 
+  // BOOTSTRAP TOOLTIPS
+  $('[data-toggle="tooltip"]').tooltip()
+  
+
   ///////////////
   // FAKE THINGS
   //////////////

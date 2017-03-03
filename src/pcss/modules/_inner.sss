@@ -534,6 +534,167 @@
     span
       font-size: 18px
 
+@media($desktop)
+  .big-game
+    p
+      font-size: 28px
+    .quote
+      padding-top: 20px
+      &__image
+        flex: 0 0 220px
+      &__text
+        margin-left: 3%
+        padding: 30px 20px 0px 35px
+        &__title
+          font-size: 36px
+          margin-bottom: 10px
+        p
+          font-size: 28px
+          line-height: 1.3em
+
+  .form-buy
+    width: 550px
+    flex: 0 0 550px
+    padding: 35px 40px 30px 55px
+    margin-bottom: 40px
+    margin-left: auto
+    margin-right: auto
+    margin-top: 80px
+    &__date
+      padding-bottom: 40px
+      &__datetime
+        font-size: 40px
+      &__weekday
+        font-size: 30px
+
+    &__from-to
+      margin-left: -55px
+      margin-right: -40px
+      padding: 30px 40px 28px 55px
+      &--first-el
+        margin-top: -25px
+        margin-bottom: 25px
+      .ico-arrow-spacer
+        transform: scale(1.8)
+      &__item
+        flex: 0 1 auto
+        span
+          display: block
+          font-size: 28px
+        font-size: 28px
+
+    &__selector
+      padding-top: 40px
+      padding-bottom: 40px
+      span
+        font-size: 30px
+      .ui-group
+        max-height: 115px
+        padding-right: 15px
+        .ui-checkbox
+          margin-bottom: 10px
+
+    &__team-input
+      font-size: 28px
+      margin-left: 10px
+      padding-top: 20px
+
+    &__promo
+      margin-top: 20px
+      margin-bottom: 20px
+      .ui-input
+        margin-right: 15px
+      .ico-info-tooltip
+        transform: scale(1.8)
+        vertical-align: bottom
+        position: relative
+        top: 20px
+    &__price
+      font-size: 48px
+      margin-top: 25px
+      span
+        font-size: 30px
+
+@media($desktop)
+  .big-game
+    margin-top: 10px
+    p
+      font-size: 20px
+    .quote
+      padding-top: 20px
+      &__image
+        flex: 1 1 25%
+      &__text
+        flex: 1 1 75%
+        margin-left: 3%
+        padding: 10px 10px 0px 10px
+        &::after
+          top: 10%
+          left: -9px
+          transform: rotate(57deg) skewY(-20deg)
+          size: 15px
+        &__title
+          font-size: 20px
+          margin-bottom: 5px
+        p
+          font-size: 20px
+          line-height: 1.2em
+
+  .form-buy
+    width: auto
+    flex: 1 1 auto
+    padding: 12px 20px 10px 20px
+    margin-bottom: 25px
+    margin-top: 50px
+    &__date
+      padding-bottom: 10px
+      &__datetime
+        font-size: 21px
+        padding-left: 15px
+      &__weekday
+        font-size: 18px
+
+    &__from-to
+      margin-left: -20px
+      margin-right: -20px
+      padding: 15px 30px 15px 30px
+      .ico-arrow-spacer
+        transform: scale(.8)
+      &__item
+        span
+          font-size: 18px
+        font-size: 18px
+
+    &__selector
+      padding-top: 15px
+      padding-bottom: 15px
+      span
+        font-size: 18px
+      .ui-group
+        max-height: 70px
+        padding-right: 5px
+        .ui-checkbox
+          margin-bottom: 3px
+
+    &__team-input
+      font-size: 18px
+      margin-left: 10px
+      padding-top: 10px
+
+    &__promo
+      margin-top: 0px
+      margin-bottom: 10px
+      .ui-input
+        margin-right: 10px
+      .ico-info-tooltip
+        transform: scale(1)
+        position: relative
+        top: 5px
+    &__price
+      font-size: 25px
+      margin-top: 15px
+      span
+        font-size: 16px
 
 // FAQ
 .faq
@@ -580,6 +741,56 @@
     padding-bottom: 25px
     &.active
       display: block
+
+
+@media($desktop)
+  .faq
+    padding-top: 120px
+    padding-bottom: 120px
+    &--inner
+      padding-top: 0px
+      padding-bottom: 80px
+    &__question-box
+      font-size: 115px
+      line-height: 1em
+      size: 125px
+    &__section
+      font-size: 34px
+      color: white
+      padding: 10px 20px
+      margin-top: 50px
+      margin-bottom: 15px
+    &__item
+      &:first-child
+        margin-top: 12px
+    &__question
+      font-size: 28px
+      margin-bottom: 15px
+    &__answer
+      font-size: 28px
+      padding-top: 10px
+      padding-bottom: 55px
+
+@media($mobile)
+  .faq
+    padding-top: 50px
+    padding-bottom: 60px
+    &__question-box
+      font-size: 55px
+      size: 65px
+      margin-left: auto
+      margin-right: auto
+    &__item
+      &:first-child
+        margin-top: 20px
+    &__question
+      font-size: 20px
+      margin-bottom: 7px
+      padding-top: 5px
+    &__answer
+      font-size: 20px
+      padding-top: 10px
+      padding-bottom: 25px
 
 
 // TEXT

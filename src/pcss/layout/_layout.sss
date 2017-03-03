@@ -150,6 +150,11 @@ body, html
       margin-left: auto
       margin-right: auto
 
+  @media($tablet)
+    &--pad-r-9
+      padding-right: 3%
+
+
   @media(width <= 785px)
     &--360--desktop
       flex-basis: 340px
@@ -157,6 +162,8 @@ body, html
   @media($mobile)
     &--360--desktop
       flex-basis: 260px
+    &--full--mobile
+      flex-basis: 100%
 
   @media($mobile-s)
     &--640--desktop
@@ -172,6 +179,9 @@ body, html
     &--10--desktop
       margin-left: 10%
       margin-right: 10%
+    &--no--desktop
+      margin-left: 3%
+      margin-right: 3%
 
 @media($tablet)
   .offset
@@ -184,9 +194,13 @@ body, html
 
 .no-pad-l
   padding-left: 0
+  @media($mobile)
+    padding-left: 15px
 
 .no-pad-r
   padding-right: 0
+  @media($mobile)
+    padding-right: 15px
 
 .hidden--desktop
   display: block
@@ -196,4 +210,9 @@ body, html
 .visible--desktop
   display: none
   @media($desktop)
+    display: block
+
+.visible--mobile
+  display: none
+  @media($mobile)
     display: block
