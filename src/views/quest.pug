@@ -7,25 +7,47 @@ html
       include shared/header.pug
       .page__content
         // HERO
-        .hero.hero--quest(style='background-image: url("images/questHero.png"); background-position: top center')
-          .container
-            .row
-              .col.col--full
-                .hero__content-wrap.hero__content-wrap--quest
-                  .hero__title приВЕТ С БЕТЕЛЬГЕЙЗЕ
-                  .hero__quest-types
-                    span
-                      i.ico.ico-list-1
-                      span Короткий
-                    span
-                      i.ico.ico-list-1
-                      span Сложный
-                    span
-                      i.ico.ico-list-1
-                      span автоквест
-                  .hero__quest-teams
-                    span.selected 1 команда
-                    span 2 команды
+        .owl-carousel.owl-carousel--fullpage#owlHeroSlider
+          .slide
+            .hero.hero--quest(style='background-image: url("images/questHero.png"); background-position: top center')
+              .container
+                .row
+                  .col.col--full
+                    .hero__content-wrap.hero__content-wrap--quest
+                      .hero__title приВЕТ С БЕТЕЛЬГЕЙЗЕ
+                      .hero__quest-types
+                        span
+                          i.ico.ico-list-1
+                          span Короткий
+                        span
+                          i.ico.ico-list-1
+                          span Сложный
+                        span
+                          i.ico.ico-list-1
+                          span автоквест
+                      .hero__quest-teams
+                        span.selected 1 команда
+                        span 2 команды
+          .slide
+            .hero.hero--quest(style='background-image: url("images/questHero.png"); background-position: top center')
+              .container
+                .row
+                  .col.col--full
+                    .hero__content-wrap.hero__content-wrap--quest
+                      .hero__title приВЕТ С БЕТЕЛЬГЕЙЗЕ
+                      .hero__quest-types
+                        span
+                          i.ico.ico-list-1
+                          span Короткий
+                        span
+                          i.ico.ico-list-1
+                          span Сложный
+                        span
+                          i.ico.ico-list-1
+                          span автоквест
+                      .hero__quest-teams
+                        span.selected 1 команда
+                        span 2 команды
 
         // BIG GAME
         .big-game

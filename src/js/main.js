@@ -66,7 +66,12 @@ $(document).ready(function(){
       }
     }
   });
-
+  $('#owlHeroSlider').owlCarousel({
+    loop: false,
+    nav: true,
+    dots: false,
+    items: 1
+  });
 
   $('#owlMainpageBenefits .owl-dot').each(function(i){
     i ++

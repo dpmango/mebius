@@ -509,6 +509,25 @@
           font-size: 20px
         &:before
           display: none
+  &--fullpage
+    max-width: 100%
+    position: relative
+    .owl-prev
+      position: absolute
+      top: 50%
+      left: 20px
+      background: url('../images/sprite/ico-owl-nav-white.png') no-repeat center
+      size: 20px 40px
+      transform: translateY(-50%)
+
+    .owl-next
+      position: absolute
+      top: 50%
+      right: 20px
+      background: url('../images/sprite/ico-owl-nav-white.png') no-repeat center
+      size: 20px 40px
+      transform: translateY(-50%) rotate(180deg)
+
 
   .owl-nav
     text-align: center
