@@ -26,7 +26,7 @@
               <div class="header__navi"><a href="#">Как это работает?</a><a href="blog.html">Блог</a><a href="contact.html">Контакты</a></div>
             </div>
             <div class="col col--3-6 col--auto--desktop col--grow--desktop">
-              <div class="header__contacts"><a class="header__question hidden-desktop-down" href="#"><i class="ico ico-help"></i><span>Задать вопрос</span></a><a class="header__tel" href="tel:8912000000"><span>с 10 до 21<span>+ 7 912 000 00 00</span></span></a><a class="header__cabinet" href="#"><i class="ico ico-cabinet"></i><span>Личный кабинет</span></a>
+              <div class="header__contacts"><a class="header__question hidden-desktop-down" href="#modalQuestion"><i class="ico ico-help"></i><span>Задать вопрос</span></a><a class="header__tel" href="tel:8912000000"><span>с 10 до 21<span>+ 7 912 000 00 00</span></span></a><a class="header__cabinet" href="#"><i class="ico ico-cabinet"></i><span>Личный кабинет</span></a>
                 <div class="visible-desktop-down inline">
                   <button class="hamburger hamburger--stand" type="button" id="headerHamburger"><span class="hamburger-box"><span class="hamburger-inner"></span></span></button>
                 </div>
@@ -45,12 +45,34 @@
         </div>
       </navi>
       <navi class="navi-mobile">
-        <div class="container">
-          <div class="row">
-            <div class="col col--full"><a href="games.html"><span>ИГРЫ</span></a><a href="big-games.html"><span>БОЛЬШИЕ ИГРЫ</span></a><a href="#"><span>квесты для групп</span></a><a href="testimonials.html"><span>ОТЗЫВЫ</span></a><a href="bonus.html"><i class="ico ico-gift"></i><span>В ПОДАРОК</span></a><a class="active" href="promos.html"><span>АКЦИИ</span></a></div>
-          </div>
+        <div class="navi-mobile__wrapper">
+          <div class="navi-mobile__logo"><a class="header__logo" href="homepage.html"><i class="ico ico-logo"></i></a></div>
+          <div class="navi-mobile__menu"><a href="games.html"><span>ИГРЫ</span></a><a href="big-games.html"><span>БОЛЬШИЕ ИГРЫ</span></a><a href="#"><span>квесты для групп</span></a><a href="testimonials.html"><span>ОТЗЫВЫ</span></a><a href="bonus.html"><span><span>В ПОДАРОК</span><i class="ico ico-gift"></i></span></a><a class="active" href="promos.html"><span>АКЦИИ</span></a></div>
+          <div class="navi-mobile__additional"><a href="#">Как это работает?</a><a href="blog.html">Блог</a><a href="contact.html">Контакты</a></div>
+          <div class="navi-mobile__question"><a class="header__question" href="#modalQuestion"><i class="ico ico-help"></i><span>Задать вопрос</span></a></div>
         </div>
       </navi>
+      <div class="modal modal--cover" id="modalQuestion">
+        <div class="modal__wrapper">
+          <div class="container">
+            <div class="row">
+              <div class="col col--4-6 col--auto--desktop col--grow--desktop offset--1-6 offset--10--desktop no-pad">
+                <div class="modal__content">
+                  <div class="modal__close"><i class="ico ico-close"></i></div>
+                  <div class="modal__scrollable-area">
+                    <div class="question__title">Что-то до сих пор осталось непонятным? <br> Задайте свой вопрос!</div>
+                    <form class="question__form" action="">
+                      <textarea class="ui-input" placeholder="ВАШ ВОПРОС" rows="7"></textarea>
+                      <input class="ui-input" type="text" placeholder="Ваше имя">
+                      <input class="ui-input" type="email" placeholder="Email"><a class="btn btn--primary btn--block btn--no-skew-hover" href="#">ОТПРАВИТЬ</a>
+                    </form>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
       <div class="page__content">
         <!-- HERO-->
         <div class="hero hero--big-game">

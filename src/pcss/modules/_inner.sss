@@ -732,6 +732,9 @@
     padding: 10px 20px
     margin-top: 50px
     margin-bottom: 15px
+    @media($mobile)
+      font-size: 24px
+      margin-top: 30px
   &__item
     &:first-child
       margin-top: 12px
@@ -895,6 +898,7 @@
   &__wrapper
     display: flex
     justify-content: space-around
+    overflow-y: scroll
   &__block
     text-align: center
     &__action

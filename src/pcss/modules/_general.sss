@@ -282,60 +282,113 @@
   opacity: 0
   pointer-events: none
   position: absolute
-  padding: 30px 20px
-  top: 78px
+  top: 0px
   left: 0
   right: 0
-  z-index: 8
+  min-height: 100vh
+  overflow-y: scroll
+  z-index: 10
   background: $chocoBG
   text-align: center
-  transform: translate3d(0, -200%, 0)
+  transform: translate3d(-100%, 0%, 0)
   transition: transform .6s ease-out, opacity .4s ease
   @media($desktop-from)
     display: none !important
-  @media($mobile-s)
-    top: 40px
   &.is-active
     opacity: 1
     pointer-events: all
-    transform: translate3d(0, 0, 0)
-  a
-    display: block
-    font-size: 22px
-    line-height: 48px
-    text-align: center
-    vertical-align: middle
-    color: #706350
-    text-transform: uppercase
-    transition: all .3s ease-out .2s
-    position: relative
-    cursor: pointer
-    @media($mobile-s)
-      font-size: 20px
-      line-height: 44px
-    span
+    transform: translate3d(-10%, 0, 0)
+    @media($mobile)
+      transform: translate3d(-13%, 0, 0)
+  &__wrapper
+    margin-left: 10%
+    min-height: 100vh
+    display: flex
+    flex-direction: column
+    justify-content: space-between
+    @media($mobile)
+      margin-left: 13%
+  &__logo
+    flex: 0 0 auto
+    margin-top: 10px
+    margin-bottom: 20px
+    @media($mobile)
+      margin-top: 20px
+    .header__logo
+      margin-left: auto
+      margin-right: auto
+  &__menu
+    flex: 4 1 auto
+    display: flex
+    flex-direction: column
+    align-items: stretch
+    a
+      flex: 1
+      display: flex
+      align-items: center
+      justify-content: center
+      font-size: 36px
+      line-height: 1em
+      text-align: center
+      vertical-align: middle
+      color: #706350
+      text-transform: uppercase
+      transition: all .3s ease-out .2s
       position: relative
       cursor: pointer
-      &::before
-        display: block
-        content: ' '
-        position: absolute
-        background: $colorExtraLightChoco
-        left: 50%
-        right: 50%
-        bottom: -2px
-        z-index: -1
-        height: 2px
-        transition: all .4s ease-in-out
+      border-top: 1px solid #e5cfb1
+      border-bottom: 1px solid #e5cfb1
+      &:first-child
+        border-top-width: 2px
       &:last-child
-        border-right: none
-      &.active, &:hover
-        &::before
-          left: 0
-          right: 0
-    .ico
-      margin-right: 5px
-      vertical-align: 1px
+        border-bottom-width: 2px
+      &:hover, &.active
+        background: #baa688
+        color: white
+      @media($tablet)
+        display: 24px
+      @media($mobile-s)
+        font-size: 20px
+      .ico
+        order: 1
+        margin-top: -4px
+        transform: scale(1.8)
+        margin-right: 10px
+        @media($tablet)
+          margin-right: 5px
+          transform: scale(1)
+      span
+        margin-left: auto
+        margin-right: auto
+        display: flex
+        justify-content: center
+        align-items: center
+        span
+          order: 2
+  &__additional
+    margin-top: 20px
+    margin-bottom: 10px
+    flex: 1 1 20%
+    display: flex
+    flex-direction: column
+
+    a
+      flex: 1
+      font-size: 36px
+      display: block
+      text-align: center
+      @media($tablet)
+        display: 24px
+      @media($mobile-s)
+        font-size: 20px
+  &__question
+    text-align: center
+    margin-bottom: 20px
+    span
+      display: inline-block
+      @media($mobile)
+        font-size: 20px
+
 
 // FOOTER
 .footer
@@ -504,6 +557,8 @@
   position: fixed 0 0 0 0
   background: color(#3b3a3a a(55%))
   z-index: 5
+  &--cover
+    z-index: 99
   &--offset-top
     padding-top: 120px
     transition: padding .25s ease

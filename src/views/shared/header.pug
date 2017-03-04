@@ -12,7 +12,7 @@ header.header
           a(href="contact.html") Контакты
       .col.col--3-6.col--auto--desktop.col--grow--desktop
         .header__contacts
-          a(href="#").header__question.hidden-desktop-down
+          a(href="#modalQuestion").header__question.hidden-desktop-down
             i.ico.ico-help
             span Задать вопрос
           a(href="tel:8912000000").header__tel
@@ -42,19 +42,46 @@ navi.navi.hidden-desktop-down
           a(href="promos.html").active АКЦИИ
 
 navi.navi-mobile
-  .container
-    .row
-      .col.col--full
-        a(href="games.html")
-          span ИГРЫ
-        a(href="big-games.html")
-          span БОЛЬШИЕ ИГРЫ
-        a(href="#")
-          span квесты для групп
-        a(href="testimonials.html")
-          span ОТЗЫВЫ
-        a(href="bonus.html")
-          i.ico.ico-gift
+  .navi-mobile__wrapper
+    .navi-mobile__logo
+      a(href="homepage.html").header__logo
+        i.ico.ico-logo
+    .navi-mobile__menu
+      a(href="games.html")
+        span ИГРЫ
+      a(href="big-games.html")
+        span БОЛЬШИЕ ИГРЫ
+      a(href="#")
+        span квесты для групп
+      a(href="testimonials.html")
+        span ОТЗЫВЫ
+      a(href="bonus.html")
+        span
           span В ПОДАРОК
-        a(href="promos.html").active
-          span АКЦИИ
+          i.ico.ico-gift
+      a(href="promos.html").active
+        span АКЦИИ
+    .navi-mobile__additional
+      a(href="#") Как это работает?
+      a(href="blog.html") Блог
+      a(href="contact.html") Контакты
+    .navi-mobile__question
+      a(href="#modalQuestion").header__question
+        i.ico.ico-help
+        span Задать вопрос
+
+.modal.modal--cover#modalQuestion
+  .modal__wrapper
+    .container
+      .row
+        .col.col--4-6.col--auto--desktop.col--grow--desktop.offset--1-6.offset--10--desktop.no-pad
+          .modal__content
+            .modal__close
+              i.ico.ico-close
+            .modal__scrollable-area
+              .question__title Что-то до сих пор осталось непонятным? <br> Задайте свой вопрос!
+              form(action="").question__form
+                textarea.ui-input(placeholder="ВАШ ВОПРОС" rows="7")
+                input(type="text" placeholder="Ваше имя").ui-input
+                input(type="email" placeholder="Email").ui-input
+                a(href="#").btn.btn--primary.btn--block.btn--no-skew-hover ОТПРАВИТЬ

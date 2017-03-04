@@ -24,6 +24,7 @@ $(document).ready(function(){
   $('#headerHamburger').on('click', function(){
     $(this).toggleClass('is-active');
     $('.navi-mobile').toggleClass('is-active');
+    $('.page').toggleClass('lock');
   });
 
   ///////////////
