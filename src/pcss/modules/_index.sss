@@ -284,6 +284,13 @@
         &:hover
           img
             transform: scale(1.1)
+      @media($mobile)
+        .game-list__card__cta
+          padding-bottom: 0 !important
+        .game-list__card__cta-right
+          margin-top: -10px
+          .ruble
+            display: block
     &--full-hover
       .btn
         position: absolute
@@ -343,8 +350,9 @@
           vertical-align: top
       .game-list__card__image
         opacity: .5
-        img
-          transform: none
+        &:hover
+          img
+            transform: none
 
     &__chars
       position: absolute
@@ -373,11 +381,37 @@
       left: 0
       z-index: 3
       color: white
-      padding: 7px 13px
+      padding: 8px 8px 6px 13px
+      height: 30px
       font-family: 'Neo-Light'
       text-transform: uppercase
       color: $fontColor
       background: #f7c25b
+      &__wrapper
+        position: relative
+      &::after
+        position: absolute
+        top: 0
+        right: -15px
+        display: block
+        content: ' '
+        width: 0
+        height: 0
+        border-style: solid
+        border-width: 15px 15px 0 0
+        border-color: #f7c25b transparent transparent transparent
+      &::before
+        position: absolute
+        bottom: 0
+        right: -15px
+        display: block
+        content: ' '
+        width: 0
+        height: 0
+        border-style: solid
+        border-width: 15px 0 0 15px
+        border-color: transparent transparent transparent #f7c25b
+
     &__image
       font-size: 0
       cursor: pointer
