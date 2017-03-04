@@ -7,10 +7,10 @@ html
       include shared/header.pug
       .page__content
         // Profile
-        .profile.profile--no-bg
+        .profile.profile--no-bg.profile--games
           .container
-            .row
-              .col.col--2-6.no-pad-r
+            .row.row-jcc--desktop.row--wrap--desktop
+              .col.col--2-6.no-pad-r.col--full--desktop
                 .profile__scope
                   .profile__scope__left
                     .profile__scope__image
@@ -25,7 +25,7 @@ html
                     a(href='#').btn.btn--primary.btn--darker.btn--block.active Мои игры
                     a(href='#').btn.btn--primary.btn--block Тюториал
 
-              .col.col--4-6
+              .col.col--4-6.col--full--desktop
                 .profile__heading Мои самые классные игры
                 // card
                 .game-list__card.game-list__card--huge
@@ -43,7 +43,8 @@ html
                 .row
                   // game card
                   .col.col--2-4
-                    .game-list__card
+                    .game-list__card.game-list__card--full-hover
+                      a(href="#").btn.btn--primary Играть
                       .game-list__card__chars
                         span короткий
                         span сложный
@@ -63,7 +64,8 @@ html
 
                   // game card
                   .col.col--2-4
-                    .game-list__card
+                    .game-list__card.game-list__card--full-hover
+                      a(href="#").btn.btn--primary Играть
                       .game-list__card__chars
                         span короткий
                         span сложный
@@ -106,7 +108,7 @@ html
 
                   // game card
                   .col.col--2-4
-                    .game-list__card
+                    .game-list__card.game-list__card--arrow-hover
                       .game-list__card__chars
                         span короткий
                         span сложный
@@ -123,13 +125,14 @@ html
                           .game-list__card__cta-right
                             span 900
                               span.ruble Р
+                          a(href="#").game-list__card__fold__link
 
                 // next line
                 .profile__heading Уже прошёл
                 .row
                   // game card
                   .col.col--2-4
-                    .game-list__card
+                    .game-list__card.game-list__card--done
                       .game-list__card__chars
                         span короткий
                         span сложный
@@ -141,15 +144,14 @@ html
                         .game-list__card__name Привет с Бетельгейзе
                         .game-list__card__cta
                           .game-list__card__cta-left
-                            i.ico.ico-location
-                            span м. полянка
+
                           .game-list__card__cta-right
-                            span 900
-                              span.ruble Р
+                            span 12
+                            i.ico.ico-pulp
 
                   // game card
                   .col.col--2-4
-                    .game-list__card
+                    .game-list__card.game-list__card--done
                       .game-list__card__chars
                         span короткий
                         span сложный
@@ -161,10 +163,9 @@ html
                         .game-list__card__name Привет с Бетельгейзе
                         .game-list__card__cta
                           .game-list__card__cta-left
-                            i.ico.ico-location
-                            span м. полянка
+
                           .game-list__card__cta-right
-                            span 900
-                              span.ruble Р
+                            span 12
+                            i.ico.ico-pulp
 
       include shared/footer.pug

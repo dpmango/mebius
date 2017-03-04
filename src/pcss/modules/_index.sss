@@ -284,6 +284,67 @@
         &:hover
           img
             transform: scale(1.1)
+    &--full-hover
+      .btn
+        position: absolute
+        opacity: 0
+        left: 50%
+        top: 50%
+        pointer-events: none
+        transform: translate3d(-50%, 200%, 0)
+      &::before
+        display: block
+        content: ' '
+        position: absolute
+        left: 0
+        top: 0
+        right: 0
+        bottom: 0
+        background: color(#f7c25b a(80%))
+        z-index: 5
+        transform: translate3d(0, 100%, 0)
+        transition: all .4s ease-in-out
+      &:hover
+        &::before
+          transform: translate3d(0,0,0)
+
+        .game-list__card__image
+          img
+            transform: none
+        .btn
+          opacity: 1
+          z-index: 6
+          border-color: white
+          color: white
+          transform: translate3d(-50%,-50%,0)
+          pointer-events: all
+
+    &--arrow-hover
+      &:hover
+        .game-list__card__fold
+          transform: translate3d(-60px,0,0)
+          @media($desktop)
+            transform: translate3d(-100px,0,0)
+          position: relative
+          &__link
+            opacity: 1
+            pointer-events: all
+        .game-list__card__image
+          img
+            transform: none
+
+    &--done
+      .game-list__card__cta-right
+        color: #f9bc5a
+        font-size: 20px
+        .ico
+          transform: scale(1.35)
+          margin-left: 7px
+          vertical-align: top
+      .game-list__card__image
+        opacity: .5
+        img
+          transform: none
 
     &__chars
       position: absolute
@@ -336,6 +397,26 @@
       background: $chocoBG
       position: relative
       z-index: 3
+      transition: transform .4s ease-in
+      &__link
+        opacity: 0
+        pointer-events: none
+        display: block
+        content: ' '
+        position: absolute
+        top: 0
+        right: -60px
+        width: 60px
+        height: 100%
+        background: $colorYellow url('../images/sprite/ico-arrow-white@2x.png') no-repeat center
+        background-size: 50%
+        transition: all .4s ease-in
+        cursor: pointer
+        @media($desktop)
+          width: 100px
+          right: -100px
+        &:hover
+          background-size: 60%
     &__name
       font-family: 'Neo-Light'
       font-size: 18px

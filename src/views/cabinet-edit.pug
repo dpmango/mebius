@@ -7,10 +7,10 @@ html
       include shared/header.pug
       .page__content
         // Profile
-        .profile.profile--no-bg
+        .profile.profile--no-bg.profile--games
           .container
-            .row
-              .col.col--2-6.no-pad-r
+            .row.row-jcc--desktop.row--wrap--desktop
+              .col.col--2-6.no-pad-r.col--full--desktop
                 .profile__scope
                   .profile__scope__left
                     .profile__scope__image
@@ -25,7 +25,7 @@ html
                     a(href='#').btn.btn--primary.btn--darker.btn--block.active Мои игры
                     a(href='#').btn.btn--primary.btn--block Тюториал
 
-              .col.col--4-6
+              .col.col--4-6.col--full--desktop
                 .profile__heading Информация о вас
                 .ui-input.ui-input--labeled
                   label Имя
