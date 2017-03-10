@@ -124,6 +124,7 @@
         font-size: 30px
         .ico
           transform: scale(1.5)
+          margin-top: 10px
           margin-left: 5px
           margin-right: 10px
         > span
@@ -157,6 +158,7 @@
         font-size: 25px
         position: relative
         .ico
+          margin-top: 0px
           transform: scale(1.2)
           position: absolute
           top: 15px
@@ -173,7 +175,7 @@
     &__navi
       ul
         li
-          padding: 7px 10px
+          padding: 9px 10px 6px 10px
           border-radius: 4px
           font-size: 20px
           margin-bottom: 7px
@@ -189,10 +191,10 @@
         .ico
           transform: scale(1)
           position: absolute
-          top: 15px
+          top: 8px
           left: 0
         > span
-          padding-left: 40px
+          padding-left: 35px
           > span
             font-size: 30px
 
@@ -261,6 +263,7 @@
     border-right: none
     img
       max-width: 105%
+      height: 101%
       position: absolute
       top: 50%
       left: 50%
@@ -274,6 +277,7 @@
     height: 235px
     border: 1px solid #c3b298
     border-left: none
+    position: relative
 
   &__name
     font-family: 'Neo-Light'
@@ -281,7 +285,15 @@
   &__desc
     font-size: 18px
     margin-top: 20px
+    overflow: hidden
   &__cta
+    position: absolute
+    bottom: 20px
+    left: 0
+    padding-left: 42px
+    padding-right: 20px
+    background: white
+    width: 100%
     display: flex
     justify-content: space-between
     align-items: center
@@ -314,6 +326,7 @@
       margin-top: 10px
     &__cta
       margin-top: 30px
+      padding-left: 30px
       &__price
         font-size: 22px
         position: relative
@@ -356,6 +369,9 @@
       margin-top: 15px
       line-height: 1.2
     &__cta
+      position: static
+      padding-left: 0
+      padding-right: 0
       flex-direction: column
       margin-top: 30px
       &__price
@@ -448,6 +464,11 @@
         margin-bottom: 5px
       p
         font-size: 20px
+.p-one-line--mobile
+  @media($mobile)
+    text-align: justify
+    br
+      display: none
 
 .form-buy
   border: 1px solid #cab597
@@ -458,6 +479,7 @@
     justify-content: space-between
     align-items: flex-end
     padding-bottom: 20px
+    padding-right: 12px
     &__datetime
       font-size: 24px
       font-family: 'Neo-Light'
@@ -481,12 +503,12 @@
       flex: 1 1 auto
     &__item
       flex: 0 1 auto
+      font-size: 20px
       span
         display: block
         font-size: 18px
         font-family: 'Neo-Light'
         color: #baa588
-      font-size: 16px
 
   &__selector
     display: flex
@@ -552,10 +574,10 @@
         margin-left: 3%
         padding: 30px 20px 0px 35px
         &__title
-          font-size: 36px
+          font-size: 34px
           margin-bottom: 10px
         p
-          font-size: 28px
+          font-size: 26px
           line-height: 1.3em
 
   .form-buy
@@ -576,7 +598,7 @@
     &__from-to
       margin-left: -55px
       margin-right: -40px
-      padding: 30px 40px 28px 55px
+      padding: 30px 68px 28px 55px
       &--first-el
         margin-top: -35px
         margin-bottom: 25px
@@ -621,6 +643,20 @@
       span
         font-size: 30px
 
+@media($tablet)
+  .big-game
+    p
+      font-size: 22px
+    .quote
+      padding-top: 20px
+      &__text
+        margin-left: 5%
+        &__title
+          font-size: 25px
+          margin-bottom: 10px
+        p
+          font-size: 22px
+
 @media($mobile)
   .big-game
     margin-top: 30px
@@ -663,7 +699,7 @@
     &__from-to
       margin-left: -20px
       margin-right: -20px
-      padding: 15px 30px 15px 30px
+      padding: 15px 35px 15px 30px
       &--first-el
         margin-top: -12px
       .ico-arrow-spacer
@@ -782,11 +818,25 @@
       padding-top: 10px
       padding-bottom: 55px
 
+@media($tablet)
+  .faq
+    padding-top: 70px
+    padding-bottom: 80px
+    &__section
+      font-size: 30px
+    &__item
+      &:first-child
+        margin-top: 12px
+    &__question
+      font-size: 23px
+    &__answer
+      font-size: 22px
+
 @media($mobile)
   .faq
-    padding-top: 50px
     padding-bottom: 60px
     &__question-box
+      padding-top: 10px
       font-size: 55px
       size: 65px
       margin-left: auto
@@ -814,12 +864,16 @@
     @media($mobile)
       margin-left: 0
       margin-right: 0
+  .quest-card__cta__price
+    text-transform: none
+    color: #baa588
+    font-family: 'Neo-Light'
   .quest-card__image
     img
       @media($desktop)
         max-width: 200%
         width: auto
-        height: 100%
+        height: 102%
       @media($tablet)
         width: 100%
         height: auto
@@ -846,6 +900,14 @@
   @media($mobile-s)
     padding-top: 80px
     padding-bottom: 40px
+  &--mainpage
+    min-height: 100px
+    padding-top: 00px
+    padding-bottom: 20px
+    @media($desktop)
+      padding-top: 60px
+    @media($mobile)
+      padding-top: 0px
   &__title
     font-family: 'Neo-Light'
     font-size: 32px
@@ -898,7 +960,7 @@
   &__wrapper
     display: flex
     justify-content: space-around
-    overflow-y: scroll
+
   &__block
     text-align: center
     &__action

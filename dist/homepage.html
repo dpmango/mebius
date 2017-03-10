@@ -12,7 +12,7 @@
   <body>
     <div class="page">
       <!-- HEADER::START-->
-      <header class="header">
+      <header class="header header--float">
         <div class="container">
           <div class="row row--alignCenter">
             <div class="col col--1-6 col--auto--desktop col--grow--desktop"><a class="header__logo" href="homepage.html"><i class="ico ico-logo"></i></a></div>
@@ -29,7 +29,7 @@
           </div>
         </div>
       </header>
-      <navi class="navi hidden-desktop-down">
+      <navi class="navi hidden-desktop-down navi--float">
         <div class="container">
           <div class="row row--jcsb">
             <div class="col col--full">
@@ -58,7 +58,7 @@
                     <form class="question__form" action="">
                       <textarea class="ui-input" placeholder="ВАШ ВОПРОС" rows="7"></textarea>
                       <input class="ui-input" type="text" placeholder="Ваше имя">
-                      <input class="ui-input" type="email" placeholder="Email"><a class="btn btn--primary btn--block btn--no-skew-hover" href="#">ОТПРАВИТЬ</a>
+                      <input class="ui-input" type="email" name="email" placeholder="Email"><a class="btn btn--primary btn--block btn--no-skew-hover" href="#">ОТПРАВИТЬ</a>
                     </form>
                   </div>
                 </div>
@@ -383,22 +383,63 @@
             </div>
           </div>
         </div>
+        <!-- Testimonials-->
+        <div class="testimonials testimonials--mainpage">
+          <div class="container">
+            <div class="row">
+              <div class="col col--full">
+                <div class="testimonials__title">Вот что думают наши игроки</div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col col--full">
+                <div class="owl-carousel owl-carousel--controlls-l-to-r" id="owlTestimonials">
+                  <div class="testimonials__card">
+                    <div class="testimonials__card__image"><img src="images/testimonialsPic1@2x.png"></div>
+                    <div class="testimonials__card__name">Каролина</div>
+                    <div class="testimonials__card__content">Были на квесте про инопланетян. Очень понравилось! Некоторые задания сложноваты для десятилетки, но старший помог, со всем справились. В музеоне заблудились. Очень приятные рисуночки, после квеста прислали заготовку для открытки.</div><a href="#">Ссылка...</a>
+                  </div>
+                  <!-- card-->
+                  <div class="testimonials__card">
+                    <div class="testimonials__card__image"><img src="images/testimonialsPic1@2x.png"></div>
+                    <div class="testimonials__card__name">Тимур</div>
+                    <div class="testimonials__card__content">Были на квесте про инопланетян. Очень понравилось! Некоторые задания сложноваты для десятилетки, но старший помог, со всем справились. В музеоне заблудились. Очень приятные рисуночки, после квеста прислали заготовку для открытки. Жаль что больше нету таких квестов</div><a href="#">Ссылка...</a>
+                  </div>
+                  <!-- card-->
+                  <div class="testimonials__card">
+                    <div class="testimonials__card__image"><img src="images/testimonialsPic1@2x.png"></div>
+                    <div class="testimonials__card__name">Анна</div>
+                    <div class="testimonials__card__content">Были на квесте про инопланетян. Очень понравилось! Некоторые задания сложноваты для десятилетки, но старший помог, со всем справились. В музеоне заблудились.</div><a href="#">Ссылка...</a>
+                  </div>
+                  <!-- card-->
+                  <div class="testimonials__card">
+                    <div class="testimonials__card__image"><img src="images/testimonialsPic1@2x.png"></div>
+                    <div class="testimonials__card__name">Тимур</div>
+                    <div class="testimonials__card__content">Были на квесте про инопланетян. Очень понравилось! Некоторые задания сложноваты для десятилетки, но старший помог, со всем справились. В музеоне заблудились. Очень приятные рисуночки, после квеста прислали заготовку для открытки.</div><a href="#">Ссылка...</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
         <!-- QUESTION-->
         <div class="question">
           <div class="container">
             <div class="row row--jcc">
               <div class="col col--4-6 col--full--desktop">
                 <div class="question__title">Что-то до сих пор осталось непонятным? <br> Задайте свой вопрос!</div>
-                <form class="question__form" action=""></form>
-                <div class="row row--mobile">
-                  <div class="col col--3-6">
-                    <textarea class="ui-input" placeholder="ВАШ ВОПРОС" rows="7"></textarea>
+                <div class="question__form__thanks">Спасибо! Заявка отправлена<br> Мы свяжемся с вами очень скоро</div>
+                <form class="question__form" action="">
+                  <div class="row row--mobile">
+                    <div class="col col--3-6">
+                      <textarea class="ui-input" placeholder="ВАШ ВОПРОС" rows="7"></textarea>
+                    </div>
+                    <div class="col col--3-6">
+                      <input class="ui-input" type="text" placeholder="Ваше имя">
+                      <input class="ui-input" type="email" placeholder="Email"><a class="btn btn--primary btn--block btn--no-skew-hover" href="#">ОТПРАВИТЬ</a>
+                    </div>
                   </div>
-                  <div class="col col--3-6">
-                    <input class="ui-input" type="text" placeholder="Ваше имя">
-                    <input class="ui-input" type="email" placeholder="Email"><a class="btn btn--primary btn--block btn--no-skew-hover" href="#">ОТПРАВИТЬ</a>
-                  </div>
-                </div>
+                </form>
               </div>
             </div>
           </div>

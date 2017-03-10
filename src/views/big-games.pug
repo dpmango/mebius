@@ -21,7 +21,7 @@ html
             .row.row--jcc--desktop.row--wrap--desktop
               .col.col--full.visible--mobile
                 .hero__desc.hero__desc--mobile это мероприятие-квест, на котором классный сюжет и удобство мобильной системы <br> превращаются в массовое городское помешательство
-              .col.col--4-6.col--pad-r-9.col--full--desktop
+              .col.col--4-6.col--pad-r-9.col--full--desktop.p-one-line--mobile
                 p Сегодня вы нашли в кустах странный мобильный телефон с ярко горящими красными буквами: SOS! <br> Остаться в стороне никак нельзя: ситуация требует немедленного вмешательства. Маленькая девочка отстала от инопланетной экскурсионной группы. Её шлюпка разбилась где-то в Москве, а сама девочка ужасно напугана и хочет как можно скорее попасть домой...
                 .quote
                   .quote__image
@@ -60,7 +60,7 @@ html
                         input(type="checkbox" name="startDate" id="startDate_5")
                         label(for="startDate_5") 20:00-22:00
                   input.ui-input(type="text" placeholder="НАЗВАНИЕ КОМАНДЫ")
-                  input.ui-input(type="email" placeholder="E-MAIL")
+                  input.ui-input(type="email" name="email"  placeholder="E-MAIL")
 
                   span.form-buy__team-input
                     | В моей команде
@@ -134,7 +134,7 @@ html
                   .col.col--1-6.col--pad-r-9
                     .faq__question-box
                       span ?
-                  .col.col--5-6.no-pad-r
+                  .col.col--5-6
                     .faq__item.active
                       .faq__question Чем большая игра отличается от обычной?
                       .faq__answer.active Игра происходит на специальном сайте, поэтому вам понадобится смартфон или планшет с подключённым мобильным интернетом. На экране вы увидите задания, реплики персонажей и свой игровой прогресс. Перемещайтесь по городу и продвигайтесь по сюжету. На случай сложностей в квесте предусмотрены подсказки. <br> Время на прохождение не ограничено: при желании можно прерваться на кофе или даже продолжить в другой день.
@@ -156,14 +156,14 @@ html
             .row.row--jcc
               .col.col--4-6.col--full--desktop
                 .question__title Что-то до сих пор осталось непонятным? <br> Задайте свой вопрос!
+                .question__form__thanks Спасибо! Заявка отправлена<br> Мы свяжемся с вами очень скоро
                 form(action="").question__form
-                .row.row--mobile
-                  .col.col--3-6
-                    textarea.ui-input(placeholder="ВАШ ВОПРОС" rows="7")
-
-                  .col.col--3-6
-                    input(type="text" placeholder="Ваше имя").ui-input
-                    input(type="email" placeholder="Email").ui-input
-                    a(href="#").btn.btn--primary.btn--block.btn--no-skew-hover ОТПРАВИТЬ
+                  .row.row--mobile
+                    .col.col--3-6
+                      textarea.ui-input(placeholder="ВАШ ВОПРОС" rows="7")
+                    .col.col--3-6
+                      input(type="text" placeholder="Ваше имя").ui-input
+                      input(type="email" placeholder="Email").ui-input
+                      a(href="#").btn.btn--primary.btn--block.btn--no-skew-hover ОТПРАВИТЬ
 
       include shared/footer.pug

@@ -25,9 +25,6 @@ html
                         span
                           i.ico.ico-list-1
                           span автоквест
-                      .hero__quest-teams
-                        span.selected 1 команда
-                        span 2 команды
           .slide
             .hero.hero--quest(style='background-image: url("images/questHero.png"); background-position: top center')
               .container
@@ -45,9 +42,6 @@ html
                         span
                           i.ico.ico-list-1
                           span автоквест
-                      .hero__quest-teams
-                        span.selected 1 команда
-                        span 2 команды
 
         // BIG GAME
         .big-game
@@ -73,10 +67,6 @@ html
                   input.ui-input(type="email" placeholder="E-MAIL")
 
                   .form-buy__promo
-                    input.ui-input(type="email" placeholder="E-MAIL КАПИТАНА ВТОРОЙ КОМАНДЫ")
-                    i.ico.ico-info-tooltip(data-toggle="tooltip" data-placement="top" title="Tooltip on top")
-
-                  .form-buy__promo
                     input.ui-input.ui-input--bottom-dashed(type="text" placeholder="ВВЕДИТЕ ПРОМОКОД")
                     i.ico.ico-info-tooltip(data-toggle="tooltip" data-placement="top" title="Tooltip on top")
 
@@ -91,14 +81,15 @@ html
             .row.row--jcc
               .col.col--4-6.col--full--desktop
                 .question__title Что-то до сих пор осталось непонятным? <br> Задайте свой вопрос!
+                .question__form__thanks Спасибо! Заявка отправлена<br> Мы свяжемся с вами очень скоро
                 form(action="").question__form
-                .row.row--mobile
-                  .col.col--3-6
-                    textarea.ui-input(placeholder="ВАШ ВОПРОС" rows="7")
+                  .row.row--mobile
+                    .col.col--3-6
+                      textarea.ui-input(placeholder="ВАШ ВОПРОС" rows="7")
 
-                  .col.col--3-6
-                    input(type="text" placeholder="Ваше имя").ui-input
-                    input(type="email" placeholder="Email").ui-input
-                    a(href="#").btn.btn--primary.btn--block.btn--no-skew-hover ОТПРАВИТЬ
+                    .col.col--3-6
+                      input(type="text" placeholder="Ваше имя").ui-input
+                      input(type="email" placeholder="Email").ui-input
+                      a(href="#").btn.btn--primary.btn--block.btn--no-skew-hover ОТПРАВИТЬ
 
       include shared/footer.pug

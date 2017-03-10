@@ -1,0 +1,1097 @@
+// HER0
+.hero
+  background-repeat: no-repeat
+  background-size: cover
+  background-position: center
+  background-attachment: fixed
+  min-height: 650px
+  height: 100vh
+  position: relative
+  @media($desktop)
+    max-height: 700px
+  @media($tablet)
+    min-height: auto
+    max-height: 530px
+    background-attachment: local
+  @media($mobile)
+    max-height: 350px
+  @media($mobile-s)
+    max-height: 260px
+  &::after
+    position: absolute 0 0 0 0
+    background: color(black a(10%))
+    display: block
+    content: ' '
+    z-index: 1
+  &::before
+    position: absolute
+    bottom: 0
+    left: 0
+    right: 0
+    height: 200px
+    background: linear-gradient(to top, color(black a(50%)), color(black a(0%)) )
+    display: block
+    content: ' '
+    z-index: 1
+    @media($desktop)
+      display: none
+  &--mainpage
+    background-image: url('../images/heroGorodok.png')
+  &--bonus, &--quest
+    background-image: url('../images/heroBonus.png')
+    height: auto
+    min-height: auto
+    max-height: 620px
+    &::after
+      background: color(black a(15%))
+    &::before
+      display: none
+  &--big-game
+    background-image: url('../images/heroMainpage.png')
+    height: auto
+    min-height: auto
+    max-height: 620px
+    @media($tablet)
+      max-height: 500px
+    @media($mobile)
+      max-height: 340px
+    @media($mobile-s)
+      max-height: 280px
+  &__content-wrap
+    display: flex
+    flex-direction: column
+    justify-content: center
+    align-items: flex-start
+    padding-top: 110px
+    min-height: 650px
+    height: 100vh
+    @media($desktop)
+      max-height: 700px
+    @media($tablet)
+      min-height: auto
+      max-height: 530px
+    @media($mobile)
+      padding-top: 80px
+      max-height: 350px
+    @media($mobile-s)
+      padding-top: 50px
+      max-height: 260px
+    &--centrify
+      align-items: center
+      height: auto
+      min-height: 620px
+      max-height: 620px
+      .hero__title
+        width: 100%
+      .hero__desc
+        width: 100%
+      @media($tablet)
+        min-height: 500px
+        max-height: 500px
+      @media($mobile)
+        min-height: 340px
+        max-height: 340px
+      @media($mobile-s)
+        min-height: 280px
+        max-height: 280px
+    &--quest
+      justify-content: flex-start
+      padding-top: 220px
+      height: auto
+      min-height: 620px
+      max-height: 620px
+    .ico-down
+      position: absolute
+      bottom: 30px
+      z-index: 3
+      left: 50%
+      transform: translateX(-50%)
+      cursor: pointer
+      &:hover
+        transform: translateX(-50%) scale(1.2)
+
+  &__title
+    font-family: 'Neo-Light'
+    font-size: 52px
+    color: white
+    text-transform: uppercase
+    position: relative
+    z-index: 3
+    text-shadow: 0 3px 10px color(black a(40%))
+    @media($desktop)
+      font-size: 58px
+    @media($tablet)
+      font-size: 52px
+    @media($mobile)
+      font-size: 32px
+    @media($mobile-s)
+      font-size: 22px
+    &--mega
+      text-align: center
+      font-size: 126px
+      @media($tablet)
+        font-size: 90px
+      @media($mobile)
+        font-size: 40px
+
+  &__desc
+    font-size: 27px
+    text-align: center
+    color: white
+    position: relative
+    z-index: 2
+    margin-top: 8vh
+    @media($desktop)
+      font-size: 34px
+    @media($tablet)
+      margin-top: 10px
+    @media($mobile)
+      display: none
+      &--mobile
+        display: block
+        font-size: 20px
+        line-height: 1em
+        color: #baa588
+        margin-bottom: 10px
+        margin-top: 0
+
+  &__quest-types
+    position: relative
+    z-index: 2
+    font-size: 22px
+    color: white
+    margin-top: 5px
+    span
+      margin-right: 10px
+      margin-left: -7px
+    .ico
+      transform: scale(.5)
+      filter: contrast(100)
+      margin-right: 5px
+  &__quest-teams
+    position: relative
+    z-index: 2
+    margin-top: 10px
+    border: 1px solid white
+    border-radius: 6px
+    font-size: 20px
+    text-transform: uppercase
+    line-height: 1
+    span
+      display: inline-block
+      padding: 5px 10px
+      cursor: pointer
+      &.selected
+        background: white
+        color: $fontColor
+
+
+
+
+// ICON LIST
+.icon-list
+  &__wrapper
+    display: flex
+    justify-content: space-between
+    margin-top: 30px
+    @media($desktop)
+      flex-wrap: wrap
+      margin-left: 15%
+      margin-right: 15%
+    @media($tablet)
+      margin-left: 5%
+      margin-right: 5%
+    @media($mobile)
+      margin-left: 0
+      margin-right: 0
+  &__item
+    flex: 1
+    text-align: center
+    padding-left: 10px
+    padding-right: 10px
+    @media($desktop)
+      flex: 1 1 25%
+    .ico
+      transition: transform .3s ease-out
+      @media($desktop)
+        transform: scale(1.1)
+      @media($tablet)
+        transform: scale(1.2)
+      @media($mobile)
+        transform: scale(1)
+      @media($mobile-s)
+        transform: scale(.8)
+    &__name
+      margin-top: 10px
+      color: $colorExtraLightChoco
+      text-transform: uppercase
+      font-size: 18px
+      transition: color .4s ease-in-out, transform .5s ease-out
+      @media($desktop)
+        margin-top: 15px
+        font-size: 24px
+      @media($desktop)
+        font-size: 22px
+      @media($mobile)
+        font-size: 18px
+    &__flip
+      color: $colorExtraLightChoco
+      opacity: 0
+      margin-top: 5px
+      transition: transform .5s ease-out, opacity .3s ease
+      @media($desktop)
+        font-size: 22px
+        line-height: 0.65
+        margin-bottom: -10px
+      @media($desktop)
+        font-size: 18px
+        line-height: .8
+      @media($mobile)
+        font-size: 14px
+        line-height: 1
+        margin-bottom: -20px
+    &:hover
+      .ico
+        transform: scale(0)
+      .icon-list__item__name
+        color: $colorYellow
+        transform: translate3d(0, -40px, 0)
+      .icon-list__item__flip
+        opacity: 1
+        transform: translate3d(0, -40px, 0)
+
+// tmp icons
+.ico-list-1
+  background-image: url('../images/sprite/ico-list-1@2x.png')
+  size: 45px 47px
+
+
+// GAME LIST
+.game-list
+  margin-top: 5px
+  margin-bottom: 15px
+  @media($tablet)
+    margin-top: 30px
+  &.mt50
+    margin-top: 50px
+
+  &__card
+    position: relative
+    margin-bottom: 25px
+    overflow: hidden
+    &--huge
+      .game-list__card__image
+        &:hover
+          img
+            transform: scale(1.1)
+      @media($mobile)
+        .game-list__card__cta
+          padding-bottom: 0 !important
+        .game-list__card__cta-right
+          margin-top: -10px
+          .ruble
+            display: block
+    &--full-hover
+      .btn
+        position: absolute
+        opacity: 0
+        left: 50%
+        top: 50%
+        pointer-events: none
+        transform: translate3d(-50%, 200%, 0)
+      &::before
+        display: block
+        content: ' '
+        position: absolute
+        left: 0
+        top: 0
+        right: 0
+        bottom: 0
+        background: color(#f7c25b a(80%))
+        z-index: 5
+        transform: translate3d(0, 100%, 0)
+        transition: all .4s ease-in-out
+      &:hover
+        &::before
+          transform: translate3d(0,0,0)
+
+        .game-list__card__image
+          img
+            transform: none
+        .btn
+          opacity: 1
+          z-index: 6
+          border-color: white
+          color: white
+          transform: translate3d(-50%,-50%,0)
+          pointer-events: all
+
+    &--arrow-hover
+      &:hover
+        .game-list__card__fold
+          transform: translate3d(-60px,0,0)
+          @media($desktop)
+            transform: translate3d(-100px,0,0)
+          position: relative
+          &__link
+            opacity: 1
+            pointer-events: all
+        .game-list__card__image
+          img
+            transform: none
+
+    &--done
+      .game-list__card__cta-right
+        color: #f9bc5a
+        font-size: 20px
+        .ico
+          transform: scale(1.35)
+          margin-left: 7px
+          vertical-align: top
+      .game-list__card__image
+        opacity: .5
+        &:hover
+          img
+            transform: none
+
+    &__chars
+      position: absolute
+      top: 0
+      left: 0
+      right: 0
+      z-index: 3
+      padding: 10px 20px
+      font-size: 18px
+      background: linear-gradient(to bottom, color(black a(50%)), color(black a(0%)))
+      display: flex
+      justify-content: space-between
+      color: white
+      @media($desktop)
+        font-size: 24px
+      @media($tablet)
+        font-size: 18px
+      @media($mobile)
+        font-size: 14px
+      span
+        flex: 1 0 auto
+        margin-right: 5px
+    &__promo
+      position: absolute
+      top: 40px
+      left: 0
+      z-index: 3
+      color: white
+      padding: 8px 8px 6px 13px
+      height: 30px
+      font-family: 'Neo-Light'
+      text-transform: uppercase
+      color: $fontColor
+      background: #f7c25b
+      &__wrapper
+        position: relative
+      &::after
+        position: absolute
+        top: 0
+        right: -15px
+        display: block
+        content: ' '
+        width: 0
+        height: 0
+        border-style: solid
+        border-width: 15px 15px 0 0
+        border-color: #f7c25b transparent transparent transparent
+      &::before
+        position: absolute
+        bottom: 0
+        right: -15px
+        display: block
+        content: ' '
+        width: 0
+        height: 0
+        border-style: solid
+        border-width: 15px 0 0 15px
+        border-color: transparent transparent transparent #f7c25b
+
+    &__image
+      font-size: 0
+      cursor: pointer
+      &:hover
+        img
+          transform: scale(1.15) rotate3d(2, 1, 3, -10deg)
+      img
+        max-width: 100%
+        transition: transform .6s ease-in-out
+        @media($desktop)
+          min-width: 360px
+        @media(width <= 785px)
+          min-width: 340px
+        @media($mobile)
+          min-width: auto
+    &__fold
+      background: $chocoBG
+      position: relative
+      z-index: 3
+      transition: transform .4s ease-in
+      &__link
+        opacity: 0
+        pointer-events: none
+        display: block
+        content: ' '
+        position: absolute
+        top: 0
+        right: -60px
+        width: 60px
+        height: 100%
+        background: $colorYellow url('../images/sprite/ico-arrow-white@2x.png') no-repeat center
+        background-size: 50%
+        transition: all .4s ease-in
+        cursor: pointer
+        @media($desktop)
+          width: 100px
+          right: -100px
+        &:hover
+          background-size: 60%
+    &__name
+      font-family: 'Neo-Light'
+      font-size: 18px
+      padding: 10px 20px 0 20px
+      @media($desktop)
+        font-size: 26px
+      @media($tablet)
+        font-size: 20px
+      @media($mobile)
+        padding-left: 15px
+        padding-top: 7px
+        font-size: 18px
+    &__cta
+      display: flex
+      justify-content: space-between
+      padding: 8px 10px 10px 20px
+      @media($desktop)
+        padding-top: 2px
+        padding-bottom: 5px
+      @media($mobile)
+        padding: 6px 10px 10px 15px
+      .ico
+        margin-right: 5px
+        @media($desktop)
+          size: 12px 18px
+          vertical-align: -2px
+          margin-right: 10px
+        @media($tablet)
+          size: 10px 16px
+
+    &__cta-left
+      color: #706350
+      @media($desktop)
+        font-size: 22px
+      @media($tablet)
+        font-size: 18px
+
+    &__cta-right
+      font-family: 'Neo-Light'
+      margin-right: 0px
+      color: #776e5e
+      font-size: 18px
+      @media($desktop)
+        font-size: 24px
+      @media($tablet)
+        font-size: 20px
+      .ruble
+        display: inline-block
+        font-size: 13px
+        margin-left: 2px
+
+//HOW IT WORKS
+.how-it-works
+  background: $chocoBG
+  margin-top: 60px
+  padding: 50px 0
+  @media($desktop)
+    margin-top: 120px
+    padding: 90px 0 110px 0
+    .mt30
+      margin-top: 45px
+  @media($tablet)
+    padding-top: 70px
+    padding-bottom: 60px
+  @media($mobile)
+    margin-top: 50px
+    padding-top: 30px
+    padding-bottom: 20px
+  &--no-bg
+    background: #fefefe
+
+  .col--1-4
+    overflow: hidden
+    height: 320px
+    border: 1px solid #c3b497
+    margin-left: -1px
+    @media($desktop)
+      overflow: visible
+      border: none
+      margin-left: 0
+      height: 435px
+      display: flex
+      flex-wrap: nowrap
+      &:nth-child(odd)
+        .how-it-works__visible
+          order: 1
+          margin-bottom: -1px
+        .how-it-works__hidden
+          order: 2
+      &:nth-child(even)
+        .how-it-works__visible
+          order: 2
+          margin-left: -1px
+        .how-it-works__hidden
+          order: 1
+          padding-left: 0
+          padding-right: 25px
+    @media($mobile-s)
+      height: auto
+      flex-wrap: wrap
+      &:nth-child(odd)
+        .how-it-works__visible
+          order: 1
+        .how-it-works__hidden
+          order: 2
+      &:nth-child(even)
+        .how-it-works__visible
+          order: 1
+        .how-it-works__hidden
+          order: 2
+
+    @media($desktop-from)
+      &:hover
+        .how-it-works__desc
+          height: auto
+          background: #c3b497
+          span
+            color: white
+        .how-it-works__hidden
+          background: #c3b497
+          opacity: 1
+          width: auto
+      &:nth-child(odd)
+        .how-it-works__desc
+          border-top: 1px solid #c3b497
+        &:hover
+          .how-it-works__image
+            transform: translate3d(0, -160px, 0)
+          .how-it-works__desc
+            transform: translate3d(0, -160px, 0)
+          .how-it-works__hidden
+            transform: translate3d(0, -160px, 0)
+      &:nth-child(even)
+        .how-it-works__desc
+          border-bottom: 1px solid #c3b497
+        &:hover
+          .how-it-works__image
+            transform: translate3d(0, -160px, 0)
+          .how-it-works__desc
+            transform: translate3d(0, 0px, 0)
+          .how-it-works__hidden
+            transform: translate3d(0, -180px, 0)
+
+  &__image
+    font-size: 0
+    height: 160px
+    position: relative
+    overflow: hidden
+    transition: transform .4s ease-out
+    @media($desktop)
+      height: 215px
+    @media($mobile-s)
+      height: auto
+      max-height: 180px
+    img
+      position: relative
+      left: 50%
+      top: 50%
+      transform: translate(-50%, -50%)
+      display: block
+      max-width: 110%
+      @media($tablet)
+        max-width: 120%
+      @media($mobile)
+        top: 45%
+        max-width: 130%
+      @media($mobile-s)
+        max-width: 110%
+        left: auto
+        top: auto
+        transform: translate(0)
+  &__desc
+    font-size: 18px
+    padding-left: 25px
+    padding-top: 20px
+    padding-right: 20px
+    height: 160px
+    display: flex
+    flex-wrap: wrap
+    flex-direction: column
+    justify-content: center
+    position: relative
+    z-index: 2
+    text-transform: uppercase
+    transition: all .4s ease-out
+    @media($desktop)
+      padding-left: 35px
+      padding-right: 10px
+      height: 205px
+      font-size: 28px
+      margin-top: -10px
+    @media($mobile)
+      height: auto
+    @media($width <= 500px)
+      height: auto
+    @media($mobile-s)
+      height: auto
+      min-height: 215px
+      padding-top: 45px
+      padding-bottom: 40px
+      margin-bottom: 10px
+      padding-right: 20px
+      font-size: 20px
+    span
+      display: block
+      color: #b3a488
+      font-family: 'Neo-Light'
+      font-size: 60px
+      line-height: 1
+      margin-bottom: -5px
+      @media($desktop)
+        margin-left: -5px
+        margin-bottom: -10px
+        font-size: 90px
+      @media($mobile)
+        font-size: 70px
+        margin-bottom: 0
+      @media($mobile-s)
+        font-size: 58px
+  &__hidden
+    opacity: 0
+    width: 0.1px
+    overflow: hidden
+    padding: 25px 10px 25px 25px
+    line-height: 1.2
+    height: 320px
+    transition: transform .4s ease-out
+    @media($desktop)
+      opacity: 1
+      width: 50%
+      flex: 0 1 50%
+      font-size: 28px
+      line-height: 1.25
+      height: 430px
+      padding: 34px 0px 25px 30px
+    @media($tablet)
+      font-size: 25px
+      padding-top: 50px
+    @media($mobile)
+      font-size: 22px
+    @media($mobile-s)
+      height: auto
+      margin-bottom: 20px
+      padding-right: 10px
+      flex: 1 1 100%
+      padding: 10px 0
+    @media(width <= 500px)
+      padding-right: 0
+
+  &__visible
+    @media($desktop)
+      border: 1px solid #c3b497
+      flex: 0 1 50%
+      display: flex
+      flex-direction: column
+      .how-it-works__image
+        order: 1
+      .how-it-works__desc
+        order: 2
+    @media($mobile-s)
+      flex: 1 1 100%
+
+// NUMBERs
+.numbers
+  &__wrapper
+    display: flex
+    justify-content: space-between
+    @media($mobile)
+      justify-content: center
+      align-items: center
+      flex-wrap: wrap
+      margin-left: -5px
+      margin-right: -5px
+  &__card
+    flex: 1 1 20%
+    border-left: 1px solid $colorLightChoco
+    padding-left: 15px
+    @media($desktop)
+      border-width: 2px
+    @media($mobile)
+      margin-bottom: 30px
+      flex: 0 1 33%
+      padding-left: 12px
+      padding-right: 10px
+      border-width: 1px
+      margin-left: 0px
+      &:nth-child(2)
+        flex-basis: 30%
+      &:nth-child(3)
+        flex-basis: 37%
+    &:last-child
+      flex-basis: 14%
+      @media($tablet)
+        flex-basis: 18%
+      @media($mobile)
+        margin-left: 0
+        flex-basis: auto
+        padding-left: 12px
+    &:last-child
+      @media($mobile)
+        padding-right: 0
+
+    &__number
+      color: $colorLightChoco
+      font-family: 'Neo-light'
+      font-size: 60px
+      line-height: 1
+      @media($desktop)
+        font-size: 68px
+      @media(width <= 870px)
+        font-size: 55px
+      @media($tablet)
+        font-size: 52px
+      @media($mobile)
+        font-size: 38px
+
+    &__name
+      margin-top: -7px
+      font-size: 18px
+      line-height: 1
+      margin-bottom: -5px
+      @media($desktop)
+        font-size: 26px
+        margin-top: -10px
+      @media(width <= 870px)
+        font-size: 22px
+      @media($tablet)
+        margin-top: -5px
+        font-size: 23px
+      @media($mobile)
+        margin-bottom: -2px
+        font-size: 18px
+
+
+// CALENDAR
+.calendar
+  background: $chocoBG
+  padding-top: 30px
+  padding-bottom: 45px
+  @media($tablet)
+    padding-bottom: 60px
+  @media($mobile)
+    padding-top: 20px
+    padding-bottom: 30px
+  img
+    max-width: 100%
+  p
+    margin-top: 15px
+    padding-bottom: 0
+    font-size: 20px
+    @media($desktop)
+      margin-top: 25px
+      font-size: 28px
+    @media($tablet)
+      font-size: 25px
+    @media($mobile)
+      margin-top: 5px
+      font-size: 20px
+
+  &__title
+    font-family: 'Neo-Light'
+    font-size: 32px
+    margin-bottom: 12px
+    color: #706350
+    @media($desktop)
+      margin-top: 5px
+      font-size: 44px
+      margin-bottom: 20px
+    @media($tablet)
+      font-size: 35px
+    @media($mobile)
+      font-size: 22px
+      margin-bottom: 5px
+  &__input
+    input
+      display: none
+    .datepicker
+      width: 100%
+      border: 1px solid #c3b497
+      overflow: hidden
+      font-family: 'Neo-Light'
+      @media($desktop)
+        font-size: 20px
+        .datepicker--nav
+          padding-top: 10px
+          padding-bottom: 10px
+        .datepicker--cell
+          height: 50px
+      @media($mobile)
+        width: auto
+        font-size: 16px
+        .datepicker--nav
+          padding-top: 5px
+          padding-bottom: 5px
+        .datepicker--cell
+          height: 35px
+
+      &--days-names
+        display: none
+        font-size: 0
+      &--day-name
+        display: none
+      &--cell.-weekend-
+        color: #e9c162
+        &.-selected-
+          color: white
+      &--cell-day
+        border: 1px solid #c3b497
+        margin-left: -1px
+        margin-bottom: -1px
+      .datepicker--nav-title
+        vertical-align: middle
+        font-family: 'PTSans-Light'
+        text-transform: uppercase
+        font-size: 14px
+        font-size: 18px
+        @media($desktop)
+          font-size: 26px
+        @media($mobile)
+          font-size: 20px
+      .datepicker--cells.datepicker--cells-days
+        margin-right: -8px
+      &--content
+        padding: 0
+
+    &__context
+      background: white
+      padding: 17px 20px 16px 35px
+      border: 1px solid #c3b497
+      margin-top: -1px
+      margin-right: -2px
+      position: relative
+      @media($desktop)
+        padding: 25px 20px 16px 50px
+      @media($mobile)
+        padding: 17px 20px 16px 35px
+        margin-right: 0px
+
+    &__selected-row
+      display: flex
+      justify-content: space-between
+    &__selected-day
+      font-family: 'Neo-Light'
+      font-size: 26px
+      margin-bottom: 10px
+      @media($desktop)
+        font-size: 40px
+      @media($mobile)
+        font-size: 26px
+    &__selected-time
+      .ico
+        margin-right: 10px
+        @media($desktop)
+          margin-right: 20px
+          margin-top: -5px
+          transform: scale(1.2)
+        @media($mobile)
+          margin-right: 10px
+          transform: scale(1)
+      font-size: 24px
+      @media($desktop)
+        margin-top: 10px
+        font-size: 36px
+      @media($mobile)
+        font-size: 24px
+        margin-top: 0
+
+    &__selected-weekday
+      font-size: 18px
+      color: #b3a488
+      margin-top: 5px
+      @media($desktop)
+        font-size: 28px
+      @media($mobile)
+        font-size: 20px
+
+
+// BENEFITS
+.benefits
+  padding-top: 70px
+  padding-bottom: 100px
+  @media($desktop)
+    padding-bottom: 50px
+  @media($mobile)
+    padding-top: 40px
+    padding-bottom: 60px
+  .section-name
+    @media($mobile)
+      font-size: 20px
+  &__slide
+    display: flex
+    align-items: center
+    padding-top: 70px
+    position: relative
+    overflow: hidden
+    margin-left: 10%
+    @media($desktop)
+      margin-left: 0
+    @media($mobile)
+      padding-top: 20px
+      flex-wrap: wrap
+      flex-direction: column
+      justify-content: center
+    &__image
+      flex: 0 0 200px
+      @media($desktop)
+        flex-basis: 230px
+      @media($tablet)
+        flex-basis: 180px
+      @media($mobile)
+        flex-basis: auto
+        margin-bottom: 15px
+      img
+        max-width: 100%
+        @media($mobile)
+          width: auto !important
+          max-height: 110px
+    &__content
+      flex: 1 1 auto
+      margin-right: 15%
+      margin-left: 95px
+      position: relative
+      @media($desktop)
+        margin-left: 80px
+      @media(width <=870px)
+        margin-left: 60px
+      @media($mobile)
+        margin-left: 50px
+    .ico-quote
+      position: absolute
+      left: -65px
+      top: 0
+      @media($mobile)
+        left: -40px
+        top: -15px
+        transform: scale(.6)
+    &__title
+      font-family: 'Neo-Light'
+      font-size: 38px
+      position: relative
+      display: inline-block
+      @media($desktop)
+        font-size: 42px
+        white-space: nowrap
+      @media($tablet)
+        font-size: 34px
+      @media($mobile)
+        font-size: 22px
+      span
+        position: relative
+        z-index: 2
+      &::after
+        display: block
+        content: ' '
+        position: absolute
+        bottom: 7px
+        width: 100%
+        height: 11px
+        background: #f2eadc
+        z-index: 1
+        @media($mobile)
+          height: 4px
+    &__text
+      margin-top: 10px
+      font-size: 22px
+      @media($desktop)
+        font-size: 28px
+      @media($tablet)
+        font-size: 25px
+      @media($mobile)
+        font-size: 20px
+
+// QUestions
+.question
+  padding-top: 100px
+  padding-bottom: 90px
+  background: $chocoBG
+  @media($desktop)
+    padding-top: 150px
+    padding-bottom: 120px
+  @media($tablet)
+    padding-top: 110px
+    padding-bottom: 100px
+  @media($mobile)
+    padding-top: 20px
+    padding-bottom: 30px
+  &--no-bg
+    background: #fefefe
+  &__title
+    text-align: center
+    font-family: 'Neo-Light'
+    font-size: 24px
+    @media($desktop)
+      font-size: 35px
+    @media($tablet)
+      font-size: 32px
+    @media($mobile)
+      font-size: 20px
+  &__form
+    margin-top: 30px
+    @media($mobile)
+      margin-top: 20px
+
+  .btn--primary
+    margin-top: 17px
+    @media($desktop)
+      margin-top: 44px
+    @media($tablet)
+      margin-top: 30px
+    @media($mobile)
+      margin-top: 10px
+      display: inline-block
+      position: relative
+      left: 50%
+      margin-left: -65px
+
+  &__bottom-title
+    font-size: 22px
+    margin-top: 25px
+    @media($desktop)
+      font-size: 28px
+      margin-top: 50px
+    @media($mobile)
+      display: none
+
+  &__bottom-desc
+    font-size: 24px
+    margin-top: 45px
+    color: #baa588
+    padding-left: 7%
+    padding-right: 7%
+    @media($desktop)
+      font-size: 30px
+      margin-top: 35px
+    @media($mobile)
+      display: none
+
+
+@media($desktop)
+  .question__formCondenced
+    textarea
+      height: 230px
+    .btn
+      margin-top: 0

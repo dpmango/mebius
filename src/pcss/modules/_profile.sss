@@ -1,16 +1,20 @@
 // PROFILE
 .profile
-  min-height: 100vh
+  min-height: 700px
+  height: 700px
   background: url('../images/profileBg.png') no-repeat center
   background-size: cover
   padding-top: 125px
   &--no-bg
+    height: auto
     background: #fefefe
     padding-bottom: 50px
   &__scope
     display: flex
     background: #ffffff
     padding: 10px 15px
+    position: relative
+    z-index: 3
     &__left
       text-align: center
       flex-basis: 50%
@@ -46,27 +50,48 @@
       color: #f7c25b
       .ico
         vertical-align: top
+        margin-left: 5px
     &__next-left
       font-size: 16px
       color: #baa588
   &__game
     &__person
-      position: relative
+      position: absolute
       background-size: contain !important
       cursor: pointer
       &:hover
         filter: drop-shadow(0px 0px 30px color($colorYellow a(50%)))
-
       &--cat
-        background: url('../images/profileGameCat@2x.png') no-repeat center
-        size: 114px 111px
+        background: url('../images/cabinet/achive_cat.png') no-repeat center
+        size: 130px 130px
+        bottom: 200px
         left: 15%
-        margin-top: 30vh
-      &--flower
-        background: url('../images/profileGameFlower@2x.png') no-repeat center
-        size: 83px 114px
-        left: 65%
-        margin-top: -35vh
+      &--car
+        background: url('../images/cabinet/achive_car.png') no-repeat center
+        size: 150px 100px
+        bottom: 150px
+        right: 5%
+
+    &__house
+      position: relative
+      background-size: contain !important
+      position: absolute
+      &--abservotoria
+        background: url('../images/cabinet/houseAbservotoria.png') no-repeat center
+        size: 344px 503px
+        right: 400px
+        top: 50px
+      &--gallery
+        background: url('../images/cabinet/houseGallery.png') no-repeat center
+        size: 450px 450px
+        right: 0px
+        top: 130px
+      &--green
+        background: url('../images/cabinet/houseGreen.png') no-repeat center
+        size: 300px
+        right: 200px
+        top: 300px
+
   &__heading
     font-family: 'Neo-Light'
     font-size: 32px
@@ -78,12 +103,6 @@
     padding-bottom: 100px
     &--games
       padding-top: 100px
-      .profile__scope
-        width: 480px
-        margin-left: auto
-        margin-right: auto
-        @media($mobile)
-          width: 100%
       .game-list__card
         &__name
           padding: 15px 30px 10px 30px
@@ -100,31 +119,11 @@
         &__image
           img
             width: 100%
-
     &__scope
-      &__left
-        flex-basis: 60%
       &__right
-        flex-basis: 40%
-      &__image
-        size: 130px
-        img
-          width: 100%
-      &__name
-        font-size: 30px
-      &__rate
-        font-size: 30px
-        .ico
-          transform: scale(1.5)
-          margin-left: 5px
-      &__next-left
-        font-size: 28px
-
-      &__right
-        padding-top: 35px
         .btn
-          font-size: 25px
-          margin-bottom: 10px
+          font-size: 15px
+          padding: 11px 20px 8px 20px
     &__heading
       font-size: 38px
       margin-top: 50px
@@ -165,6 +164,8 @@
     &__game
       &__person
         transform: scale(.8)
+      &__house
+        transform: scale(.65)
     &__scope
       &__left
         flex-basis: 50%

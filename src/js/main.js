@@ -61,7 +61,7 @@ $(document).ready(function(){
       568 : {
         items: 2
       },
-      940 : {
+      768 : {
         items: 3
       }
     }
@@ -81,8 +81,20 @@ $(document).ready(function(){
   // Masked input
   $("#date").mask("99/99/9999",{placeholder:"mm/dd/yyyy"});
   $("input[name='phone']").mask("9 (999) 999-9999");
-  $("#tin").mask("99-9999999");
-  $("#ssn").mask("999-99-9999");
+
+  $("input[type='email']").keydown(function (event) {
+    var email = $(this).val();
+    var emailRegex = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+
+    if(emailRegex.test(email)){
+      $(this).removeClass('has-error');
+      $(this).addClass('valid');
+    } else {
+      $(this).addClass('has-error');
+      $(this).removeClass('valid');
+    }
+
+  });
 
   ///////////////
   // FUNCTIONALITY
@@ -158,7 +170,13 @@ $(document).ready(function(){
   });
 
   // BOOTSTRAP TOOLTIPS
-  $('[data-toggle="tooltip"]').tooltip()
+  $('[data-toggle="tooltip"]').tooltip();
+
+  // Sumit form on a href
+  $('.question__form .btn').on('click', function(e){
+    $(this).closest('.question__form').submit();
+    e.preventDefault();
+  });
 
 
   ///////////////
@@ -174,18 +192,15 @@ $(document).ready(function(){
     var email = form.find('input[type=email]');
     // fake validation
     var emailRegex = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
-    var emailIsValid = false;
-    if(emailRegex.test(email)){
-      emailIsValid = true;
-    } else {
-      emailIsValid = false;
-    }
-    if (emailIsValid){
 
+    console.log(email);
+    if(emailRegex.test(email.val())){
+      form.fadeOut();
+      form.parent().find('.question__form__thanks').fadeIn();
+      alert('form submitted - ajax call here');
     } else {
       email.addClass('has-error');
     }
-
 
     e.preventDefault();
     return false;

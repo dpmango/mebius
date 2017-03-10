@@ -58,7 +58,7 @@
                     <form class="question__form" action="">
                       <textarea class="ui-input" placeholder="ВАШ ВОПРОС" rows="7"></textarea>
                       <input class="ui-input" type="text" placeholder="Ваше имя">
-                      <input class="ui-input" type="email" placeholder="Email"><a class="btn btn--primary btn--block btn--no-skew-hover" href="#">ОТПРАВИТЬ</a>
+                      <input class="ui-input" type="email" name="email" placeholder="Email"><a class="btn btn--primary btn--block btn--no-skew-hover" href="#">ОТПРАВИТЬ</a>
                     </form>
                   </div>
                 </div>
@@ -88,7 +88,7 @@
               <div class="col col--full visible--mobile">
                 <div class="hero__desc hero__desc--mobile">это мероприятие-квест, на котором классный сюжет и удобство мобильной системы <br> превращаются в массовое городское помешательство</div>
               </div>
-              <div class="col col--4-6 col--pad-r-9 col--full--desktop">
+              <div class="col col--4-6 col--pad-r-9 col--full--desktop p-one-line--mobile">
                 <p>Сегодня вы нашли в кустах странный мобильный телефон с ярко горящими красными буквами: SOS! <br> Остаться в стороне никак нельзя: ситуация требует немедленного вмешательства. Маленькая девочка отстала от инопланетной экскурсионной группы. Её шлюпка разбилась где-то в Москве, а сама девочка ужасно напугана и хочет как можно скорее попасть домой...</p>
                 <div class="quote">
                   <div class="quote__image"><img src="images/benefit-girl@2x.png"></div>
@@ -133,7 +133,7 @@
                     </div>
                   </div>
                   <input class="ui-input" type="text" placeholder="НАЗВАНИЕ КОМАНДЫ">
-                  <input class="ui-input" type="email" placeholder="E-MAIL"><span class="form-buy__team-input">В моей команде
+                  <input class="ui-input" type="email" name="email" placeholder="E-MAIL"><span class="form-buy__team-input">В моей команде
                     <input class="ui-input ui-input--short" type="text" placeholder="?">человек</span>
                   <div class="form-buy__promo">
                     <input class="ui-input ui-input--bottom-dashed" type="text" placeholder="ВВЕДИТЕ ПРОМОКОД"><i class="ico ico-info-tooltip" data-toggle="tooltip" data-placement="top" title="Tooltip on top"></i>
@@ -196,7 +196,7 @@
                   <div class="col col--1-6 col--pad-r-9">
                     <div class="faq__question-box"><span>?</span></div>
                   </div>
-                  <div class="col col--5-6 no-pad-r">
+                  <div class="col col--5-6">
                     <div class="faq__item active">
                       <div class="faq__question">Чем большая игра отличается от обычной?</div>
                       <div class="faq__answer active">Игра происходит на специальном сайте, поэтому вам понадобится смартфон или планшет с подключённым мобильным интернетом. На экране вы увидите задания, реплики персонажей и свой игровой прогресс. Перемещайтесь по городу и продвигайтесь по сюжету. На случай сложностей в квесте предусмотрены подсказки. <br> Время на прохождение не ограничено: при желании можно прерваться на кофе или даже продолжить в другой день.</div>
@@ -224,16 +224,18 @@
             <div class="row row--jcc">
               <div class="col col--4-6 col--full--desktop">
                 <div class="question__title">Что-то до сих пор осталось непонятным? <br> Задайте свой вопрос!</div>
-                <form class="question__form" action=""></form>
-                <div class="row row--mobile">
-                  <div class="col col--3-6">
-                    <textarea class="ui-input" placeholder="ВАШ ВОПРОС" rows="7"></textarea>
+                <div class="question__form__thanks">Спасибо! Заявка отправлена<br> Мы свяжемся с вами очень скоро</div>
+                <form class="question__form" action="">
+                  <div class="row row--mobile">
+                    <div class="col col--3-6">
+                      <textarea class="ui-input" placeholder="ВАШ ВОПРОС" rows="7"></textarea>
+                    </div>
+                    <div class="col col--3-6">
+                      <input class="ui-input" type="text" placeholder="Ваше имя">
+                      <input class="ui-input" type="email" placeholder="Email"><a class="btn btn--primary btn--block btn--no-skew-hover" href="#">ОТПРАВИТЬ</a>
+                    </div>
                   </div>
-                  <div class="col col--3-6">
-                    <input class="ui-input" type="text" placeholder="Ваше имя">
-                    <input class="ui-input" type="email" placeholder="Email"><a class="btn btn--primary btn--block btn--no-skew-hover" href="#">ОТПРАВИТЬ</a>
-                  </div>
-                </div>
+                </form>
               </div>
             </div>
           </div>

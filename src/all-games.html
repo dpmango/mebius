@@ -64,7 +64,7 @@
                     <form class="question__form" action="">
                       <textarea class="ui-input" placeholder="ВАШ ВОПРОС" rows="7"></textarea>
                       <input class="ui-input" type="text" placeholder="Ваше имя">
-                      <input class="ui-input" type="email" placeholder="Email"><a class="btn btn--primary btn--block btn--no-skew-hover" href="#">ОТПРАВИТЬ</a>
+                      <input class="ui-input" type="email" name="email" placeholder="Email"><a class="btn btn--primary btn--block btn--no-skew-hover" href="#">ОТПРАВИТЬ</a>
                     </form>
                   </div>
                 </div>
@@ -248,16 +248,18 @@
             <div class="row row--jcc">
               <div class="col col--4-6 col--full--desktop">
                 <div class="question__title">Что-то до сих пор осталось непонятным? <br> Задайте свой вопрос!</div>
-                <form class="question__form" action=""></form>
-                <div class="row row--mobile">
-                  <div class="col col--3-6">
-                    <textarea class="ui-input" placeholder="ВАШ ВОПРОС" rows="7"></textarea>
+                <div class="question__form__thanks">Спасибо! Заявка отправлена<br> Мы свяжемся с вами очень скоро</div>
+                <form class="question__form" action="">
+                  <div class="row row--mobile">
+                    <div class="col col--3-6">
+                      <textarea class="ui-input" placeholder="ВАШ ВОПРОС" rows="7"></textarea>
+                    </div>
+                    <div class="col col--3-6">
+                      <input class="ui-input" type="text" placeholder="Ваше имя">
+                      <input class="ui-input" type="email" placeholder="Email"><a class="btn btn--primary btn--block btn--no-skew-hover" href="#">ОТПРАВИТЬ</a>
+                    </div>
                   </div>
-                  <div class="col col--3-6">
-                    <input class="ui-input" type="text" placeholder="Ваше имя">
-                    <input class="ui-input" type="email" placeholder="Email"><a class="btn btn--primary btn--block btn--no-skew-hover" href="#">ОТПРАВИТЬ</a>
-                  </div>
-                </div>
+                </form>
               </div>
             </div>
           </div>

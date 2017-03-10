@@ -220,14 +220,14 @@ html
             .row.row--jcc
               .col.col--4-6.col--full--desktop
                 .question__title Что-то до сих пор осталось непонятным? <br> Задайте свой вопрос!
+                .question__form__thanks Спасибо! Заявка отправлена<br> Мы свяжемся с вами очень скоро
                 form(action="").question__form
-                .row.row--mobile
-                  .col.col--3-6
-                    textarea.ui-input(placeholder="ВАШ ВОПРОС" rows="7")
-
-                  .col.col--3-6
-                    input(type="text" placeholder="Ваше имя").ui-input
-                    input(type="email" placeholder="Email").ui-input
-                    a(href="#").btn.btn--primary.btn--block.btn--no-skew-hover ОТПРАВИТЬ
+                  .row.row--mobile
+                    .col.col--3-6
+                      textarea.ui-input(placeholder="ВАШ ВОПРОС" rows="7")
+                    .col.col--3-6
+                      input(type="text" placeholder="Ваше имя").ui-input
+                      input(type="email" placeholder="Email").ui-input
+                      a(href="#").btn.btn--primary.btn--block.btn--no-skew-hover ОТПРАВИТЬ
 
       include shared/footer.pug
