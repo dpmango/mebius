@@ -1,10 +1,14 @@
 // PROFILE
+.profile-bottom-bg
+  background: url('../images/profileBgBottom.png') repeat-y center
 .profile
   min-height: 700px
   height: 700px
   background: url('../images/profileBg.png') no-repeat center
   background-size: cover
   padding-top: 125px
+  .container
+    position: relative
   &--no-bg
     height: auto
     background: #fefefe
@@ -27,8 +31,8 @@
         font-size: 15px
         margin-bottom: 10px
         &.active
-          background-color: #f7c25b
-          border-color: #f7c25b
+          background-color: #f7c25b !important
+          border-color: #f7c25b !important
     &__image
       display: inline-block
       size: 85px
@@ -55,22 +59,28 @@
       font-size: 16px
       color: #baa588
   &__game
-    &__person
+    &__achived
       position: absolute
       background-size: contain !important
       cursor: pointer
+      z-index: 3
       &:hover
         filter: drop-shadow(0px 0px 30px color($colorYellow a(50%)))
       &--cat
         background: url('../images/cabinet/achive_cat.png') no-repeat center
         size: 130px 130px
-        bottom: 200px
+        top: 200%
         left: 15%
       &--car
         background: url('../images/cabinet/achive_car.png') no-repeat center
         size: 150px 100px
-        bottom: 150px
+        top: 230%
         right: 5%
+      &--candle
+        background: url('../images/cabinet/achive_candle.png') no-repeat center
+        size: 110px
+        top: 0%
+        right: 6%
 
     &__house
       position: relative
@@ -79,18 +89,18 @@
       &--abservotoria
         background: url('../images/cabinet/houseAbservotoria.png') no-repeat center
         size: 344px 503px
-        right: 400px
-        top: 50px
+        right: 380px
+        top: -40%
       &--gallery
         background: url('../images/cabinet/houseGallery.png') no-repeat center
         size: 450px 450px
-        right: 0px
-        top: 130px
+        right: 10px
+        top: 7%
       &--green
         background: url('../images/cabinet/houseGreen.png') no-repeat center
         size: 300px
         right: 200px
-        top: 300px
+        top: 85%
 
   &__heading
     font-family: 'Neo-Light'

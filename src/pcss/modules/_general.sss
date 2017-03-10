@@ -311,9 +311,19 @@
     transform: translate3d(-10%, 0, 0)
     @media($mobile)
       transform: translate3d(-13%, 0, 0)
+  &__relative
+    position: relative
+  &__scrollable
+    position: absolute 0 0 0 0
+    min-height: 600px
+    height: 100vh
+    overflow: auto
+    @media($mobile)
+      min-height: 450px
   &__wrapper
     margin-left: 10%
-    min-height: 100vh
+    height: 100%
+    overflow-y: scroll
     display: flex
     flex-direction: column
     justify-content: space-between
@@ -329,7 +339,7 @@
       margin-left: auto
       margin-right: auto
   &__menu
-    flex: 4 1 auto
+    flex: 5 1 auto
     display: flex
     flex-direction: column
     align-items: stretch
@@ -338,7 +348,8 @@
       display: flex
       align-items: center
       justify-content: center
-      font-size: 36px
+      font-size: 28px
+      padding-top: 3px
       line-height: 1em
       text-align: center
       vertical-align: middle
@@ -357,13 +368,13 @@
         background: #baa688
         color: white
       @media($tablet)
-        display: 24px
+        font-size: 24px
       @media($mobile-s)
         font-size: 20px
       .ico
         order: 1
         margin-top: -4px
-        transform: scale(1.8)
+        transform: scale(1.5)
         margin-right: 10px
         @media($tablet)
           margin-right: 5px
@@ -379,22 +390,24 @@
   &__additional
     margin-top: 20px
     margin-bottom: 10px
-    flex: 1 1 20%
+    flex: 1 1 10%
     display: flex
     flex-direction: column
 
     a
       flex: 1
-      font-size: 36px
+      font-size: 28px
       display: block
       text-align: center
       @media($tablet)
-        display: 24px
+        font-size: 24px
       @media($mobile-s)
         font-size: 20px
   &__question
     text-align: center
     margin-bottom: 20px
+    .header__question
+      display: block
     span
       display: inline-block
       @media($mobile)
