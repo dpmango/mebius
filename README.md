@@ -29,4 +29,4 @@ __Production__
 
 
 ### Push command (gh-pages fix)
-gulp build && git add . && git commit -m "fixed round 3 - mobile menu" && git push origin master && git subtree push --prefix dist origin gh-pages
+gulp build && git add . && git commit -m "quest card image fix" && git push origin master && git subtree push --prefix dist origin gh-pages

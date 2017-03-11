@@ -5912,7 +5912,6 @@ body, html {
     top: 50%;
     left: 50%;
     max-width: 105%;
-    height: 101%;
     -webkit-transition: -webkit-transform .6s ease-in-out;
     transition: -webkit-transform .6s ease-in-out;
     transition: transform .6s ease-in-out;
