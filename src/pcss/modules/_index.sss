@@ -42,6 +42,12 @@
     height: auto
     min-height: auto
     max-height: 620px
+    @media($tablet)
+      max-height: 500px
+    @media($mobile)
+      max-height: 340px
+    @media($mobile-s)
+      max-height: 280px
     &::after
       background: color(black a(15%))
     &::before
@@ -100,6 +106,17 @@
       height: auto
       min-height: 620px
       max-height: 620px
+      @media($tablet)
+        min-height: 500px
+        max-height: 500px
+      @media($mobile)
+        padding-top: 150px
+        min-height: 340px
+        max-height: 340px
+      @media($mobile-s)
+        padding-top: 120px
+        min-height: 280px
+        max-height: 280px
     .ico-down
       position: absolute
       bottom: 30px
@@ -609,7 +626,7 @@
       height: 215px
     @media($mobile-s)
       height: auto
-      max-height: 180px
+      max-height: 160px
     img
       position: relative
       left: 50%
@@ -618,7 +635,7 @@
       display: block
       max-width: 110%
       @media($tablet)
-        max-width: 120%
+        max-width: 123%
       @media($mobile)
         top: 45%
         max-width: 130%
@@ -634,7 +651,6 @@
     padding-right: 20px
     height: 160px
     display: flex
-    flex-wrap: wrap
     flex-direction: column
     justify-content: center
     position: relative
@@ -645,7 +661,7 @@
       padding-left: 35px
       padding-right: 10px
       height: 205px
-      font-size: 28px
+      font-size: 26px
       margin-top: -10px
     @media($mobile)
       height: auto
@@ -653,11 +669,12 @@
       height: auto
     @media($mobile-s)
       height: auto
-      min-height: 215px
+      min-height: 165px
       padding-top: 45px
       padding-bottom: 40px
       margin-bottom: 10px
-      padding-right: 20px
+      padding-left: 25px
+      padding-right: 15px
       font-size: 20px
     span
       display: block
@@ -687,15 +704,15 @@
       opacity: 1
       width: 50%
       flex: 0 1 50%
-      font-size: 28px
+      font-size: 27px
       line-height: 1.25
       height: 430px
       padding: 34px 0px 25px 30px
     @media($tablet)
-      font-size: 25px
+      font-size: 24px
       padding-top: 50px
     @media($mobile)
-      font-size: 22px
+      font-size: 21px
     @media($mobile-s)
       height: auto
       margin-bottom: 20px
@@ -729,7 +746,7 @@
   &__wrapper
     display: flex
     justify-content: space-between
-    @media($mobile)
+    @media($mobile-s)
       justify-content: center
       align-items: center
       flex-wrap: wrap
@@ -741,13 +758,18 @@
     padding-left: 15px
     @media($desktop)
       border-width: 2px
+    @media($tablet)
+      padding-right: 5px
     @media($mobile)
       margin-bottom: 30px
-      flex: 0 1 33%
       padding-left: 12px
       padding-right: 10px
       border-width: 1px
       margin-left: 0px
+      &:nth-child(3)
+        flex-basis: 25%
+    @media($mobile-s)
+      flex: 0 1 33%
       &:nth-child(2)
         flex-basis: 30%
       &:nth-child(3)
@@ -1111,15 +1133,18 @@
       display: none
 
 
+.question__formCondenced
+  textarea
+    height: 102px
 @media($desktop)
   .question__formCondenced
     textarea
-      height: 230px
+      height: 183px
     .btn
       margin-top: 0
 @media($tablet)
   .question__formCondenced
     textarea
-      height: 250px
+      height: 210px
     .btn
       margin-top: 25px

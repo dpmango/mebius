@@ -306,6 +306,14 @@
         margin-left: 5px
       span
         vertical-align: -2px
+    &__more
+      font-size: 22px
+      color: $colorYellow
+      text-transform: uppercase
+      @media($desktop)
+        font-size: 28px
+      @media($mobile)
+        font-size: 24px
     .btn
       min-width: 190px
 
@@ -332,19 +340,13 @@
         .ico
           transform: scale(1.5)
           position: absolute
-          top: 0
+          top: 15px
           left: 0
           margin-left: 8px
         span
           display: inline-block
           padding-left: 40px
           line-height: 1.3em
-      &__more
-        font-size: 26px
-        color: $colorYellow
-        text-transform: uppercase
-        @media($mobile)
-          font-size: 24px
       .btn
         span
           display: none
@@ -380,7 +382,7 @@
           transform: scale(2)
           margin-left: 0
           left: 15px
-          top: 0px
+          top: 0
         span
           padding-left: 55px
       .btn
@@ -478,7 +480,7 @@
     justify-content: space-between
     align-items: flex-end
     padding-bottom: 20px
-    padding-right: 12px
+    padding-right: 30px
     &__datetime
       font-size: 24px
       font-family: 'Neo-Light'
@@ -522,15 +524,17 @@
       padding-right: 10px
       overflow-y: scroll
       border-right: 1px solid #cab597
-      ::-webkit-scrollbar
+      &::-webkit-scrollbar
         width: 5px
 
-      ::-webkit-scrollbar-track
+      &::-webkit-scrollbar-track
         -webkit-box-shadow: none
         -webkit-border-radius: 0px
         border-radius: 0px
+        background: #cab597
+        width: 2px
 
-      ::-webkit-scrollbar-thumb
+      &::-webkit-scrollbar-thumb
         -webkit-border-radius: 5px
         border-radius: 5px
         background: #cab597
@@ -743,6 +747,13 @@
 .faq
   padding-top: 100px
   padding-bottom: 90px
+  &--light-bg
+    background: #f5ebdc
+    margin-bottom: 50px
+    .faq__question
+      color: $colorChoco
+    .question-box
+      color: $colorChoco
   &--inner
     padding-top: 0px
     padding-bottom: 80px
@@ -902,11 +913,13 @@
   &--mainpage
     min-height: 100px
     padding-top: 00px
-    padding-bottom: 20px
+    padding-bottom: 80px
     @media($desktop)
       padding-top: 60px
+
     @media($mobile)
       padding-top: 0px
+      padding-bottom: 40px
   &__title
     font-family: 'Neo-Light'
     font-size: 32px
@@ -915,6 +928,16 @@
     @media($mobile)
       font-size: 20px
 
+  &__mobile-wrapper
+    display: -webkit-flex
+    display: -ms-flex
+    display: flex
+    justify-content: space-between
+    flex-wrap: wrap
+    .testimonials__card
+      flex: 1 1 50%
+      @media($mobile)
+        flex: 1 1 100%
   &__card
     padding-left: 45px
     padding-right: 25px
@@ -1071,10 +1094,10 @@
       span
         margin-top: 35px
 
-@media($desktop)
+@media($tablet)
   .socials-contact
     padding: 40px 0 40px 0
-    margin-bottom: 30px
+    margin-bottom: 0px
     &__title
       font-size: 20px
       margin-bottom: 30px

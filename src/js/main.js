@@ -79,8 +79,8 @@ $(document).ready(function(){
   });
 
   // Masked input
-  $("#date").mask("99/99/9999",{placeholder:"mm/dd/yyyy"});
-  $("input[name='phone']").mask("9 (999) 999-9999");
+  $("input[name='birthday']").mask("99.99.9999",{placeholder:"дд.мм.гггг"});
+  $("input[name='phone']").mask("8 (999) 999-9999");
 
   $("input[type='email']").keydown(function (event) {
     var email = $(this).val();
@@ -195,6 +195,7 @@ $(document).ready(function(){
 
     console.log(email);
     if(emailRegex.test(email.val())){
+      form.parent().find('.question__title').fadeOut();
       form.fadeOut();
       form.parent().find('.question__form__thanks').fadeIn();
       alert('form submitted - ajax call here');

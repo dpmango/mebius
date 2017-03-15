@@ -43,8 +43,9 @@ html
                 .row.row--jcc--tablet.row--wrap--tablet.row--mobile
                   // game card
                   .col.col--2-4
-                    .game-list__card.game-list__card--full-hover
-                      a(href="#").btn.btn--primary Играть
+                    // game-list__card--full-hover - animation effect
+                    .game-list__card.game-list__card--arrow-hover
+                      // a(href="#").btn.btn--primary Играть
                       .game-list__card__chars
                         span короткий
                         span сложный
@@ -61,11 +62,13 @@ html
                           .game-list__card__cta-right
                             span 900
                               span.ruble Р
+                          a(href="#").game-list__card__fold__link
 
                   // game card
                   .col.col--2-4
-                    .game-list__card.game-list__card--full-hover
-                      a(href="#").btn.btn--primary Играть
+                    // game-list__card--full-hover - animation effect
+                    .game-list__card.game-list__card--arrow-hover
+                      // a(href="#").btn.btn--primary Играть
                       .game-list__card__chars
                         span короткий
                         span сложный
@@ -82,13 +85,14 @@ html
                           .game-list__card__cta-right
                             span 900
                               span.ruble Р
+                          a(href="#").game-list__card__fold__link
 
                 // next line
                 .profile__heading Еще могут понравиться
                 .row.row--jcc--tablet.row--wrap--tablet.row--mobile
                   // game card
                   .col.col--2-4
-                    .game-list__card
+                    .game-list__card.game-list__card--arrow-hover
                       .game-list__card__chars
                         span короткий
                         span сложный
@@ -105,6 +109,7 @@ html
                           .game-list__card__cta-right
                             span 900
                               span.ruble Р
+                          a(href="#").game-list__card__fold__link
 
                   // game card
                   .col.col--2-4

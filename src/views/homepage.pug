@@ -87,6 +87,7 @@ html
                     i.ico.ico-close
                   .modal__scrollable-area
                     .question__title Что-то до сих пор осталось непонятным? <br> Задайте свой вопрос!
+                    .question__form__thanks Спасибо! Ваша заявка отправлена.<br> Мы обязательно свяжемся с вами
                     form(action="").question__form
                       textarea.ui-input(placeholder="ВАШ ВОПРОС" rows="7")
                       input(type="text" placeholder="Ваше имя").ui-input
@@ -427,6 +428,32 @@ html
                 .text-center
                   a(href="#").btn.btn--primary.btn--min-width выбрать игру
 
+
+        // FAQ
+        .faq.faq--light-bg
+          .container
+            .row
+              .col.col--4-6.col--auto--desktop.col--grow--desktop.offset--1-6.offset--no--desktop
+                .row.row--mobile
+                  .col.col--1-6.col--pad-r-9
+                    .faq__question-box
+                      span ?
+                  .col.col--5-6
+                    .faq__item.active
+                      .faq__question Чем большая игра отличается от обычной?
+                      .faq__answer.active Игра происходит на специальном сайте, поэтому вам понадобится смартфон или планшет с подключённым мобильным интернетом. На экране вы увидите задания, реплики персонажей и свой игровой прогресс. Перемещайтесь по городу и продвигайтесь по сюжету. На случай сложностей в квесте предусмотрены подсказки. <br> Время на прохождение не ограничено: при желании можно прерваться на кофе или даже продолжить в другой день.
+                    .faq__item
+                      .faq__question Сколько может быть игроков?
+                      .faq__answer Игра происходит на специальном сайте, поэтому вам понадобится смартфон или планшет с подключённым мобильным интернетом. На экране вы увидите задания, реплики персонажей и свой игровой прогресс. Перемещайтесь по городу и продвигайтесь по сюжету. На случай сложностей в квесте предусмотрены подсказки. <br> Время на прохождение не ограничено: при желании можно прерваться на кофе или даже продолжить в другой день.
+                    .faq__item
+                      .faq__question А что если мы глупые вороны?
+                      .faq__answer Игра происходит на специальном сайте, поэтому вам понадобится смартфон или планшет с подключённым мобильным интернетом. На экране вы увидите задания, реплики персонажей и свой игровой прогресс. Перемещайтесь по городу и продвигайтесь по сюжету. На случай сложностей в квесте предусмотрены подсказки. <br> Время на прохождение не ограничено: при желании можно прерваться на кофе или даже продолжить в другой день.
+
+                .row
+                  .col.col--full.text-center.mt30.mt60--desktop.mt20--mobile
+                    a(href='#').btn.btn--primary.btn--min-width ЕЩЁ ВОПРОСЫ
+
+
         // Testimonials
         .testimonials.testimonials--mainpage
           .container
@@ -436,7 +463,7 @@ html
 
             .row
               .col.col--full
-                .owl-carousel.owl-carousel--controlls-l-to-r#owlTestimonials
+                .owl-carousel.owl-carousel--controlls-l-to-r--wide#owlTestimonials
                   .testimonials__card
                     .testimonials__card__image
                       img(src="images/testimonialsPic1@2x.png")
@@ -471,7 +498,7 @@ html
             .row.row--jcc
               .col.col--4-6.col--full--desktop
                 .question__title Что-то до сих пор осталось непонятным? <br> Задайте свой вопрос!
-                .question__form__thanks Спасибо! Заявка отправлена<br> Мы свяжемся с вами очень скоро
+                .question__form__thanks Спасибо! Ваша заявка отправлена.<br> Мы обязательно свяжемся с вами
                 form(action="").question__form
                   .row.row--mobile
                     .col.col--3-6

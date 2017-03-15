@@ -71,12 +71,12 @@
 // UTILITIES
 .hidden-desktop-down
   @media($desktop)
-    display: none
+    display: none !important
 
 .visible-desktop-down
   display: none
   @media($desktop)
-    display: block
+    display: block !important
   &.inline
     @media($desktop)
       display: inline-block

@@ -2,12 +2,12 @@ doctype html
 html
   include shared/head.pug
 
-  body
+  body.scroll-x
     .page
       include shared/header.pug
       .page__content.profile-bottom-bg
         // Profile
-        .profile
+        .profile.scroll-x
           .container
             .row
               .profile__game__achived.profile__game__achived--cat(data-toggle="tooltip" data-placement="right" title="Планета Плутон перестала считаться планетой в 2006 году, но в некоторых штатах США по закону до сих пор является планетой")

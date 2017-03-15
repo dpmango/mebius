@@ -65,6 +65,7 @@
                   <div class="modal__close"><i class="ico ico-close"></i></div>
                   <div class="modal__scrollable-area">
                     <div class="question__title">Что-то до сих пор осталось непонятным? <br> Задайте свой вопрос!</div>
+                    <div class="question__form__thanks">Спасибо! Ваша заявка отправлена.<br> Мы обязательно свяжемся с вами</div>
                     <form class="question__form" action="">
                       <textarea class="ui-input" placeholder="ВАШ ВОПРОС" rows="7"></textarea>
                       <input class="ui-input" type="text" placeholder="Ваше имя">
@@ -113,7 +114,8 @@
                 </div>
                 <div class="ui-input ui-input--labeled">
                   <label>День рождения <span>*</span></label>
-                  <input type="text" placeholder="" value="20.01.1900">
+                  <!-- masked input on name attr-->
+                  <input type="text" name="birthday" placeholder="">
                 </div>
                 <div class="form-required-text"><span>*</span> это можно сделать ровно один раз, после этого поле становится неизменяемым</div>
                 <div class="mt30"><a class="btn btn--primary" href="#">Сохранить ИЗМЕНЕНИЯ</a></div>

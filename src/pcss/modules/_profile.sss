@@ -7,6 +7,9 @@
   background: url('../images/profileBg.png') no-repeat center
   background-size: cover
   padding-top: 125px
+  &.scroll-x
+    overflow-x: scroll
+    width: auto
   .container
     position: relative
   &--no-bg
@@ -68,9 +71,9 @@
         filter: drop-shadow(0px 0px 30px color($colorYellow a(50%)))
       &--cat
         background: url('../images/cabinet/achive_cat.png') no-repeat center
-        size: 130px 130px
-        top: 200%
-        left: 15%
+        size: 150px
+        top: 180%
+        left: 14%
       &--car
         background: url('../images/cabinet/achive_car.png') no-repeat center
         size: 150px 100px
@@ -79,8 +82,8 @@
       &--candle
         background: url('../images/cabinet/achive_candle.png') no-repeat center
         size: 110px
-        top: 0%
-        right: 6%
+        top: 130%
+        left: 720px
 
     &__house
       position: relative
@@ -89,18 +92,18 @@
       &--abservotoria
         background: url('../images/cabinet/houseAbservotoria.png') no-repeat center
         size: 344px 503px
-        right: 380px
+        left: 300px
         top: -40%
       &--gallery
         background: url('../images/cabinet/houseGallery.png') no-repeat center
         size: 450px 450px
-        right: 10px
+        left: 840px
         top: 7%
       &--green
         background: url('../images/cabinet/houseGreen.png') no-repeat center
         size: 300px
-        right: 200px
-        top: 85%
+        left: 560px
+        top: 65%
 
   &__heading
     font-family: 'Neo-Light'

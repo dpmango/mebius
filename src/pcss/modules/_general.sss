@@ -75,7 +75,7 @@
     @media($tablet)
       font-size: 42px
     @media($mobile)
-      font-size: 20px
+      font-size: 24px
 
 .cta-text
   margin-top: 60px
@@ -117,6 +117,8 @@
       padding-right: 0
   &--float
     position: fixed
+    @media($desktop)
+      box-shadow: 0 2px 8px color(black a(20%))
 
   &__logo
     display: flex
@@ -335,11 +337,12 @@
     margin-bottom: 20px
     @media($mobile)
       margin-top: 20px
+      margin-bottom: 5px
     .header__logo
       margin-left: auto
       margin-right: auto
   &__menu
-    flex: 5 1 auto
+    flex: 2 1 auto
     display: flex
     flex-direction: column
     align-items: stretch
@@ -348,7 +351,7 @@
       display: flex
       align-items: center
       justify-content: center
-      font-size: 28px
+      font-size: 25px
       padding-top: 3px
       line-height: 1em
       text-align: center
@@ -368,9 +371,9 @@
         background: #baa688
         color: white
       @media($tablet)
-        font-size: 24px
+        font-size: 22px
       @media($mobile-s)
-        font-size: 20px
+        font-size: 18px
       .ico
         order: 1
         margin-top: -4px
@@ -406,6 +409,9 @@
   &__question
     text-align: center
     margin-bottom: 20px
+    .ico-help
+      @media($mobile)
+        size: 16px
     .header__question
       display: block
     span
@@ -543,7 +549,16 @@
       background: url('../images/sprite/ico-owl-nav-white.png') no-repeat center
       size: 20px 40px
       transform: translateY(-50%)
-
+      @media($desktop)
+        transform: none
+        top: 120px
+        left: auto
+        right: 30px
+      @media($mobile)
+        top: 90px
+      @media($mobile-s)
+        top: 70px
+        right: 15px
     .owl-next
       position: absolute
       top: 50%
@@ -551,8 +566,15 @@
       background: url('../images/sprite/ico-owl-nav-white.png') no-repeat center
       size: 20px 40px
       transform: translateY(-50%) rotate(180deg)
-
-
+      @media($desktop)
+        transform: rotate(180deg)
+        top: 120px
+        right: 15px
+      @media($mobile)
+        top: 90px
+      @media($mobile-s)
+        top: 70px
+        right: 0
   .owl-nav
     text-align: center
     margin-top: 50px
@@ -591,7 +613,7 @@
       left: -80px
     .owl-next
       right: -80px
-    @media($desktop)
+    @media(width <= 1175px)
       .owl-prev, .owl-next
         top: -37px
       .owl-prev
@@ -608,6 +630,18 @@
     @media($mobile-s)
       .owl-prev, .owl-next
         top: 50px
+
+  &--controlls-l-to-r--wide
+    @media(width >= 1175px)
+      .owl-prev, .owl-next
+        transform: scale(.75)
+        position: absolute
+        top: 44%
+      .owl-prev
+        left: -80px
+      .owl-next
+        right: -80px
+
 // MODAL
 
 .modal
@@ -662,6 +696,23 @@
     @media($mobile)
       padding-top: 50px
       padding: 30px 20px
+    @media($desktop)
+      textarea.ui-input
+        max-height: 130px
+      .ui-input
+        padding-top: 10px
+        padding-bottom: 8px
+        margin-bottom: 8px
+      .question__title
+        font-size: 28px
+    @media($mobile)
+      textarea.ui-input
+        max-height: 100px
+      .question__title
+        font-size: 22px
+
+
+
   &__heading
     font-family: 'Neo-Light'
     font-size: 27px
@@ -710,15 +761,15 @@
       margin-bottom: 10px
     p
       font-size: 20px
-    ::-webkit-scrollbar
+    &::-webkit-scrollbar
       width: 5px
 
-    ::-webkit-scrollbar-track
+    &::-webkit-scrollbar-track
       -webkit-box-shadow: none
       -webkit-border-radius: 0px
       border-radius: 0px
 
-    ::-webkit-scrollbar-thumb
+    &::-webkit-scrollbar-thumb
       -webkit-border-radius: 5px
       border-radius: 5px
       background: #cab597

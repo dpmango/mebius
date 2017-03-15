@@ -112,18 +112,18 @@ html
             .row.row--jcc
               .col.col--4-6.col--full--desktop
                 .question__title Что-то до сих пор осталось непонятным? <br> Задайте свой вопрос!
+                .question__form__thanks Спасибо! Ваша заявка отправлена.<br> Мы обязательно свяжемся с вами
                 form(action="").question__form
-                .row.row--mobile
-                  .col.col--3-6
-                    input(type="text" placeholder="Ваше имя").ui-input
-                    input(type="email" placeholder="Email").ui-input
-                    input(type="tel" name="phone" placeholder="Телефон").ui-input
-                    input(type="text" placeholder="Выбранный квест").ui-input
-                    input(type="text" placeholder="количество игроков").ui-input
+                  .row.row--mobile
+                    .col.col--3-6
+                      input(type="text" placeholder="Ваше имя").ui-input
+                      input(type="email" placeholder="Email").ui-input
+                      input(type="tel" name="phone" placeholder="Телефон").ui-input
+                      input(type="text" placeholder="количество игроков").ui-input
 
-                  .col.col--3-6
-                    textarea.ui-input(placeholder="ВАШ ВОПРОС" rows="8")
-                    a(href="#").btn.btn--primary.btn--block.btn--no-skew-hover ОТПРАВИТЬ
+                    .col.col--3-6
+                      textarea.ui-input(placeholder="ВАШ ВОПРОС" rows="8")
+                      a(href="#").btn.btn--primary.btn--block.btn--no-skew-hover ОТПРАВИТЬ
 
             .row.row--jcc
               .col.col--4-6.col--full--desktop.text-center
