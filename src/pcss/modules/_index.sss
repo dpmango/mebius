@@ -1142,6 +1142,16 @@
       display: none
 
 
+@media($mobile-from)
+  .question__form
+    .col
+      display: flex
+      flex-direction: column
+      .ui-input
+        flex: 1
+        &:last-child
+          margin-bottom: 0
+
 .question__formCondenced
   textarea
     height: 113px
