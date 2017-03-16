@@ -3515,7 +3515,7 @@ body.scroll-x, html.scroll-x {
         max-height: 130px;
     }
     .modal__content .ui-input {
-        margin-bottom: 8px;
+        margin-bottom: 10px !important;
         padding-top: 10px;
         padding-bottom: 8px;
     }
@@ -3523,10 +3523,17 @@ body.scroll-x, html.scroll-x {
         font-size: 28px;
     }
 }
-@media(max-width: 568px) {
+@media(max-width: 768px) {
     .modal__content textarea.ui-input {
         max-height: 100px;
     }
+    .modal__content .ui-input {
+        padding-top: 8px;
+        padding-bottom: 8px;
+        font-size: 18px;
+    }
+}
+@media(max-width: 568px) {
     .modal__content .question__title {
         font-size: 22px;
     }
@@ -5484,7 +5491,7 @@ body.scroll-x, html.scroll-x {
         margin-left: 60px;
     }
 }
-@media(max-width: 568px) {
+@media(max-width: 640px) {
     .benefits__slide__content {
         margin-left: 50px;
     }
@@ -5519,6 +5526,11 @@ body.scroll-x, html.scroll-x {
         font-size: 34px;
     }
 }
+@media(max-width: 640px) {
+    .benefits__slide__title {
+        font-size: 28px;
+    }
+}
 @media(max-width: 568px) {
     .benefits__slide__title {
         font-size: 22px;
@@ -5551,6 +5563,11 @@ body.scroll-x, html.scroll-x {
 @media(max-width: 768px) {
     .benefits__slide__text {
         font-size: 25px;
+    }
+}
+@media(max-width: 640px) {
+    .benefits__slide__text {
+        font-size: 22px;
     }
 }
 @media(max-width: 568px) {
@@ -5606,6 +5623,7 @@ body.scroll-x, html.scroll-x {
     margin-top: 30px;
 }
 .question__form .ui-input {}
+.question__form textarea.ui-input {}
 @media(max-width: 568px) {
     .question__form {
         margin-top: 20px;
@@ -5613,12 +5631,22 @@ body.scroll-x, html.scroll-x {
 }
 @media(max-width: 940px) {
     .question__form .ui-input {
-        margin-bottom: 25px;
+        margin-bottom: 15px;
     }
 }
 @media(max-width: 568px) {
     .question__form .ui-input {
         margin-bottom: 10px;
+    }
+}
+@media(max-width: 940px) {
+    .question__form textarea.ui-input {
+        max-height: 203px;
+    }
+}
+@media(max-width: 768px) {
+    .question__form textarea.ui-input {
+        max-height: 212px;
     }
 }
 .question__form__thanks {
@@ -5636,12 +5664,12 @@ body.scroll-x, html.scroll-x {
 }
 @media(max-width: 940px) {
     .question .btn--primary {
-        margin-top: 36px;
+        margin-top: 25px;
     }
 }
 @media(max-width: 768px) {
     .question .btn--primary {
-        margin-top: 30px;
+        margin-top: 20px;
     }
 }
 @media(max-width: 568px) {
@@ -5687,11 +5715,11 @@ body.scroll-x, html.scroll-x {
     }
 }
 .question__formCondenced textarea {
-    height: 102px;
+    height: 113px;
 }
 @media(max-width: 940px) {
     .question__formCondenced textarea {
-        height: 183px;
+        height: 179px;
     }
     .question__formCondenced .btn {
         margin-top: 0;
@@ -5699,10 +5727,15 @@ body.scroll-x, html.scroll-x {
 }
 @media(max-width: 768px) {
     .question__formCondenced textarea {
-        height: 210px;
+        height: 197px;
     }
     .question__formCondenced .btn {
         margin-top: 25px;
+    }
+}
+@media(max-width: 568px) {
+    .question__formCondenced textarea {
+        height: 100px;
     }
 }
 /* INTRO */
@@ -6382,7 +6415,7 @@ body.scroll-x, html.scroll-x {
             align-items: flex-end;
     -webkit-justify-content: space-between;
             justify-content: space-between;
-    padding-right: 30px;
+    padding-right: 40px;
     padding-bottom: 20px;
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
@@ -6409,7 +6442,7 @@ body.scroll-x, html.scroll-x {
             justify-content: space-around;
     margin-right: -20px;
     margin-left: -35px;
-    padding: 15px 20px 15px 35px;
+    padding: 15px 30px 15px 35px;
     background: #f5ebdc;
         -ms-flex-pack: distribute;
     -webkit-box-align: center;
@@ -6429,12 +6462,14 @@ body.scroll-x, html.scroll-x {
     -webkit-flex: 0 1 auto;
         -ms-flex: 0 1 auto;
             flex: 0 1 auto;
-    font-size: 20px;
+    text-transform: uppercase;
+    font-size: 16px;
     -webkit-box-flex: 0;
 }
 .form-buy__from-to__item span {
     display: block;
     color: #baa588;
+    text-transform: none;
     font-size: 18px;
     font-family: 'Neo-Light';
 }
@@ -6547,6 +6582,7 @@ body.scroll-x, html.scroll-x {
         -webkit-box-flex: 0;
     }
     .form-buy__date {
+        padding-right: 30px;
         padding-bottom: 40px;
     }
     .form-buy__date__datetime {
@@ -6573,7 +6609,7 @@ body.scroll-x, html.scroll-x {
         -webkit-flex: 0 1 auto;
             -ms-flex: 0 1 auto;
                 flex: 0 1 auto;
-        font-size: 28px;
+        font-size: 22px;
         -webkit-box-flex: 0;
     }
     .form-buy__from-to__item span {
@@ -6638,6 +6674,10 @@ body.scroll-x, html.scroll-x {
     .big-game .quote__text__title {
         margin-bottom: 10px;
         font-size: 25px;
+    }
+    .form-buy {}
+    .form-buy__date {
+        padding-right: 45px;
     }
 }
 @media(max-width: 568px) {
@@ -7401,8 +7441,8 @@ body.scroll-x, html.scroll-x {
     background: url('../images/cabinet/achive_cat.png') no-repeat center;
 }
 .profile__game__achived--car {
-    top: 230%;
-    right: 5%;
+    top: 175%;
+    left: 1030px;
     width: 150px;
     height: 100px;
     background: url('../images/cabinet/achive_car.png') no-repeat center;
@@ -7414,16 +7454,30 @@ body.scroll-x, html.scroll-x {
     height: 110px;
     background: url('../images/cabinet/achive_candle.png') no-repeat center;
 }
+.profile__game__achived--flag {
+    top: 85%;
+    left: 510px;
+    width: 70px;
+    height: 70px;
+    background: url('../images/cabinet/achive_flag.png') no-repeat center;
+}
+.profile__game__achived--ufo {
+    top: 0;
+    left: 435px;
+    width: 100px;
+    height: 60px;
+    background: url('../images/cabinet/achive_ufo.png') no-repeat center;
+}
 .profile__game__house {
     position: relative;
     position: absolute;
     background-size: contain !important;
 }
 .profile__game__house--abservotoria {
-    top: -40%;
-    left: 300px;
-    width: 344px;
-    height: 503px;
+    top: -17%;
+    left: 320px;
+    width: 324px;
+    height: 450px;
     background: url('../images/cabinet/houseAbservotoria.png') no-repeat center;
 }
 .profile__game__house--gallery {

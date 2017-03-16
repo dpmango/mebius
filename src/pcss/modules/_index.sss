@@ -1010,7 +1010,7 @@
         margin-left: 80px
       @media(width <=870px)
         margin-left: 60px
-      @media($mobile)
+      @media(width <= 640px)
         margin-left: 50px
     .ico-quote
       position: absolute
@@ -1030,6 +1030,8 @@
         white-space: nowrap
       @media($tablet)
         font-size: 34px
+      @media(width <= 640px)
+        font-size: 28px
       @media($mobile)
         font-size: 22px
       span
@@ -1053,6 +1055,8 @@
         font-size: 28px
       @media($tablet)
         font-size: 25px
+      @media(width <= 640px)
+        font-size: 22px
       @media($mobile)
         font-size: 20px
 
@@ -1085,9 +1089,14 @@
       margin-top: 20px
     .ui-input
       @media($desktop)
-        margin-bottom: 25px
+        margin-bottom: 15px
       @media($mobile)
         margin-bottom: 10px
+    textarea.ui-input
+      @media($desktop)
+        max-height: 203px
+      @media($tablet)
+        max-height: 212px
     &__thanks
       display: none
       padding-top: 30px
@@ -1101,9 +1110,9 @@
   .btn--primary
     margin-top: 17px
     @media($desktop)
-      margin-top: 36px
+      margin-top: 25px
     @media($tablet)
-      margin-top: 30px
+      margin-top: 20px
     @media($mobile)
       margin-top: 10px
       display: inline-block
@@ -1135,16 +1144,20 @@
 
 .question__formCondenced
   textarea
-    height: 102px
+    height: 113px
 @media($desktop)
   .question__formCondenced
     textarea
-      height: 183px
+      height: 179px
     .btn
       margin-top: 0
 @media($tablet)
   .question__formCondenced
     textarea
-      height: 210px
+      height: 197px
     .btn
       margin-top: 25px
+@media($mobile)
+  .question__formCondenced
+    textarea
+      height: 100px

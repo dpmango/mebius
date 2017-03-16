@@ -480,7 +480,7 @@
     justify-content: space-between
     align-items: flex-end
     padding-bottom: 20px
-    padding-right: 30px
+    padding-right: 40px
     &__datetime
       font-size: 24px
       font-family: 'Neo-Light'
@@ -492,7 +492,7 @@
   &__from-to
     margin-left: -35px
     margin-right: -20px
-    padding: 15px 20px 15px 35px
+    padding: 15px 30px 15px 35px
     background: #f5ebdc
     display: flex
     justify-content: space-around
@@ -504,12 +504,14 @@
       flex: 1 1 auto
     &__item
       flex: 0 1 auto
-      font-size: 20px
+      font-size: 16px
+      text-transform: uppercase
       span
         display: block
         font-size: 18px
         font-family: 'Neo-Light'
         color: #baa588
+        text-transform: none
 
   &__selector
     display: flex
@@ -593,6 +595,7 @@
     margin-top: 80px
     &__date
       padding-bottom: 40px
+      padding-right: 30px
       &__datetime
         font-size: 40px
       &__weekday
@@ -612,7 +615,7 @@
         span
           display: block
           font-size: 28px
-        font-size: 28px
+        font-size: 22px
 
     &__selector
       padding-top: 40px
@@ -659,6 +662,9 @@
           margin-bottom: 10px
         p
           font-size: 22px
+  .form-buy
+    &__date
+      padding-right: 45px
 
 @media($mobile)
   .big-game
