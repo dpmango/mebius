@@ -84,7 +84,7 @@ var processors = [
 ];
 
 gulp.task('postcss', function() {
-  return gulp.src('./src/pcss/style.sss')
+  return gulp.src('./src/pcss/*.sss')
       .pipe( sourcemaps.init() )
       .pipe( postcss(processors, { parser: sugarss }) )
       .pipe( sourcemaps.write('.') )

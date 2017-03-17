@@ -1,0 +1,21 @@
+doctype html
+html
+  include shared/head-gaming.pug
+
+  body
+    .container
+      .gaming.center
+        .gaming__logo
+          i.ico.ico-logo
+        .gaming__title Введите ваш логин и пароль для личного кабинета
+        .gaming__form
+          form(action="")
+            input(type="email" placeholder="Логин").ui-input
+            input(type="password" placeholder="Пароль").ui-input
+        .gaming__button
+          a(href='#').btn.btn--primary Ок
+    
+    include shared/footer-gaming.pug
+    
+          
+    
