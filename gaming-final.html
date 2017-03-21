@@ -12,15 +12,32 @@
   <body>
     <div class="container">
       <div class="gaming center">
-        <div class="gaming__logo"><i class="ico ico-logo"></i></div>
-        <div class="gaming__title">Введите ваш логин и пароль для личного кабинета</div>
-        <div class="gaming__form">
-          <form action="">
-            <input class="ui-input" type="email" placeholder="Логин">
-            <input class="ui-input" type="password" placeholder="Пароль">
-          </form>
+        <div class="gaming__title gaming__title--quests">Ура! <br> Спасибо, что помогли Мяусу выбраться!</div>
+        <div class="gaming__image"><img src="images/gaming/guestImage.png"></div>
+        <div class="gaming__title">За прохождение этой игры вы получаете свою первую призовую лампочку  </div>
+        <div class="gaming__pulp-achived"><i class="ico ico-pulp ico-pulp-2x"></i></div>
+        <div class="gaming__title">Количество лампочек в конце игры зависит от того, насколько много подсказок вы использовали. <br> За X лампочек можно получить бесплатный квест! Кроме того, с каждой пройденной игрой в вашем городе появляется какой-то новый объект. <br> Например, сейчас это кот Мяус :)</div>
+        <div class="gaming__achived">
+          <div class="gaming__achived__title">Ваши достижения</div>
+          <div class="gaming__achived__block">
+            <div class="gaming__achived__block__title">Быстрый, как ветер</div>
+            <div class="gaming__achived__block__desc">Пройти квест меньше, чем за 30 минут</div>
+          </div>
+          <div class="gaming__achived__block">
+            <div class="gaming__achived__block__title">Инженер-конструктор</div>
+            <div class="gaming__achived__block__desc">Собрать видеофон из деталей</div>
+          </div>
         </div>
-        <div class="gaming__button"><a class="btn btn--primary" href="#">Ок</a></div>
+        <div class="gaming__title gaming__title--quests">Оценить квест</div>
+        <div class="gaming__rate">
+          <div class="gaming__rate__btn" data-rate="1">1</div>
+          <div class="gaming__rate__btn" data-rate="2">2</div>
+          <div class="gaming__rate__btn" data-rate="3">3</div>
+          <div class="gaming__rate__btn" data-rate="4">4</div>
+          <div class="gaming__rate__btn inactive" data-rate="5">5</div>
+          <input type="hidden" name="rating">
+        </div>
+        <div class="gaming__buttons"><a class="btn btn--primary btn--min-width btn--fill btn--darker" href="#">НАПИСАТЬ ОТЗЫВ</a><a class="btn btn--primary btn--min-width btn--fill" href="#">НАЧАТЬ НОВУЮ ИГРУ</a></div>
       </div>
     </div>
     <!-- SCRIPTS-->
