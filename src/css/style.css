@@ -761,6 +761,15 @@ body.scroll-x, html.scroll-x {
     background: #e9c162;
     color: white;
 }
+.btn--fill {
+    border-color: #f7c25b;
+    background: #f7c25b;
+    cursor: pointer;
+}
+.btn--fill:hover {
+    background: #f7c25b;
+    background: rgba(247, 194, 91, 0.8);
+}
 .btn--min-width {
     min-width: 190px;
 }
@@ -795,6 +804,9 @@ body.scroll-x, html.scroll-x {
     border-color: #baa688;
 }
 .btn--darker:hover {
+    background: #baa688;
+}
+.btn--darker.btn--fill {
     background: #baa688;
 }
 .btn-group .btn {

@@ -5,16 +5,72 @@ html
   body
     .container
       .gaming.center
-        .gaming__logo
-          i.ico.ico-logo
-        .gaming__title Введите ваш логин и пароль для личного кабинета
-        .gaming__form
-          form(action="")
-            input(type="email" placeholder="Логин").ui-input
-            input(type="password" placeholder="Пароль").ui-input
-        .gaming__button
-          a(href='#').btn.btn--primary Ок
-    
+        .gaming__title.gaming__title--game
+          i.ico.ico-arrow-left
+          span Вопрос 2
+          i.ico.ico-arrow-right
+          .gaming__pulp.gamin__pulp--pull
+            span 12
+            i.ico.ico-pulp
+            
+        .gaming__question
+          .quote
+            .quote__left
+              .quote__image
+                img(src="images/gaming/gameQuestionAva.png")
+              .quote__name Ленточка
+            .quote__text
+              p Привет, игроки! Мне очень нужна ваша помощь. Случилась беда: куда-то пропал кот Мяус, мой хороший друг. Вчера вечером мы гуляли по Старомонетному переулку, а сегодня я нигде не могу его найти!
+          
+          .gaming__question__text Возможно, Мяус заблудился в какой-нибудь игре, которая начинается неподалёку. Может быть, его видели: стоит кого-нибудь спросить. Но кого? 
+          .gaming__question__answer
+            form(action="#")
+              input(type="text" placeholder="Введите ответ").ui-input
+              button(type="submit").btn.btn--primary.btn--fill
+                i.ico.ico-go
+        
+        .gaming__hints
+          .gaming__hints__hintbox
+            .gaming__hints__hintbox__title Подсказки
+            .gaming__hints__hintbox__icons
+              a(href='#')
+                i.ico.ico-hint-closed
+              a(href='#')
+                i.ico.ico-hint-closed  
+              a(href='#')
+                i.ico.ico-hint-closed
+              a(href='#')
+                i.ico.ico-hint-open
+          .gaming__hints__links
+            a(href='#')
+              i.ico.ico-location-dark
+              span Куда идти?
+            a(href='#')
+              i.ico.ico-book
+              span Показать решения
+          
+        .gaming__hint
+          .gaming__hint__title Подсказка 1
+          .gaming__hint__text Посмотрите на сайте, какая из игр начинается недалеко от Старомонетного переулка (если вы не знаете, где это, — всегда можно воспользоваться картами)
+          .gaming__hint__image
+            img(src="images/gaming/hintImage.png")
+          .gaming__hint__cost вы потратили 1 подсказку
+              
+              
+                    
+        .gaming__footer.gaming__footer--with-pad
+          .gaming__footer__links
+            .gaming__link
+              a(href="#") Правила игры
+            .gaming__link
+              a(href="#") Сообщить об ошибке
+          .gaming__footer__phone
+            a(href='#tel:8912000000')
+              i.ico.ico-phone
+              span 8-912-000-0000
+        
+        
+                
     include shared/footer-gaming.pug
     
           

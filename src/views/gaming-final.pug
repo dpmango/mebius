@@ -5,16 +5,44 @@ html
   body
     .container
       .gaming.center
-        .gaming__logo
-          i.ico.ico-logo
-        .gaming__title Введите ваш логин и пароль для личного кабинета
-        .gaming__form
-          form(action="")
-            input(type="email" placeholder="Логин").ui-input
-            input(type="password" placeholder="Пароль").ui-input
-        .gaming__button
-          a(href='#').btn.btn--primary Ок
-    
+        .gaming__title.gaming__title--quests Ура! <br> Спасибо, что помогли Мяусу выбраться!
+        
+        .gaming__image
+          img(src='images/gaming/guestImage.png')
+            
+        .gaming__title За прохождение этой игры вы получаете свою первую призовую лампочку  
+        
+        .gaming__pulp-achived
+          i.ico.ico-pulp.ico-pulp-2x
+        
+        .gaming__title Количество лампочек в конце игры зависит от того, насколько много подсказок вы использовали. <br> За X лампочек можно получить бесплатный квест! Кроме того, с каждой пройденной игрой в вашем городе появляется какой-то новый объект. <br> Например, сейчас это кот Мяус :)
+        
+        .gaming__achived
+          .gaming__achived__title Ваши достижения
+          .gaming__achived__block
+            .gaming__achived__block__title Быстрый, как ветер
+            .gaming__achived__block__desc Пройти квест меньше, чем за 30 минут
+          .gaming__achived__block
+            .gaming__achived__block__title Инженер-конструктор
+            .gaming__achived__block__desc Собрать видеофон из деталей
+        
+        .gaming__title.gaming__title--quests Оценить квест
+        .gaming__rate
+          .gaming__rate__btn(data-rate="1") 1
+          .gaming__rate__btn(data-rate="2") 2
+          .gaming__rate__btn(data-rate="3") 3
+          .gaming__rate__btn(data-rate="4") 4
+          .gaming__rate__btn(data-rate="5").inactive 5
+          input(type="hidden" name="rating")
+        
+        .gaming__buttons
+          a(href="#").btn.btn--primary.btn--min-width.btn--fill.btn--darker НАПИСАТЬ ОТЗЫВ
+          a(href="#").btn.btn--primary.btn--min-width.btn--fill НАЧАТЬ НОВУЮ ИГРУ
+          
+          
+          
+          
+          
     include shared/footer-gaming.pug
     
           

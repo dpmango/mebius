@@ -20,6 +20,22 @@ $(document).ready(function(){
         return false;
 	});
 
-  
+  // RATE
+  $('.gaming__rate').on('click', '.gaming__rate__btn', function(e){
+    var rate = $(this).data('rate');
+
+    $(this).parent().find('input[name="rating"]').val(rate);
+
+    $(this).parent().find('.gaming__rate__btn').each(function(i){
+      if ( rate < $(this).data('rate') ){
+        $(this).addClass('inactive');
+      } else{
+        $(this).removeClass('inactive');
+      }
+    });
+
+  });
+
+
 
 });

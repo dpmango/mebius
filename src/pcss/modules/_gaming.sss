@@ -32,13 +32,24 @@
       font-size: 38px
     @media($mobile)
       font-size: 30px
+    &--bigger
+      font-size: 40px
+      font-family: 'Neo-Light'
     &--quests
       font-size: 48px
       font-family: 'Neo-Light'
       color: #887e6f
       margin-bottom: 50px
+    &--game
+      position: relative
+      color: #887e6f
+      font-size: 32px
+      margin-top: 40px
+      font-family: 'Neo-Light'
+      width: 100%
 
-  &__form
+
+  form
     flex: 1 1 auto
     margin-top: 20px
     @media(width <= 470px)
@@ -150,3 +161,253 @@
         transition: all .3s ease
         &:hover
           border-bottom: 3px dashed transparent
+
+  &__footer
+    flex: 1 1 auto
+    width: 100%
+    display: -webkit-flex
+    display: -ms-flex
+    display: flex
+    align-items: flex-end
+    justify-content: space-between
+    margin-bottom: 35px
+    &--with-pad
+      margin-top: 20vh
+
+    .gaming__link
+      margin-bottom: 20px
+      &:last-child
+        margin-bottom: 0
+    &__phone
+      font-size: 35px
+      font-family: 'Neo-Light'
+      color: #706350
+
+  &__question
+    flex: 1 1 auto
+    display: flex
+    flex-direction: column
+    margin-top: 30px
+    &__text
+      font-size: 32px
+      margin-top: 70px
+    &__answer
+      margin-top: 60px
+      max-width: 550px
+      margin-left: auto
+      margin-right: auto
+      form
+        position: relative
+        .ui-input
+          padding-right: 150px
+        button
+          position: absolute
+          top: 0
+          right: 0
+          bottom: 0
+          min-width: 130px
+          border-top-left-radius: 0
+          border-bottom-left-radius: 0
+
+  &__pulp
+    color: #fabd5f
+    font-size: 40px
+    font-family: 'Neo-Light'
+    position: absolute
+    right: 0
+    top: -8px
+
+  &__hints
+    flex: 1 1 auto
+    margin-top: 120px
+    display: flex
+    justify-content: space-between
+    width: 100%
+    &__hintbox
+      &__title
+        display: inline-block
+        font-family: 'Neo-Light'
+        font-size: 34px
+        color: #706350
+        background: #eddfcc
+        padding: 7px 20px
+      &__icons
+        margin-top: 15px
+        display: -webkit-flex
+        display: -ms-flex
+        display: flex
+        align-items: flex-end
+    &__links
+      text-align: right
+      font-family: 'Neo-Light'
+      color: #706350
+      font-size: 34px
+      a
+        display: block
+        margin-bottom: 25px
+        &:last-child
+          margin-bottom: 0
+
+  &__hint
+    margin-top: 60px
+    max-width: 500px
+    margin-left: auto
+    margin-right: auto
+    text-align: center
+    background: url('../images/gaming/bg-hint.png') no-repeat top center
+    &__title
+      margin-top: 60px
+      font-size: 36px
+      font-family: 'Neo-Light'
+
+    &__text
+      font-size: 32px
+      margin-top: 35px
+      margin-bottom: 60px
+      text-align: left
+
+    &__image
+      display: inline-block
+      border-radius: 8px
+      overflow: hidden
+      text-align: center
+      img
+        max-width: 100%
+
+    &__cost
+      margin-top: 50px
+      font-size: 34px
+      font-family: 'Neo-Light'
+      color: #baa588
+
+  &__image
+    flex: 1 1 auto
+    margin-left: -20px
+    margin-right: -20px
+    margin-bottom: 50px
+    img
+      width: 100%
+
+  &__pulp-achived
+    flex: 1 1 auto
+    margin-top: 20px
+    margin-bottom: 20px
+
+  &__achived
+    flex: 1 1 auto
+    padding: 50px
+    border-radius: 20px
+    border: 2px solid #d0bda3
+    width: 100%
+    text-align: center
+    margin-top: 80px
+    margin-bottom: 60px
+    &__title
+      font-size: 38px
+      font-family: 'Neo-Light'
+      color: #887e6f
+    &__block
+      margin-top: 40px
+      &__title
+        font-size: 38px
+        text-transform: uppercase
+      &__desc
+        font-size: 36px
+        color: #887e6f
+
+  &__rate
+    flex: 1 1 auto
+    display: flex
+    margin-bottom: 70px
+    &__btn
+      background: #fdcb6b
+      border-radius: 50%
+      size: 85px
+      margin-right: 35px
+      display: -webkit-flex
+      display: -ms-flex
+      display: flex
+      justify-content: center
+      align-items: center
+      font-size: 44px
+      line-height: 1
+      text-align: center
+      padding-top: 5px
+      font-family: 'Neo-Light'
+      cursor: pointer
+      transition: all .4s ease
+      &:hover
+        opacity: .6
+      &.inactive
+        background: #887e6f
+        &:hover
+          background: #fdcb6b
+
+  &__buttons
+    margin-bottom: 50px
+    margin-top: 80px
+    .btn--primary
+      margin-bottom: 30px
+      display: block
+      font-size: 36px
+      padding: 14px 50px 11px 50px
+      margin-bottom: 50px
+      min-width: 270px
+      @media(width <= 470px)
+        min-width: 240px
+
+
+
+
+// QUOTE
+.quote
+  display: flex
+  justify-content: space-between
+  padding-top: 20px
+  &__left
+    flex: 0 0 200px
+  &__image
+    size: 200px
+    border: 2px solid #bba789
+    border-radius: 50%
+    overflow: hidden
+    position: relative
+    img
+      max-width: 100%
+      position: absolute
+      top: 50%
+      left: 50%
+      transform: translate(-50%, -50%)
+  &__name
+    text-align: center
+    font-family: 'Neo-Light'
+    margin-top: 15px
+    font-size: 32px
+  &__text
+    flex: 1 1 auto
+    margin-left: 10%
+    border: 2px solid #bba789
+    border-radius: 12px
+    padding: 30px 40px
+    position: relative
+    &::after
+      position: absolute
+      display: block
+      content: ' '
+      top: 35%
+      left: -17px
+      background: #fefefe
+      transform: rotate(57deg) skewY(-20deg)
+      size: 30px 30px
+      border: 2px solid #bba789
+      border-right: none
+      border-top: none
+    &__title
+      font-family: 'Neo-Light'
+      font-size: 27px
+      color: #393738
+      margin-bottom: 5px
+    p
+      font-size: 32px
+      margin: 0
+      padding: 0
