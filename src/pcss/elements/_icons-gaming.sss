@@ -18,56 +18,86 @@
   background-image: url('../images/gaming/ico-gaming-location@2x.png')
   size: 22px 35px
   margin-right: 10px
+  @media($tablet)
+    size: 20px 30px
+  @media($mobile)
+    size: 12px
+    margin-right: 4px
 
 .ico-phone
   background-image: url('../images/gaming/ico-phone@2x.png')
   size: 32px 44px
   margin-right: 10px
-
+  @media($mobile)
+    size: 18px 22px
+    margin-right: 5px
 .ico-pulp
   background-image: url('../images/gaming/ico-pulp@2x.png')
   size: 31px 53px
   margin-left: 10px
   &.ico-pulp-2x
     size: 62px 106px
+    @media($mobile)
+      size: 30px 45px
+  @media($mobile)
+    size: 12px 18px
 
 .ico-arrow-left, .ico-arrow-right
   background-image: url('../images/gaming/ico-gaming-arrow@2x.png')
   size: 19px 32px
   cursor: pointer
   transition: all .3s ease
+  @media($mobile)
+    size: 8px 15px
   &:hover
     opacity: .7
 
 .ico-arrow-left
   margin-right: 20px
+  @media($mobile)
+    margin-right: 7px
 
 .ico-arrow-right
   transform: rotate(180deg)
   margin-left: 20px
+  @media($mobile)
+    margin-left: 7px
 
 .ico-go
   background-image: url('../images/gaming/ico-go@2x.png')
   size: 47px 32px
+  @media($mobile)
+    size: 30px 20px
 
 .ico-hint-closed
   background-image: url('../images/gaming/ico-hint-closed@2x.png')
   size: 59px 43px
   margin-right: 10px
+  @media($mobile)
+    size: 38px 26px
 
 .ico-hint-open
   background-image: url('../images/gaming/ico-hint-open@2x.png')
   size: 55px 61px
   margin-right: 10px
+  @media($mobile)
+    size: 40px 42px
 
 .ico-book
   background-image: url('../images/gaming/ico-book@2x.png')
   size: 44px 40px
   margin-right: 10px
+  @media($mobile)
+    size: 30px 25px
 
 .ico-location-dark
   background-image: url('../images/gaming/ico-location-dark@2x.png')
   size: 25px 45px
   margin-right: 10px
+  @media($mobile)
+    size: 17px 28px
+
   &.ico-location-dark-2x
     size: 50px 90px
+    @media($mobile)
+      size: 30px 50px

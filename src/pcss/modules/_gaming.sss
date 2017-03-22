@@ -15,6 +15,10 @@
     align-items: center
     flex-direction: column
     margin-top: 20px
+    &--big-pad
+      @media($mobile)
+        flex: 0
+        margin-top: 25vh
     .ico-logo
       background-image: url('../images/logo.png')
       width: 250px
@@ -22,6 +26,13 @@
       @media($mobile)
         width: 180px
         height: 70px
+  &--final
+    @media($mobile)
+      .gaming__title--quests
+        font-size: 22px
+        margin-bottom: 15px
+      .gaming__title
+        font-size: 20px
 
   &__title
     font-size: 34px
@@ -35,11 +46,18 @@
     &--bigger
       font-size: 40px
       font-family: 'Neo-Light'
+      @media($mobile)
+        font-size: 24px
     &--quests
       font-size: 48px
       font-family: 'Neo-Light'
       color: #887e6f
       margin-bottom: 50px
+      @media($tablet)
+        font-size: 42px
+      @media($mobile)
+        font-size: 18px
+        margin-bottom: 35px
     &--game
       position: relative
       color: #887e6f
@@ -47,6 +65,13 @@
       margin-top: 40px
       font-family: 'Neo-Light'
       width: 100%
+      @media($mobile)
+        font-size: 18px
+        margin-top: 15px
+    &--small-xs
+      @media($mobile)
+        font-size: 22px
+        margin: 15px 10%
 
 
   form
@@ -86,6 +111,10 @@
       color: #706350
       border-bottom: 3px dashed #bba587
       transition: all .3s ease
+      @media($mobile)
+        font-size: 36px
+      @media($mobile)
+        font-size: 16px
       &:hover
         border-bottom: 3px dashed transparent
   &__quests
@@ -93,6 +122,8 @@
     width: calc(100% + 40px)
     margin-top: 60px
     margin-bottom: 20vh
+    @media($mobile)
+      margin-top: 20px
   &__quest
     width: 100%
     position: relative
@@ -100,6 +131,12 @@
     color: white
     padding-left: 30px
     padding-right: 30px
+    @media($tablet)
+      padding-left: 25px
+      padding-right: 25px
+    @media($mobile)
+      padding-left: 15px
+      padding-right: 15px
     &--disabled
       .gaming__quest__image
         &::after
@@ -140,10 +177,22 @@
       z-index: 3
       margin-top: 60px
       margin-bottom: 60px
+      @media($tablet)
+        font-size: 40px
+        margin-top: 40px
+        margin-bottom: 40px
+      @media($mobile)
+        margin-top: 30px
+        margin-bottom: 20px
+        font-size: 18px
     &__date
       font-size: 40px
       position: relative
       z-index: 3
+      @media($tabet)
+        font-size: 36px
+      @media($mobile)
+        font-size: 15px
     &__action
       display: flex
       margin-bottom: 25px
@@ -153,12 +202,20 @@
       justify-content: space-between
     &__location
       font-size: 40px
+      @media($tabet)
+        font-size: 36px
+      @media($mobile)
+        font-size: 15px
     &__link
       text-transform: uppercase
       a
         font-size: 36px
         border-bottom: 3px dashed white
         transition: all .3s ease
+        @media($tabet)
+          font-size: 36px
+        @media($mobile)
+          font-size: 15px
         &:hover
           border-bottom: 3px dashed transparent
 
@@ -171,8 +228,16 @@
     align-items: flex-end
     justify-content: space-between
     margin-bottom: 35px
+    @media($mobile)
+      text-align: left
+      align-items: flex-start
+      justify-content: flex-start
+      flex-direction: column
+      margin-bottom: 20px
     &--with-pad
       margin-top: 20vh
+      @media($mobile)
+        margin-top: 20px
 
     .gaming__link
       margin-bottom: 20px
@@ -182,24 +247,38 @@
       font-size: 35px
       font-family: 'Neo-Light'
       color: #706350
+      @media($mobile)
+        font-size: 18px
+        margin-top: 20px
 
   &__question
     flex: 1 1 auto
     display: flex
     flex-direction: column
     margin-top: 30px
+    @media($mobile)
+      margin-top: 15px
     &__text
       font-size: 32px
       margin-top: 70px
+      @media($mobile)
+        font-size: 20px
+        margin-top: 20px
     &__answer
       margin-top: 60px
       max-width: 550px
       margin-left: auto
       margin-right: auto
+      @media($mobile)
+        margin-top: 10px
       form
         position: relative
+        @media($mobile)
+          width: 100%
         .ui-input
           padding-right: 150px
+          @media($mobile)
+            padding-right: 100px
         button
           position: absolute
           top: 0
@@ -208,6 +287,8 @@
           min-width: 130px
           border-top-left-radius: 0
           border-bottom-left-radius: 0
+          @media($mobile)
+            min-width: 80px
 
   &__pulp
     color: #fabd5f
@@ -216,6 +297,9 @@
     position: absolute
     right: 0
     top: -8px
+    @media($mobile)
+      top: 0px
+      font-size: 20px
 
   &__hints
     flex: 1 1 auto
@@ -223,6 +307,9 @@
     display: flex
     justify-content: space-between
     width: 100%
+    @media($mobile)
+      margin-top: 40px
+      flex-direction: column
     &__hintbox
       &__title
         display: inline-block
@@ -231,20 +318,31 @@
         color: #706350
         background: #eddfcc
         padding: 7px 20px
+        @media($mobile)
+          font-size: 20px
+          padding: 3px 10px
       &__icons
         margin-top: 15px
         display: -webkit-flex
         display: -ms-flex
         display: flex
         align-items: flex-end
+        @media($mobile)
+          margin-top: 5px
     &__links
       text-align: right
       font-family: 'Neo-Light'
       color: #706350
       font-size: 34px
+      @media($mobile)
+        margin-top: 30px
+        font-size: 20px
+        text-align: left
       a
         display: block
         margin-bottom: 25px
+        @media($mobile)
+          margin-bottom: 10px
         &:last-child
           margin-bottom: 0
 
@@ -255,16 +353,27 @@
     margin-right: auto
     text-align: center
     background: url('../images/gaming/bg-hint.png') no-repeat top center
+    background-size: 55%
+    @media($mobile)
+      margin-top: 30px
+      margin-bottom: 50px
     &__title
       margin-top: 60px
       font-size: 36px
       font-family: 'Neo-Light'
+      @media($mobile)
+        font-size: 24px
+        margin-top: 30px
 
     &__text
       font-size: 32px
       margin-top: 35px
       margin-bottom: 60px
       text-align: left
+      @media($mobile)
+        font-size: 20px
+        margin-top: 10px
+        margin-bottom: 30px
 
     &__image
       display: inline-block
@@ -279,12 +388,17 @@
       font-size: 34px
       font-family: 'Neo-Light'
       color: #baa588
+      @media($mobile)
+        margin-top: 20px
+        font-size: 20px
 
   &__image
     flex: 1 1 auto
     margin-left: -20px
     margin-right: -20px
     margin-bottom: 50px
+    @media($mobile)
+      margin-bottom: 5px
     img
       width: 100%
 
@@ -292,6 +406,9 @@
     flex: 1 1 auto
     margin-top: 20px
     margin-bottom: 20px
+    @media($mobile)
+      margin-top: 10px
+      margin-bottom: 0
 
   &__achived
     flex: 1 1 auto
@@ -302,23 +419,38 @@
     text-align: center
     margin-top: 80px
     margin-bottom: 60px
+    @media($mobile)
+      padding: 25px
+      margin-top: 20px
+      margin-bottom: 20px
+
     &__title
       font-size: 38px
       font-family: 'Neo-Light'
       color: #887e6f
+      @media($mobile)
+        font-size: 22px
     &__block
       margin-top: 40px
+      @media($mobile)
+        margin-top: 10px
       &__title
         font-size: 38px
         text-transform: uppercase
+        @media($mobile)
+          font-size: 20px
       &__desc
         font-size: 36px
         color: #887e6f
+        @media($mobile)
+          font-size: 20px
 
   &__rate
     flex: 1 1 auto
     display: flex
     margin-bottom: 70px
+    @media($mbile)
+      margin-bottom: 30px
     &__btn
       background: #fdcb6b
       border-radius: 50%
@@ -336,6 +468,14 @@
       font-family: 'Neo-Light'
       cursor: pointer
       transition: all .4s ease
+      @media($tablet)
+        size: 80px
+        margin-right: 25px
+      @media($mobile)
+        margin-right: 5px
+        size: 50px
+        font-size: 22px
+        padding-top: 2px
       &:hover
         opacity: .6
       &.inactive
@@ -346,6 +486,9 @@
   &__buttons
     margin-bottom: 50px
     margin-top: 80px
+    @media($mobile)
+      margin-top: 10px
+      margin-bottom: 30px
     .btn--primary
       margin-bottom: 30px
       display: block
@@ -355,6 +498,23 @@
       min-width: 270px
       @media(width <= 470px)
         min-width: 240px
+      @media($mobile)
+        font-size: 20px
+        padding: 10px 30px
+        min-width: 200px
+        &.btn--darker
+          margin-bottom: 10px
+
+
+
+
+  &__button
+    @media($mobile)
+      flex: 4 1 auto
+      .btn--primary
+        font-size: 18px
+        padding-top: 9px
+        padding-bottom: 7px
 
 
 
@@ -366,12 +526,16 @@
   padding-top: 20px
   &__left
     flex: 0 0 200px
+    @media($mobile)
+      flex-basis: 70px
   &__image
     size: 200px
     border: 2px solid #bba789
     border-radius: 50%
     overflow: hidden
     position: relative
+    @media($mobile)
+      size: 70px
     img
       max-width: 100%
       position: absolute
@@ -383,6 +547,8 @@
     font-family: 'Neo-Light'
     margin-top: 15px
     font-size: 32px
+    @media($mobile)
+      font-size: 20px
   &__text
     flex: 1 1 auto
     margin-left: 10%
@@ -390,6 +556,8 @@
     border-radius: 12px
     padding: 30px 40px
     position: relative
+    @media($mobile)
+      padding: 10px
     &::after
       position: absolute
       display: block
@@ -402,12 +570,21 @@
       border: 2px solid #bba789
       border-right: none
       border-top: none
+      @media($mobile)
+        size: 15px
+        top: 13%
+        left: -10px
+
     &__title
       font-family: 'Neo-Light'
       font-size: 27px
       color: #393738
       margin-bottom: 5px
+      @media($mobile)
+        font-size:180px
     p
       font-size: 32px
       margin: 0
       padding: 0
+      @media($mobile)
+        font-size: 20px
