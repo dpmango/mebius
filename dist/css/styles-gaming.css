@@ -1180,6 +1180,12 @@ body.scroll-x, html.scroll-x {
     height: 43px;
     background-image: url('../images/gaming/ico-hint-closed@2x.png');
 }
+@media(max-width: 768px) {
+    .ico-hint-closed {
+        width: 45px;
+        height: 34px;
+    }
+}
 @media(max-width: 568px) {
     .ico-hint-closed {
         width: 38px;
@@ -1191,6 +1197,12 @@ body.scroll-x, html.scroll-x {
     width: 55px;
     height: 61px;
     background-image: url('../images/gaming/ico-hint-open@2x.png');
+}
+@media(max-width: 768px) {
+    .ico-hint-open {
+        width: 45px;
+        height: 54px;
+    }
 }
 @media(max-width: 568px) {
     .ico-hint-open {
@@ -1204,6 +1216,12 @@ body.scroll-x, html.scroll-x {
     height: 40px;
     background-image: url('../images/gaming/ico-book@2x.png');
 }
+@media(max-width: 768px) {
+    .ico-book {
+        width: 37px;
+        height: 35px;
+    }
+}
 @media(max-width: 568px) {
     .ico-book {
         width: 30px;
@@ -1216,6 +1234,12 @@ body.scroll-x, html.scroll-x {
     height: 45px;
     background-image: url('../images/gaming/ico-location-dark@2x.png');
 }
+@media(max-width: 768px) {
+    .ico-location-dark {
+        width: 22px;
+        height: 38px;
+    }
+}
 @media(max-width: 568px) {
     .ico-location-dark {
         width: 17px;
@@ -1225,6 +1249,12 @@ body.scroll-x, html.scroll-x {
 .ico-location-dark.ico-location-dark-2x {
     width: 50px;
     height: 90px;
+}
+@media(max-width: 768px) {
+    .ico-location-dark.ico-location-dark-2x {
+        width: 40px;
+        height: 75px;
+    }
 }
 @media(max-width: 568px) {
     .ico-location-dark.ico-location-dark-2x {
@@ -1562,7 +1592,7 @@ body.scroll-x, html.scroll-x {
 }
 @media(max-width: 768px) {
     .gaming__title {
-        font-size: 38px;
+        font-size: 32px;
     }
 }
 @media(max-width: 568px) {
@@ -1587,7 +1617,7 @@ body.scroll-x, html.scroll-x {
 }
 @media(max-width: 768px) {
     .gaming__title--quests {
-        font-size: 42px;
+        font-size: 25px;
     }
 }
 @media(max-width: 568px) {
@@ -1603,6 +1633,11 @@ body.scroll-x, html.scroll-x {
     color: #887e6f;
     font-size: 32px;
     font-family: 'Neo-Light';
+}
+@media(max-width: 768px) {
+    .gaming__title--game {
+        font-size: 25px;
+    }
 }
 @media(max-width: 568px) {
     .gaming__title--game {
@@ -1625,7 +1660,7 @@ body.scroll-x, html.scroll-x {
 @media(max-width: 768px) {
     .gaming form .ui-input {
         padding: 10px 20px 7px 20px;
-        font-size: 36px;
+        font-size: 32px;
     }
 }
 @media(max-width: 470px) {
@@ -1641,6 +1676,11 @@ body.scroll-x, html.scroll-x {
     padding: 14px 50px 11px 50px;
     min-width: 270px;
     font-size: 30px;
+}
+@media(max-width: 768px) {
+    .gaming__button .btn--primary {
+        font-size: 24px;
+    }
 }
 @media(max-width: 470px) {
     .gaming__button .btn--primary {
@@ -1667,9 +1707,9 @@ body.scroll-x, html.scroll-x {
 .gaming__link a:hover {
     border-bottom: 3px dashed transparent;
 }
-@media(max-width: 568px) {
+@media(max-width: 768px) {
     .gaming__link a {
-        font-size: 36px;
+        font-size: 24px;
     }
 }
 @media(max-width: 568px) {
@@ -1686,6 +1726,11 @@ body.scroll-x, html.scroll-x {
     width: -webkit-calc(100% + 40px);
     width: calc(100% + 40px);
     -webkit-box-flex: 1;
+}
+@media(max-width: 768px) {
+    .gaming__quests {
+        margin-top: 40px;
+    }
 }
 @media(max-width: 568px) {
     .gaming__quests {
@@ -1774,7 +1819,7 @@ body.scroll-x, html.scroll-x {
     .gaming__quest__title {
         margin-top: 40px;
         margin-bottom: 40px;
-        font-size: 40px;
+        font-size: 24px;
     }
 }
 @media(max-width: 568px) {
@@ -1789,9 +1834,9 @@ body.scroll-x, html.scroll-x {
     z-index: 3;
     font-size: 40px;
 }
-@media($tabet) {
+@media(max-width: 768px) {
     .gaming__quest__date {
-        font-size: 36px;
+        font-size: 22px;
     }
 }
 @media(max-width: 568px) {
@@ -1816,9 +1861,9 @@ body.scroll-x, html.scroll-x {
 .gaming__quest__location {
     font-size: 40px;
 }
-@media($tabet) {
+@media(max-width: 768px) {
     .gaming__quest__location {
-        font-size: 36px;
+        font-size: 22px;
     }
 }
 @media(max-width: 568px) {
@@ -1838,9 +1883,9 @@ body.scroll-x, html.scroll-x {
 .gaming__quest__link a:hover {
     border-bottom: 3px dashed transparent;
 }
-@media($tabet) {
+@media(max-width: 768px) {
     .gaming__quest__link a {
-        font-size: 36px;
+        font-size: 20px;
     }
 }
 @media(max-width: 568px) {
@@ -1907,6 +1952,11 @@ body.scroll-x, html.scroll-x {
     font-size: 35px;
     font-family: 'Neo-Light';
 }
+@media(max-width: 768px) {
+    .gaming__footer__phone {
+        font-size: 24px;
+    }
+}
 @media(max-width: 568px) {
     .gaming__footer__phone {
         margin-top: 20px;
@@ -1929,6 +1979,11 @@ body.scroll-x, html.scroll-x {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
 }
+@media(max-width: 768px) {
+    .gaming__question {
+        margin-top: 20px;
+    }
+}
 @media(max-width: 568px) {
     .gaming__question {
         margin-top: 15px;
@@ -1937,6 +1992,12 @@ body.scroll-x, html.scroll-x {
 .gaming__question__text {
     margin-top: 70px;
     font-size: 32px;
+}
+@media(max-width: 768px) {
+    .gaming__question__text {
+        margin-top: 40px;
+        font-size: 24px;
+    }
 }
 @media(max-width: 568px) {
     .gaming__question__text {
@@ -1965,6 +2026,11 @@ body.scroll-x, html.scroll-x {
     border-top-left-radius: 0;
     border-bottom-left-radius: 0;
 }
+@media(max-width: 768px) {
+    .gaming__question__answer {
+        margin-top: 30px;
+    }
+}
 @media(max-width: 568px) {
     .gaming__question__answer {
         margin-top: 10px;
@@ -1975,9 +2041,19 @@ body.scroll-x, html.scroll-x {
         width: 100%;
     }
 }
+@media(max-width: 768px) {
+    .gaming__question__answer form .ui-input {
+        padding-right: 120px;
+    }
+}
 @media(max-width: 568px) {
     .gaming__question__answer form .ui-input {
         padding-right: 100px;
+    }
+}
+@media(max-width: 768px) {
+    .gaming__question__answer form button {
+        min-width: 100px;
     }
 }
 @media(max-width: 568px) {
@@ -1992,6 +2068,11 @@ body.scroll-x, html.scroll-x {
     color: #fabd5f;
     font-size: 40px;
     font-family: 'Neo-Light';
+}
+@media(max-width: 768px) {
+    .gaming__pulp {
+        font-size: 25px;
+    }
 }
 @media(max-width: 568px) {
     .gaming__pulp {
@@ -2015,6 +2096,11 @@ body.scroll-x, html.scroll-x {
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
 }
+@media(max-width: 768px) {
+    .gaming__hints {
+        margin-top: 70px;
+    }
+}
 @media(max-width: 568px) {
     .gaming__hints {
         -webkit-flex-direction: column;
@@ -2034,6 +2120,11 @@ body.scroll-x, html.scroll-x {
     font-size: 34px;
     font-family: 'Neo-Light';
 }
+@media(max-width: 768px) {
+    .gaming__hints__hintbox__title {
+        font-size: 24px;
+    }
+}
 @media(max-width: 568px) {
     .gaming__hints__hintbox__title {
         padding: 3px 10px;
@@ -2051,6 +2142,11 @@ body.scroll-x, html.scroll-x {
     margin-top: 15px;
     -webkit-box-align: end;
         -ms-flex-align: end;
+}
+@media(max-width: 768px) {
+    .gaming__hints__hintbox__icons {
+        margin-top: 10px;
+    }
 }
 @media(max-width: 568px) {
     .gaming__hints__hintbox__icons {
@@ -2070,11 +2166,21 @@ body.scroll-x, html.scroll-x {
 .gaming__hints__links a:last-child {
     margin-bottom: 0;
 }
+@media(max-width: 768px) {
+    .gaming__hints__links {
+        font-size: 24px;
+    }
+}
 @media(max-width: 568px) {
     .gaming__hints__links {
         margin-top: 30px;
         text-align: left;
         font-size: 20px;
+    }
+}
+@media(max-width: 768px) {
+    .gaming__hints__links a {
+        margin-top: 15px;
     }
 }
 @media(max-width: 568px) {
@@ -2091,6 +2197,11 @@ body.scroll-x, html.scroll-x {
     background-size: 55%;
     text-align: center;
 }
+@media(max-width: 768px) {
+    .gaming__hint {
+        margin-top: 40px;
+    }
+}
 @media(max-width: 568px) {
     .gaming__hint {
         margin-top: 30px;
@@ -2101,6 +2212,11 @@ body.scroll-x, html.scroll-x {
     margin-top: 60px;
     font-size: 36px;
     font-family: 'Neo-Light';
+}
+@media(max-width: 768px) {
+    .gaming__hint__title {
+        font-size: 28px;
+    }
 }
 @media(max-width: 568px) {
     .gaming__hint__title {
@@ -2113,6 +2229,13 @@ body.scroll-x, html.scroll-x {
     margin-bottom: 60px;
     text-align: left;
     font-size: 32px;
+}
+@media(max-width: 768px) {
+    .gaming__hint__text {
+        margin-top: 25px;
+        margin-bottom: 40px;
+        font-size: 24px;
+    }
 }
 @media(max-width: 568px) {
     .gaming__hint__text {
@@ -2136,6 +2259,12 @@ body.scroll-x, html.scroll-x {
     font-size: 34px;
     font-family: 'Neo-Light';
 }
+@media(max-width: 768px) {
+    .gaming__hint__cost {
+        margin-top: 30px;
+        font-size: 24px;
+    }
+}
 @media(max-width: 568px) {
     .gaming__hint__cost {
         margin-top: 20px;
@@ -2154,6 +2283,11 @@ body.scroll-x, html.scroll-x {
 .gaming__image img {
     width: 100%;
 }
+@media(max-width: 768px) {
+    .gaming__image {
+        margin-bottom: 30px;
+    }
+}
 @media(max-width: 568px) {
     .gaming__image {
         margin-bottom: 5px;
@@ -2166,6 +2300,11 @@ body.scroll-x, html.scroll-x {
     margin-top: 20px;
     margin-bottom: 20px;
     -webkit-box-flex: 1;
+}
+@media(max-width: 768px) {
+    .gaming__pulp-achived {
+        margin-bottom: 0;
+    }
 }
 @media(max-width: 568px) {
     .gaming__pulp-achived {
@@ -2186,6 +2325,12 @@ body.scroll-x, html.scroll-x {
     text-align: center;
     -webkit-box-flex: 1;
 }
+@media(max-width: 768px) {
+    .gaming__achived {
+        margin-top: 40px;
+        margin-bottom: 30px;
+    }
+}
 @media(max-width: 568px) {
     .gaming__achived {
         margin-top: 20px;
@@ -2198,6 +2343,11 @@ body.scroll-x, html.scroll-x {
     font-size: 38px;
     font-family: 'Neo-Light';
 }
+@media(max-width: 768px) {
+    .gaming__achived__title {
+        font-size: 26px;
+    }
+}
 @media(max-width: 568px) {
     .gaming__achived__title {
         font-size: 22px;
@@ -2205,6 +2355,11 @@ body.scroll-x, html.scroll-x {
 }
 .gaming__achived__block {
     margin-top: 40px;
+}
+@media(max-width: 768px) {
+    .gaming__achived__block {
+        margin-top: 25px;
+    }
 }
 @media(max-width: 568px) {
     .gaming__achived__block {
@@ -2215,6 +2370,11 @@ body.scroll-x, html.scroll-x {
     text-transform: uppercase;
     font-size: 38px;
 }
+@media(max-width: 768px) {
+    .gaming__achived__block__title {
+        font-size: 26px;
+    }
+}
 @media(max-width: 568px) {
     .gaming__achived__block__title {
         font-size: 20px;
@@ -2223,6 +2383,11 @@ body.scroll-x, html.scroll-x {
 .gaming__achived__block__desc {
     color: #887e6f;
     font-size: 36px;
+}
+@media(max-width: 768px) {
+    .gaming__achived__block__desc {
+        font-size: 26px;
+    }
 }
 @media(max-width: 568px) {
     .gaming__achived__block__desc {
@@ -2239,6 +2404,11 @@ body.scroll-x, html.scroll-x {
             flex: 1 1 auto;
     margin-bottom: 70px;
     -webkit-box-flex: 1;
+}
+@media(max-width: 768px) {
+    .gaming__rate {
+        margin-top: 40px;
+    }
 }
 @media($mbile) {
     .gaming__rate {
@@ -2276,8 +2446,9 @@ body.scroll-x, html.scroll-x {
 @media(max-width: 768px) {
     .gaming__rate__btn {
         margin-right: 25px;
-        width: 80px;
-        height: 80px;
+        width: 70px;
+        height: 70px;
+        font-size: 35px;
     }
 }
 @media(max-width: 568px) {
@@ -2311,10 +2482,20 @@ body.scroll-x, html.scroll-x {
     min-width: 270px;
     font-size: 36px;
 }
+@media(max-width: 768px) {
+    .gaming__buttons {
+        margin-top: 40px;
+        margin-bottom: 30px;
+    }
+}
 @media(max-width: 568px) {
     .gaming__buttons {
         margin-top: 10px;
-        margin-bottom: 30px;
+    }
+}
+@media(max-width: 768px) {
+    .gaming__buttons .btn--primary {
+        font-size: 24px;
     }
 }
 @media(max-width: 470px) {
@@ -2333,6 +2514,14 @@ body.scroll-x, html.scroll-x {
     }
 }
 .gaming__button {}
+@media(max-width: 768px) {
+    .gaming__button {
+        -webkit-flex: 3 1 auto;
+            -ms-flex: 3 1 auto;
+                flex: 3 1 auto;
+        -webkit-box-flex: 3;
+    }
+}
 @media(max-width: 568px) {
     .gaming__button {
         -webkit-flex: 4 1 auto;
@@ -2400,6 +2589,11 @@ body.scroll-x, html.scroll-x {
     font-size: 32px;
     font-family: 'Neo-Light';
 }
+@media(max-width: 768px) {
+    .quote__name {
+        font-size: 25px;
+    }
+}
 @media(max-width: 568px) {
     .quote__name {
         font-size: 20px;
@@ -2420,6 +2614,11 @@ body.scroll-x, html.scroll-x {
     margin: 0;
     padding: 0;
     font-size: 32px;
+}
+@media(max-width: 768px) {
+    .quote__text {
+        padding: 20px 30px;
+    }
 }
 @media(max-width: 568px) {
     .quote__text {
@@ -2456,8 +2655,20 @@ body.scroll-x, html.scroll-x {
     font-size: 27px;
     font-family: 'Neo-Light';
 }
+@media(max-width: 768px) {
+    .quote__text__title {
+        font-size: 24px;
+    }
+}
 @media(max-width: 568px) {
-    .quote__text__title font-size:180px {}
+    .quote__text__title {
+        font-size: 18px;
+    }
+}
+@media(max-width: 768px) {
+    .quote__text p {
+        font-size: 26px;
+    }
 }
 @media(max-width: 568px) {
     .quote__text p {
