@@ -7711,27 +7711,33 @@ body.scroll-x, html.scroll-x {
     -webkit-flex: 1 1 auto;
         -ms-flex: 1 1 auto;
             flex: 1 1 auto;
-    margin-top: 40px;
-    margin-bottom: 30px;
-    padding: 25px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding: 20px;
     width: 100%;
     border: 2px solid #d0bda3;
     border-radius: 6px;
     text-align: center;
     -webkit-box-flex: 1;
 }
+@media(max-width: 568px) {
+    .gaming__achived {
+        margin-top: 15px;
+        padding: 10px;
+    }
+}
 .gaming__achived__title {
     color: #887e6f;
-    font-size: 26px;
+    font-size: 22px;
     font-family: 'Neo-Light';
 }
 @media(max-width: 568px) {
     .gaming__achived__title {
-        font-size: 22px;
+        font-size: 18px;
     }
 }
 .gaming__achived__block {
-    margin-top: 25px;
+    margin-top: 20px;
 }
 @media(max-width: 568px) {
     .gaming__achived__block {
@@ -7744,15 +7750,15 @@ body.scroll-x, html.scroll-x {
 }
 @media(max-width: 568px) {
     .gaming__achived__block__title {
-        font-size: 20px;
+        font-size: 18px;
     }
 }
 .gaming__achived__block__desc {
     color: #887e6f;
-    font-size: 26px;
+    font-size: 22px;
 }
 @media(max-width: 568px) {
     .gaming__achived__block__desc {
-        font-size: 20px;
+        font-size: 18px;
     }
 }

@@ -1177,6 +1177,13 @@ body.scroll-x, html.scroll-x {
         font-size: 22px;
     }
 }
+.gaming__title--with-mark {}
+@media(max-width: 430px) {
+    .gaming__title--with-mark {
+        padding-right: 15px;
+        padding-left: 15px;
+    }
+}
 .gaming__form {
     -webkit-flex: 1 1 auto;
         -ms-flex: 1 1 auto;
