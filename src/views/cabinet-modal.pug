@@ -1,0 +1,70 @@
+doctype html
+html
+  include shared/head.pug
+
+  body.scroll-x
+    .page
+      include shared/header.pug
+      .page__content.profile-bottom-bg
+        // Profile
+        .profile.scroll-x
+          .container
+            .row
+              .profile__game__achived.profile__game__achived--cat(data-toggle="tooltip" data-placement="right" title="Планета Плутон перестала считаться планетой в 2006 году, но в некоторых штатах США по закону до сих пор является планетой")
+              .profile__game__achived.profile__game__achived--car(data-toggle="tooltip" data-placement="top" data-html="true" title="Выживший <br> Вы не смогли помочь заражённым, но покинули город и остались в живых.")
+              .profile__game__achived.profile__game__achived--candle(data-toggle="tooltip" data-placement="top" data-html="true" title="Выживший <br> Вы не смогли помочь заражённым, но покинули город и остались в живых.")
+              .profile__game__achived.profile__game__achived--flag(data-toggle="tooltip" data-placement="top" data-html="true" title="Выживший <br> Вы не смогли помочь заражённым, но покинули город и остались в живых.")
+              .profile__game__achived.profile__game__achived--ufo(data-toggle="tooltip" data-placement="bottom" data-html="true" title="Выживший <br> Вы не смогли помочь заражённым, но покинули город и остались в живых.")
+                  
+              .profile__game__house.profile__game__house--abservotoria
+              .profile__game__house.profile__game__house--gallery
+              .profile__game__house.profile__game__house--green
+
+              .col.col--2-6.no-pad-r.col--310--desktop.col--full--mobile
+                .profile__scope
+                  .profile__scope__left
+                    .profile__scope__image
+                      img(src="images/profilePic.png")
+                    .profile__scope__name Каролина
+                    .profile__scope__rate
+                      span Накоплено 12
+                      i.ico.ico-pulp
+                    .profile__scope__next-left Ещё 11 до бесплатного квеста!
+                  .profile__scope__right
+                    a(href='#').btn.btn--primary.btn--darker.btn--block Профиль
+                    a(href='#').btn.btn--primary.btn--darker.btn--block.active Мои игры
+                    a(href='#').btn.btn--primary.btn--darker.btn--block Тюториал
+
+
+        .modal.modal--cover#modalSucess(data-auto="true")
+          .modal__wrapper
+            .container
+              .row
+                .col.col--4-6.col--auto--desktop.col--grow--desktop.offset--1-6.offset--10--desktop.no-pad
+                  .modal__content
+                    .modal__close
+                      i.ico.ico-close
+                    .modal__scrollable-area
+                      .question__title Поздравляем! 
+                      
+                      .gaming__title 
+                        | Вы успешно прошли квест "Привет с бетельгейзе" и заработали
+                        span.gaming__pulp 12
+                          i.ico.ico-pulp
+                        | <br> Вы помогли потерявшейся девочки найти инопланетное посольство<br> Ей обязательно помогут вернуться домой
+                         
+                      
+                      .gaming__achived
+                        .gaming__achived__title Ваши достижения
+                        .gaming__achived__block
+                          .gaming__achived__block__title Быстрый, как ветер
+                          .gaming__achived__block__desc Пройти квест меньше, чем за 30 минут
+                        .gaming__achived__block
+                          .gaming__achived__block__title Инженер-конструктор
+                          .gaming__achived__block__desc Собрать видеофон из деталей
+                      
+                      
+                      .text-center
+                        a(href="#").btn.btn--primary.btn--no-skew-hover Оставить отзыв
+
+      include shared/footer.pug

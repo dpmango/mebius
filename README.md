@@ -29,4 +29,4 @@ __Production__
 
 
 ### Push command (gh-pages fix)
-gulp build && git add . && git commit -m "smaller tablet size" && git push origin master && git subtree push --prefix dist origin gh-pages
+gulp build && git add . && git commit -m "no psd new pages" && git push origin master && git subtree push --prefix dist origin gh-pages

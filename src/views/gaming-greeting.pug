@@ -1,0 +1,28 @@
+doctype html
+html
+  include shared/head-gaming.pug
+
+  body
+    .container
+      .gaming.center
+        //- .gaming__logo
+        //-   i.ico.ico-logo
+        .gaming__title.gaming__title--bigger Давайте познакомимся
+        .gaming__title.gaming__title--small-xs Введите логины личных кабинетов всех игроков <span class="required-mark">*</span>
+        
+        .gaming__form
+          form(action="")
+            input(type="text" placeholder="Игрок #1").ui-input
+            input(type="text" placeholder="Игрок #2").ui-input
+            input(type="text" placeholder="Игрок #3").ui-input
+            input(type="text" placeholder="Игрок #4").ui-input
+            
+        .gaming__button
+          a(href='#').btn.btn--primary Ок
+          
+        .gaming__title.gaming__title--small-xs <span class="required-mark">*</span> Если у одного или нескольких игроков нет личного кабинета, просто введите email и наша система создаст его автоматически  
+    
+    include shared/footer-gaming.pug
+    
+          
+    

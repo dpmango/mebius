@@ -796,6 +796,7 @@ body.scroll-x, html.scroll-x {
 }
 @media(max-width: 568px) {
     .ico-location-dark.ico-location-dark-2x {
+        margin-bottom: 30px;
         width: 30px;
         height: 50px;
     }
@@ -1044,20 +1045,6 @@ body.scroll-x, html.scroll-x {
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
 }
-.gaming form {
-    -webkit-flex: 1 1 auto;
-        -ms-flex: 1 1 auto;
-            flex: 1 1 auto;
-    margin-top: 20px;
-    -webkit-box-flex: 1;
-}
-.gaming form .ui-input {
-    margin-bottom: 22px;
-    padding: 18px 20px 13px 20px;
-    min-width: 430px;
-    font-size: 34px;
-    line-height: 1.5em;
-}
 .gaming.center {
     -webkit-align-items: center;
             align-items: center;
@@ -1190,19 +1177,33 @@ body.scroll-x, html.scroll-x {
         font-size: 22px;
     }
 }
+.gaming__form {
+    -webkit-flex: 1 1 auto;
+        -ms-flex: 1 1 auto;
+            flex: 1 1 auto;
+    margin-top: 20px;
+    -webkit-box-flex: 1;
+}
+.gaming__form .ui-input {
+    margin-bottom: 22px;
+    padding: 18px 20px 13px 20px;
+    min-width: 430px;
+    font-size: 34px;
+    line-height: 1.5em;
+}
 @media(max-width: 470px) {
-    .gaming form {
+    .gaming__form {
         width: 90%;
     }
 }
 @media(max-width: 768px) {
-    .gaming form .ui-input {
+    .gaming__form .ui-input {
         padding: 10px 20px 7px 20px;
         font-size: 32px;
     }
 }
 @media(max-width: 470px) {
-    .gaming form .ui-input {
+    .gaming__form .ui-input {
         display: block;
         min-width: 1px;
         width: 100%;
@@ -1222,7 +1223,7 @@ body.scroll-x, html.scroll-x {
 }
 @media(max-width: 470px) {
     .gaming__button .btn--primary {
-        min-width: 240px;
+        min-width: 150px;
     }
 }
 .gaming__link {
@@ -2212,4 +2213,11 @@ body.scroll-x, html.scroll-x {
     .quote__text p {
         font-size: 20px;
     }
+}
+.required-mark {
+    display: inline-block;
+    color: #f7bb40;
+    vertical-align: -.48em;
+    font-size: 3em;
+    line-height: 0;
 }

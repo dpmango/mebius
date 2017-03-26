@@ -76,7 +76,7 @@
         margin: 15px 10%
 
 
-  form
+  &__form
     flex: 1 1 auto
     margin-top: 20px
     @media(width <= 470px)
@@ -104,7 +104,7 @@
       @media($tablet)
         font-size: 24px
       @media(width <= 470px)
-        min-width: 240px
+        min-width: 150px
 
   &__link
     flex: 1 1 auto
@@ -662,3 +662,11 @@
         font-size: 26px
       @media($mobile)
         font-size: 20px
+
+
+.required-mark
+  color: $colorYellow
+  font-size: 3em
+  vertical-align: -.48em
+  line-height: 0
+  display: inline-block

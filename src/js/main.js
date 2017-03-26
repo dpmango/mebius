@@ -146,6 +146,12 @@ $(document).ready(function(){
     });
   });
 
+  $('.modal').each(function(i, val){
+    if ( $(this).data('auto') == true ){
+      $(this).fadeIn();
+    }
+  });
+
   setModalPosition();
   $(window).scroll(function(){
     setModalPosition();
