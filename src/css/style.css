@@ -586,7 +586,7 @@ body.scroll-x, html.scroll-x {
 .ico-logo {
     margin-left: -7px;
     width: 120px;
-    height: 40px;
+    height: 43px;
     background-image: url('../images/logo.png');
 }
 .ico-help {
@@ -2005,6 +2005,16 @@ body.scroll-x, html.scroll-x {
     -webkit-box-shadow: 0 0 0 2px tomato;
             box-shadow: 0 0 0 2px tomato;
 }
+.ui-input.has-sucess, .ui-input input.has-sucess {
+    border-color: #228b22;
+    -webkit-box-shadow: 0 0 0 2px #228b22;
+            box-shadow: 0 0 0 2px #228b22;
+}
+.ui-input__error-text, .ui-input input__error-text {
+    margin-top: 0px;
+    color: tomato;
+    font-size: 13px;
+}
 .ui-input--labeled, .ui-input input--labeled {
     margin-bottom: 20px;
     padding: 0;
@@ -2771,6 +2781,10 @@ body.scroll-x, html.scroll-x {
     -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
     opacity: 1;
 }
+/* scrollbar fix */
+.is-ie .navi-mobile {
+    margin: 0 -16px 0 16px !important;
+}
 .navi-mobile {
     position: absolute;
     top: 0px;
@@ -2779,6 +2793,7 @@ body.scroll-x, html.scroll-x {
     z-index: 10;
     overflow-y: scroll;
     min-height: 100vh;
+    height: 100vh;
     background: #f5ebdc;
     text-align: center;
     -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
@@ -2818,7 +2833,6 @@ body.scroll-x, html.scroll-x {
     right: 0;
     bottom: 0;
     left: 0;
-    overflow: auto;
     min-height: 600px;
     height: 100vh;
 }

@@ -1351,6 +1351,16 @@ body.scroll-x, html.scroll-x {
     -webkit-box-shadow: 0 0 0 2px tomato;
             box-shadow: 0 0 0 2px tomato;
 }
+.ui-input.has-sucess, .ui-input input.has-sucess {
+    border-color: #228b22;
+    -webkit-box-shadow: 0 0 0 2px #228b22;
+            box-shadow: 0 0 0 2px #228b22;
+}
+.ui-input__error-text, .ui-input input__error-text {
+    margin-top: 0px;
+    color: tomato;
+    font-size: 13px;
+}
 .ui-input--labeled, .ui-input input--labeled {
     margin-bottom: 20px;
     padding: 0;

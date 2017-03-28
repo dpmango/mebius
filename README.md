@@ -29,4 +29,4 @@ __Production__
 
 
 ### Push command (gh-pages fix)
-gulp build && git add . && git commit -m "fixed elements size in modal and mark word-wrap" && git push origin master && git subtree push --prefix dist origin gh-pages
+gulp build && git add . && git commit -m "validation class and ie things" && git push origin master && git subtree push --prefix dist origin gh-pages

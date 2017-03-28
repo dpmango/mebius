@@ -214,44 +214,15 @@ $(document).ready(function(){
   });
 
 
-  // // Magnific Popup
-  // $('.popup-with-zoom-anim').magnificPopup({
-  //   type: 'inline',
-  //   fixedContentPos: false,
-  //   fixedBgPos: true,
-  //   overflowY: 'auto',
-  //   closeBtnInside: true,
-  //   preloader: false,
-  //   midClick: true,
-  //   removalDelay: 300,
-  //   mainClass: 'my-mfp-zoom-in'
-  // });
-  //
-  // $('.popup-with-move-anim').magnificPopup({
-  //   type: 'inline',
-  //   fixedContentPos: false,
-  //   fixedBgPos: true,
-  //   overflowY: 'auto',
-  //   closeBtnInside: true,
-  //   preloader: false,
-  //   midClick: true,
-  //   removalDelay: 300,
-  //   mainClass: 'my-mfp-slide-bottom'
-  // });
-  //
-  // $('.popup-gallery').magnificPopup({
-	// 	delegate: 'a',
-	// 	type: 'image',
-	// 	tLoading: 'Loading image #%curr%...',
-	// 	mainClass: 'mfp-img-mobile',
-	// 	gallery: {
-	// 		enabled: true,
-	// 		navigateByImgClick: true,
-	// 		preload: [0,1]
-	// 	},
-	// 	image: {
-	// 		tError: '<a href="%url%">The image #%curr%</a> could not be loaded.'
-	// 	}
-	// });
+  // detect IE
+  function fckie() {
+    var ua = window.navigator.userAgent;
+    var msie = ua.indexOf("MSIE ");
+    if (msie > 0 || !!navigator.userAgent.match(/Trident.*rv\:11\./))  {
+      $('body').addClass('is-ie');
+    }
+    return false;
+  }
+  fckie();
 
 });
